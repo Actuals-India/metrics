@@ -201,7 +201,7 @@ function SearchBarView({ location, onSearchActive, onSearchInactive }: Props) {
             <Icon name="close" />
           </CloseSearchButton>
         )}
-        {!isSmallScreen() && !isWithinIframe() && isActive && (
+        {!isSmallScreen() && isActive && (
           <CommandPaletteTrigger onClick={handleCommandPaletteTriggerClick} />
         )}
       </SearchInputContainer>

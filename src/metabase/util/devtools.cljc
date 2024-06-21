@@ -23,7 +23,7 @@
          (.addEventListener js/window "beforeunload"
                             (fn [_event]
                               (js/console.log "invalidating webpack build")
-                              (js/fetch "http://localhost:8080/webpack-dev-server/invalidate")
+                              (js/fetch "http://localhost:8081/webpack-dev-server/invalidate")
                               ;; HACK: Spin-lock to buy time for webpack to actually start rebuilding. Without this
                               ;; there's a race between the invalidation and the refreshed page loading the bundles.
                               (let [target (+ (js/performance.now) 500)]

@@ -159,9 +159,13 @@ class PublicDashboardInner extends Component {
       setParameterValueToDefault,
     } = this.props;
 
-    const buttons = !isWithinIframe()
-      ? getDashboardActions({ ...this.props, isPublic: true })
-      : [];
+    // const buttons = !isWithinIframe()
+    //   ? getDashboardActions({ ...this.props, isPublic: true })
+    //   : [];
+
+    const buttons = 
+       getDashboardActions({ ...this.props, isPublic: true })
+     
 
     const visibleDashcards = (dashboard?.dashcards ?? []).filter(
       dashcard => !isActionDashCard(dashcard),

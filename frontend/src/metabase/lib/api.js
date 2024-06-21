@@ -108,7 +108,7 @@ export class Api extends EventEmitter {
 
         if (isWithinIframe()) {
           // eslint-disable-next-line no-literal-metabase-strings -- Not a user facing string
-          headers["X-Metabase-Embedded"] = "true";
+          headers["X-Metabase-Embedded"] = "false";
         }
 
         if (ANTI_CSRF_TOKEN) {

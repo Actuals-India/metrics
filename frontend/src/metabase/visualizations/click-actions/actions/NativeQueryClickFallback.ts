@@ -17,9 +17,9 @@ export const NativeQueryClickFallback: LegacyDrill = ({ question }) => {
   const { database } = drill;
   const isSql = getEngineNativeType(database.engine) === "sql";
 
-  if (isWithinIframe()) {
-    return [];
-  }
+  // if (isWithinIframe()) {
+  //   return [];
+  // }
 
   return [
     {
