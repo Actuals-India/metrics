@@ -135,7 +135,7 @@ const defaultConfig = {
     config.env.feHealthcheck = {
       enabled: feHealthcheckEnabled,
       url: feHealthcheckEnabled
-        ? "http://localhost:8081/webpack-dev-server/"
+        ? "http://localhost:8080/webpack-dev-server/"
         : undefined,
     };
 

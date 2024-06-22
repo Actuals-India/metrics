@@ -66,7 +66,7 @@
                                  (when (public-settings/anon-tracking-enabled)
                                    "https://www.google-analytics.com")
                                  (when config/is-dev?
-                                   "http://localhost:8081")
+                                   "http://localhost:8080")
                                  (when config/is-dev?
                                    "'unsafe-inline'")]
                   :child-src    ["'self'"
@@ -75,7 +75,7 @@
                                  (when nonce
                                    (format "'nonce-%s'" nonce))
                                  (when config/is-dev?
-                                   "http://localhost:8081")
+                                   "http://localhost:8080")
                                  "https://accounts.google.com"]
                   :font-src     ["*"]
                   :img-src      ["*"
@@ -88,7 +88,7 @@
                                  (when (public-settings/anon-tracking-enabled)
                                    (snowplow/snowplow-url))
                                  (when config/is-dev?
-                                   "*:8081 ws://*:8081")]
+                                   "*:8080 ws://*:8080")]
                   :manifest-src ["'self'"]}]
       (format "%s %s; " (name k) (str/join " " vs))))})
 
