@@ -404,12 +404,14 @@ export function getEmbeddedParameterVisibility(
 
 export const getIsHeaderVisible = createSelector(
   [getIsEmbedded, getEmbedOptions],
-  (isEmbedded, embedOptions) => !isEmbedded || !!embedOptions.header,
+  // (isEmbedded, embedOptions) => !isEmbedded || !!embedOptions.header,
+  (isEmbedded, embedOptions) => !!embedOptions.header,
 );
 
 export const getIsAdditionalInfoVisible = createSelector(
   [getIsEmbedded, getEmbedOptions],
-  (isEmbedded, embedOptions) => !isEmbedded || !!embedOptions.additional_info,
+  // (isEmbedded, embedOptions) => !isEmbedded || !!embedOptions.additional_info,
+  (isEmbedded, embedOptions) => !!embedOptions.additional_info,
 );
 
 export const getTabs = createSelector([getDashboard], dashboard => {

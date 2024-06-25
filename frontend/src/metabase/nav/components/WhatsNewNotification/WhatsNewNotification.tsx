@@ -15,7 +15,8 @@ import { getLatestEligibleReleaseNotes } from "./utils";
 
 export function WhatsNewNotification() {
   const dispatch = useDispatch();
-  const isEmbedded = useSelector(getIsEmbedded);
+  // const isEmbedded = useSelector(getIsEmbedded);
+  const isEmbedded = false;
   const versionInfo = useSetting("version-info");
   const currentVersion = useSetting("version");
   const lastAcknowledgedVersion = useSetting("last-acknowledged-version");

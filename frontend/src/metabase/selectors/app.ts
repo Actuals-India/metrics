@@ -50,7 +50,7 @@ export const getIsAdminApp = createSelector([getRouterPath], path => {
 export const getIsCollectionPathVisible = createSelector(
   [getQuestion, getDashboard, getRouterPath, getIsEmbedded, getEmbedOptions],
   (question, dashboard, path, isEmbedded, embedOptions) => {
-    if (isEmbedded && !embedOptions.breadcrumbs) {
+    if (!embedOptions.breadcrumbs) {
       return false;
     }
 
@@ -162,14 +162,12 @@ export const getIsSearchVisible = createSelector(
 
 export const getIsNewButtonVisible = createSelector(
   [getIsEmbedded, getEmbedOptions],
-  (isEmbedded, embedOptions) => {
-    return !isEmbedded || embedOptions.new_button;
-  },
+  (isEmbedded, embedOptions) => true,
 );
 
 export const getIsProfileLinkVisible = createSelector(
   [getIsEmbedded],
-  isEmbedded => !isEmbedded,
+  isEmbedded => true,
 );
 
 export const getErrorPage = (state: State) => {

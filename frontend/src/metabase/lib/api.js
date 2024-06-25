@@ -108,7 +108,8 @@ export class Api extends EventEmitter {
 
         if (isWithinIframe()) {
           // eslint-disable-next-line no-literal-metabase-strings -- Not a user facing string
-          headers["X-Metabase-Embedded"] = "true";
+          // headers["X-Metabase-Embedded"] = "true";
+          headers["X-Metabase-Embedded"] = "false";
         }
 
         if (ANTI_CSRF_TOKEN) {
@@ -120,10 +121,10 @@ export class Api extends EventEmitter {
           body = options.formData
             ? rawData.formData
             : JSON.stringify(
-                options.bodyParamName != null
-                  ? data[options.bodyParamName]
-                  : data,
-              );
+              options.bodyParamName != null
+                ? data[options.bodyParamName]
+                : data,
+            );
         } else {
           const qs = querystring.stringify(data);
           if (qs) {
@@ -210,7 +211,7 @@ export class Api extends EventEmitter {
           if (options.json) {
             try {
               body = JSON.parse(body);
-            } catch (e) {}
+            } catch (e) { }
           }
           let status = xhr.status;
           if (status === 202 && body && body._status > 0) {
@@ -271,7 +272,7 @@ export class Api extends EventEmitter {
           if (options.json) {
             try {
               body = JSON.parse(body);
-            } catch (e) {}
+            } catch (e) { }
           }
 
           let status = response.status;
