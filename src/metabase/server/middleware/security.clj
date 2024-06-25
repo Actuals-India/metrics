@@ -60,35 +60,58 @@
   {"Content-Security-Policy"
    (str/join
     (for [[k vs] {:default-src  ["'none'"]
-                  :script-src   ["'self'"
-                                 "https://maps.google.com"
-                                 "https://accounts.google.com"
-                                 (when (public-settings/anon-tracking-enabled)
-                                   "https://www.google-analytics.com")
-                                 (when config/is-dev?
-                                   "http://localhost:8081")
-                                 (when config/is-dev?
-                                   "'unsafe-inline'")]
+                  :script-src   (concat
+                                  ["'self'"
+                                   "https://maps.google.com"
+                                   "https://accounts.google.com"
+                                   (when (public-settings/anon-tracking-enabled)
+                                     "https://www.google-analytics.com")
+                                   ;; for webpack hot reloading
+                                   (when config/is-dev?
+                                     "http://localhost:8080")
+                                   ;; for react dev tools to work in Firefox until resolution of
+                                   ;; https://github.com/facebook/react/issues/17997
+                                   (when config/is-dev?
+                                     "'unsafe-inline'")]
+                                  ;; CLJS REPL
+                                  (when config/is-dev?
+                                    ["'unsafe-eval'"
+                                     "http://localhost:9630"])
+                                 (when-not config/is-dev?
+                                   (map (partial format "'sha256-%s'") inline-js-hashes)))
                   :child-src    ["'self'"
                                  "https://accounts.google.com"]
                   :style-src    ["'self'"
+                                 ;; See [[generate-nonce]]
                                  (when nonce
                                    (format "'nonce-%s'" nonce))
+                                 ;; for webpack hot reloading
                                  (when config/is-dev?
-                                   "http://localhost:8081")
+                                   "http://localhost:8080")
+                                 ;; CLJS REPL
+                                 (when config/is-dev?
+                                   "http://localhost:9630")
                                  "https://accounts.google.com"]
                   :font-src     ["*"]
                   :img-src      ["*"
                                  "'self' data:"]
                   :connect-src  ["'self'"
+                                 ;; Google Identity Services
                                  "https://accounts.google.com"
+                                 ;; MailChimp. So people can sign up for the Metabase mailing list in the sign up process
                                  "metabase.us10.list-manage.com"
+                                 ;; Google analytics
                                  (when (public-settings/anon-tracking-enabled)
                                    "www.google-analytics.com")
+                                 ;; Snowplow analytics
                                  (when (public-settings/anon-tracking-enabled)
                                    (snowplow/snowplow-url))
+                                 ;; Webpack dev server
                                  (when config/is-dev?
-                                   "*:8081 ws://*:8081")]
+                                   "*:8080 ws://*:8080")
+                                 ;; CLJS REPL
+                                 (when config/is-dev?
+                                   "ws://*:9630")]
                   :manifest-src ["'self'"]}]
       (format "%s %s; " (name k) (str/join " " vs))))})
 
@@ -98,7 +121,6 @@
     (embed.settings/embedding-app-origin)))
 
 (defn- content-security-policy-header-with-frame-ancestors
-  "Generates a Content-Security-Policy header that allows iframes from any origin."
   [allow-iframes? nonce]
   (update (content-security-policy-header nonce)
           "Content-Security-Policy"
@@ -128,9 +150,11 @@
    strict-transport-security-header
    (content-security-policy-header-with-frame-ancestors allow-iframes? nonce)
    (when (embedding-app-origin) (access-control-headers))
-   { ;; Security headers for XSS protection, etc. Consider keeping these unless absolutely necessary to remove
+   { ;; Tell browser to block suspected XSS attacks
     "X-XSS-Protection"                  "1; mode=block"
+    ;; Prevent Flash / PDF files from including content from site.
     "X-Permitted-Cross-Domain-Policies" "none"
+    ;; Tell browser not to use MIME sniffing to guess types of files -- protect against MIME type confusion attacks
     "X-Content-Type-Options"            "nosniff"}))
 
 (defn- add-security-headers* [request response]
