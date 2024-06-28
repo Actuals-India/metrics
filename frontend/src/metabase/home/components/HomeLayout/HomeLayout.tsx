@@ -33,13 +33,16 @@ export const HomeLayout = ({
 
   return (
     <LayoutRoot data-testid="home-page">
-      {landingPageIllustration && (
-        <LayoutIllustration
-          data-testid="landing-page-illustration"
-          backgroundImageSrc={landingPageIllustration.src}
-          isDefault={landingPageIllustration.isDefault}
-        />
-      )}
+      {
+        landingPageIllustration && null
+        // (
+        //   <LayoutIllustration
+        //     data-testid="landing-page-illustration"
+        //     backgroundImageSrc={landingPageIllustration.src}
+        //     isDefault={landingPageIllustration.isDefault}
+        //   />
+        // )
+      }
       {hasMetabot ? <MetabotWidget /> : <HomeGreeting />}
       {isAdmin && (
         <Tooltip tooltip={t`Pick a dashboard to serve as the homepage`}>
