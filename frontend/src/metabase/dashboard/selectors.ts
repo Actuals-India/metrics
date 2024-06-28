@@ -411,7 +411,7 @@ export const getIsHeaderVisible = createSelector(
 export const getIsAdditionalInfoVisible = createSelector(
   [getIsEmbedded, getEmbedOptions],
   // (isEmbedded, embedOptions) => !isEmbedded || !!embedOptions.additional_info,
-  (isEmbedded, embedOptions) =>  !!embedOptions.additional_info,
+  (isEmbedded, embedOptions) => !!embedOptions.additional_info,
 );
 
 export const getTabs = createSelector([getDashboard], dashboard => {

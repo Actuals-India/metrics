@@ -20,8 +20,8 @@ export const getLatestEligibleReleaseNotes = ({
   isEmbedded: boolean;
   isWhiteLabeling: boolean;
 }): VersionInfoRecord | undefined => {
-  // if (isWhiteLabeling || isEmbedded || currentVersion === undefined) {
-    if (isWhiteLabeling || currentVersion === undefined) {
+  isEmbedded = false;
+  if (isWhiteLabeling || isEmbedded || currentVersion === undefined) {
     return undefined;
   }
 

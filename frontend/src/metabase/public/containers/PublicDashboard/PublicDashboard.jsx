@@ -162,10 +162,8 @@ class PublicDashboardInner extends Component {
     // const buttons = !isWithinIframe()
     //   ? getDashboardActions({ ...this.props, isPublic: true })
     //   : [];
-
-    const buttons = 
-       getDashboardActions({ ...this.props, isPublic: true })
-     
+    const buttons =
+      getDashboardActions({ ...this.props, isPublic: true })
 
     const visibleDashcards = (dashboard?.dashcards ?? []).filter(
       dashcard => !isActionDashCard(dashcard),
@@ -210,7 +208,7 @@ class PublicDashboardInner extends Component {
                 className={CS.spread}
                 mode={PublicMode}
                 metadata={this.props.metadata}
-                navigateToNewCardFromDashboard={() => {}}
+                navigateToNewCardFromDashboard={() => { }}
               />
             </DashboardContainer>
           )}

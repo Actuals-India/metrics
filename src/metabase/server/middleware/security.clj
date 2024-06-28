@@ -128,7 +128,7 @@
    strict-transport-security-header
    (content-security-policy-header-with-frame-ancestors allow-iframes? nonce)
    (when (embedding-app-origin) (access-control-headers))
-   { ;; Security headers for XSS protection, etc. Consider keeping these unless absolutely necessary to remove
+   { ;; Tell browser to block suspected XSS attacks
     "X-XSS-Protection"                  "1; mode=block"
     "X-Permitted-Cross-Domain-Policies" "none"
     "X-Content-Type-Options"            "nosniff"}))

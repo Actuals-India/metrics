@@ -24,7 +24,6 @@ export const Palette = withRouter(props => {
   //Disable when iframed in
   const { query } = useKBar();
   useEffect(() => {
-    // query.disable(isWithinIframe() || !isLoggedIn);
     query.disable(!isLoggedIn);
   }, [isLoggedIn, query]);
 
