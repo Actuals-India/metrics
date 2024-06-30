@@ -21,19 +21,20 @@ export const HomeGreeting = (): JSX.Element => {
   const message = useMemo(() => getMessage(name), [name]);
 
   return (
-    <GreetingRoot>
-      {showLogo && (
-        <Tooltip
-          tooltip={t`Don't tell anyone, but you're my favorite.`}
-          placement="bottom"
-        >
-          <GreetingLogo />
-        </Tooltip>
-      )}
-      <GreetingMessage data-testid="greeting-message" showLogo={showLogo}>
-        {message}
-      </GreetingMessage>
-    </GreetingRoot>
+    <></>
+    //   <GreetingRoot>
+    //     {showLogo && (
+    //       <Tooltip
+    //         tooltip={t`Don't tell anyone, but you're my favorite.`}
+    //         placement="bottom"
+    //       >
+    //         <GreetingLogo />
+    //       </Tooltip>
+    //     )}
+    //     <GreetingMessage data-testid="greeting-message" showLogo={showLogo}>
+    //       {message}
+    //     </GreetingMessage>
+    //   </GreetingRoot>
   );
 };
 

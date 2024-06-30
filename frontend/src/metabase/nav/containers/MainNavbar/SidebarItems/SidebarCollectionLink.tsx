@@ -47,6 +47,12 @@ const SidebarCollectionLink = forwardRef<HTMLLIElement, Props>(
     const wasHovered = usePrevious(isHovered);
     const timeoutId = useRef<any>(null);
 
+    console.log(collection.name);
+
+    if (collection.name === "Our analytics") {
+      collection.name = "Analytics";
+    }
+
     useEffect(() => {
       const justHovered = !wasHovered && isHovered;
 

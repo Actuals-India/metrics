@@ -160,7 +160,7 @@ function DatabaseEditApp(props: DatabaseEditAppProps) {
       <Breadcrumbs className={CS.py4} crumbs={crumbs} />
 
       <DatabaseEditMain>
-        <ErrorBoundary errorComponent={GenericError as ComponentType}>
+        {/* <ErrorBoundary errorComponent={GenericError as ComponentType}>
           <div>
             <div className={CS.pt0}>
               <LoadingAndErrorWrapper
@@ -182,7 +182,7 @@ function DatabaseEditApp(props: DatabaseEditAppProps) {
               </LoadingAndErrorWrapper>
             </div>
           </div>
-        </ErrorBoundary>
+        </ErrorBoundary> */}
 
         {editingExistingDatabase && (
           <Sidebar

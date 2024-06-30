@@ -37,21 +37,30 @@ export const AdminNavbar = ({
 }: AdminNavbarProps) => {
   const isPaidPlain = useSelector(getIsPaidPlan);
 
+  const allowedAdminPaths = [
+    "databases",
+    "data-model",
+    "people",
+    "permissions",
+  ];
+
+  adminPaths = adminPaths.filter(path => allowedAdminPaths.includes(path.key));
+
   return (
     <AdminNavbarRoot
       data-element-id="navbar-root"
       aria-label={t`Navigation bar`}
     >
-      <AdminLogoLink to="/admin">
+      <AdminLogoLink to="/admin/databases">
         <AdminLogoContainer>
           <LogoIcon className={cx(CS.textBrand, CS.my2)} dark />
           {/* eslint-disable-next-line no-literal-metabase-strings -- Metabase settings */}
-          <AdminLogoText>{t`Metabase Admin`}</AdminLogoText>
+          <AdminLogoText>{t`Actuals Admin`}</AdminLogoText>
         </AdminLogoContainer>
       </AdminLogoLink>
 
       <MobileNavbar adminPaths={adminPaths} currentPath={currentPath} />
-
+      {console.log(adminPaths)}
       <MobileHide>
         <AdminNavbarItems>
           {adminPaths.map(({ name, key, path }) => (
@@ -64,7 +73,7 @@ export const AdminNavbar = ({
           ))}
         </AdminNavbarItems>
 
-        {!isPaidPlain && <StoreLink />}
+        {/* {!isPaidPlain && <StoreLink />} */}
         <AdminExitLink
           to="/"
           data-testid="exit-admin"

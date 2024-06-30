@@ -44,6 +44,15 @@ export const CollectionCaption = ({
     [collection, onUpdateCollection],
   );
 
+  if (collection.name === "Our analytics") {
+    collection.name = "Analytics";
+  }
+
+  collection.name = collection.name.replace(
+    /^.*Personal Collection/,
+    "Personal Collection",
+  );
+
   return (
     <CaptionRoot>
       <CaptionTitleContainer>

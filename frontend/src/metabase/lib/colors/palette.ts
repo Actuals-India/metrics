@@ -8,17 +8,17 @@ export const ACCENT_COUNT = 8;
 // NOTE: KEEP SYNCRONIZED WITH COLORS.CSS
 export const colors = {
   brand: "#509EE3",
-  summarize: "#88BF4D",
-  filter: "#7172AD",
+  summarize: "#5FA5F9",
+  filter: "#5FA5F9",
   accent0: "#509EE3",
   accent1: "#88BF4D",
-  accent2: "#A989C5",
+  accent2: "#5FA5F9",
   accent3: "#EF8C8C",
   accent4: "#F9D45C",
   accent5: "#F2A86F",
   accent6: "#98D9D9",
-  accent7: "#7172AD",
-  "admin-navbar": "#7172AD",
+  accent7: "#2463EB",
+  "admin-navbar": "#5FA5F9",
   white: "#FFFFFF",
   black: "#2E353B",
   success: "#84BB4C",
@@ -43,7 +43,7 @@ export const colors = {
   /* Saturated colors for the SQL editor. Shouldn't be used elsewhere since they're not white-labelable. */
   "saturated-blue": "#2D86D4",
   "saturated-green": "#70A63A",
-  "saturated-purple": "#885AB1",
+  "saturated-purple": "#2463EB",
   "saturated-red": "#ED6E6E",
   "saturated-yellow": "#F9CF48",
 };

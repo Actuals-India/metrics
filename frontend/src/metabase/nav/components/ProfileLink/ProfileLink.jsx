@@ -49,37 +49,37 @@ function ProfileLink({ adminItems, onLogout }) {
     const showAdminSettingsItem = adminItems?.length > 0;
 
     return [
-      {
-        title: t`Account settings`,
-        icon: null,
-        link: Urls.accountSettings(),
-        event: `Navbar;Profile Dropdown;Edit Profile`,
-      },
+      // {
+      //   title: t`Account settings`,
+      //   icon: null,
+      //   link: Urls.accountSettings(),
+      //   event: `Navbar;Profile Dropdown;Edit Profile`,
+      // },
       showAdminSettingsItem && {
         title: t`Admin settings`,
         icon: null,
-        link: "/admin",
+        link: "/admin/databases",
         event: `Navbar;Profile Dropdown;Enter Admin`,
       },
-      helpLink.visible && {
-        title: t`Help`,
-        icon: null,
-        link: helpLink.href,
-        externalLink: true,
-        event: `Navbar;Profile Dropdown;About ${tag}`,
-      },
-      {
-        title: t`About ${applicationName}`,
-        icon: null,
-        action: () => openModal("about"),
-        event: `Navbar;Profile Dropdown;About ${tag}`,
-      },
-      {
-        title: t`Sign out`,
-        icon: null,
-        action: () => onLogout(),
-        event: `Navbar;Profile Dropdown;Logout`,
-      },
+      // helpLink.visible && {
+      //   title: t`Help`,
+      //   icon: null,
+      //   link: helpLink.href,
+      //   externalLink: true,
+      //   event: `Navbar;Profile Dropdown;About ${tag}`,
+      // },
+      // {
+      //   title: t`About ${applicationName}`,
+      //   icon: null,
+      //   action: () => openModal("about"),
+      //   event: `Navbar;Profile Dropdown;About ${tag}`,
+      // },
+      // {
+      //   title: t`Sign out`,
+      //   icon: null,
+      //   action: () => onLogout(),
+      //   event: `Navbar;Profile Dropdown;Logout`,
+      // },
     ].filter(Boolean);
   };
 

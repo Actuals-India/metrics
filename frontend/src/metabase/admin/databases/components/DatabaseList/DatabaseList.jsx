@@ -77,7 +77,7 @@ export default class DatabaseList extends Component {
     return (
       <div className={CS.wrapper} data-testid="database-list">
         <section className={cx(AdminS.PageHeader, CS.px2, CS.clearfix)}>
-          {isAdmin && (
+          {/* {isAdmin && (
             <Link
               to="/admin/databases/create"
               className={cx(
@@ -86,7 +86,7 @@ export default class DatabaseList extends Component {
                 CS.floatRight,
               )}
             >{t`Add database`}</Link>
-          )}
+          )} */}
           <h2 className={CS.m0}>{t`Databases`}</h2>
         </section>
         {error && (
