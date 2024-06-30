@@ -52,8 +52,8 @@ msgid "Save"
 msgstr "保存"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:122
-msgid "To do some of its magic, Metabase needs to scan your database. We will also rescan it periodically to keep the metadata up-to-date. You can control when the periodic rescans happen below."
-msgstr "为了做一些神奇的事情，Metabase 需要扫描你的数据库。我们将会定期扫描，来保持源数据是最新的。你也可以在周期的扫描之前，手工来控制扫描。"
+msgid "To do some of its magic, Actuals needs to scan your database. We will also rescan it periodically to keep the metadata up-to-date. You can control when the periodic rescans happen below."
+msgstr "为了做一些神奇的事情，Actuals 需要扫描你的数据库。我们将会定期扫描，来保持源数据是最新的。你也可以在周期的扫描之前，手工来控制扫描。"
 
 #: metabase/driver/common.clj:148
 msgid "Database syncing"
@@ -75,15 +75,15 @@ msgid "Scanning for Filter Values"
 msgstr "扫描筛选器用到值"
 
 #: frontend/src/metabase/admin/databases/components/DatabaseSchedulingForm.jsx:153
-msgid "Metabase can scan the values present in each\n"
+msgid "Actuals can scan the values present in each\n"
 "field in this database to enable checkbox filters in dashboards and questions. This\n"
 "can be a somewhat resource-intensive process, particularly if you have a very large\n"
 "database."
-msgstr "Metabase 可以扫描数据库中每个字段的值，用来启用查询或仪表板中的选择框筛选器。当你的数据库很大时，它将可能是一个消耗大量系统资源的处理过程."
+msgstr "Actuals 可以扫描数据库中每个字段的值，用来启用查询或仪表板中的选择框筛选器。当你的数据库很大时，它将可能是一个消耗大量系统资源的处理过程."
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:167
-msgid "When should Metabase automatically scan and cache field values?"
-msgstr "Metabase 应该在什么时候自动扫描缓存的字段值？"
+msgid "When should Actuals automatically scan and cache field values?"
+msgstr "Actuals 应该在什么时候自动扫描缓存的字段值？"
 
 #: frontend/src/metabase/databases/components/DatabaseCacheScheduleField/DatabaseCacheScheduleField.tsx:74
 msgid "Regularly, on a schedule"
@@ -94,9 +94,9 @@ msgid "Only when adding a new filter widget"
 msgstr "只有当你在添加一个新的筛选控件时"
 
 #: frontend/src/metabase/admin/databases/components/widgets/CacheFieldValuesScheduleWidget.jsx:55
-msgid "When a user adds a new filter to a dashboard or a SQL question, Metabase will\n"
+msgid "When a user adds a new filter to a dashboard or a SQL question, Actuals will\n"
 "scan the field(s) mapped to that filter in order to show the list of selectable values."
-msgstr "当用户向仪表板或 SQL 查询器添加一个新的筛选器，Metabase 会扫描筛选器对应的字段来显示一个可选值列表。"
+msgstr "当用户向仪表板或 SQL 查询器添加一个新的筛选器，Actuals 会扫描筛选器对应的字段来显示一个可选值列表。"
 
 #: frontend/src/metabase/databases/components/DatabaseCacheScheduleField/DatabaseCacheScheduleField.tsx:95
 msgid "Never, I'll do this manually if I need to"
@@ -672,7 +672,7 @@ msgid "{0} – Field Settings"
 msgstr "{0} - 字段设置"
 
 #: frontend/src/metabase/admin/datamodel/metadata/components/FieldGeneralSettings/FieldGeneralSettings.tsx:144
-msgid "Where this field will appear throughout Metabase"
+msgid "Where this field will appear throughout Actuals"
 msgstr "该字段将在整个Metabase中出现的位置"
 
 #: frontend/src/metabase/admin/datamodel/metadata/components/FieldGeneralSettings/FieldGeneralSettings.tsx:273
@@ -754,8 +754,8 @@ msgid "Cached field values"
 msgstr "缓存字段值"
 
 #: frontend/src/metabase/admin/datamodel/metadata/components/FieldGeneralSettings/FieldGeneralSettings.tsx:319
-msgid "Metabase can scan the values for this field to enable checkbox filters in dashboards and questions."
-msgstr "Metabase 通过扫描该字段，以启用仪表板和问题中的多选框筛选。"
+msgid "Actuals can scan the values for this field to enable checkbox filters in dashboards and questions."
+msgstr "Actuals 通过扫描该字段，以启用仪表板和问题中的多选框筛选。"
 
 #: frontend/src/metabase/admin/datamodel/metadata/components/FieldGeneralSettings/FieldGeneralSettings.tsx:324
 msgid "Re-scan this field"
@@ -916,7 +916,7 @@ msgid "Settings"
 msgstr "设置"
 
 #: frontend/src/metabase/admin/datamodel/metadata/components/MetadataTableSettings/MetadataTableSettings.tsx:92
-msgid "Metabase can scan the values in this table to enable checkbox filters in dashboards and questions."
+msgid "Actuals can scan the values in this table to enable checkbox filters in dashboards and questions."
 msgstr "Metabase扫描此表中的值，用以启用仪表板和问题中的复选框筛选器。"
 
 #: frontend/src/metabase/admin/datamodel/metadata/components/MetadataTableSettings/MetadataTableSettings.tsx:97
@@ -963,16 +963,16 @@ msgstr "设置这个用户成为管理员"
 
 #: frontend/src/metabase/admin/people/components/GroupDetail.jsx:34
 msgid "All users belong to the {0} group and can't be removed from it. Setting permissions for this group is a great way to\n"
-"make sure you know what new Metabase users will be able to see."
+"make sure you know what new Actuals users will be able to see."
 msgstr "所有用户都属于{0}组，不能从该组中删除。为这个组设置权限是一个很好的方法，可以确保你知道新的Metabase用户将能够看到哪些。"
 
 #: frontend/src/metabase/admin/people/components/GroupDetail.jsx:43
-msgid "This is a special group whose members can see everything in the Metabase instance, and who can access and make changes to the\n"
+msgid "This is a special group whose members can see everything in the Actuals instance, and who can access and make changes to the\n"
 "settings in the Admin Panel, including changing permissions! So, add people to this group with care."
 msgstr "这是一个特殊的组，其成员可以看到Metabase实例中的所有内容，并且可以访问和修改管理面板中的设置，包括改变权限！因此，请慎重将人们添加到这个组。"
 
 #: frontend/src/metabase/admin/people/components/GroupDetail.jsx:47
-msgid "To make sure you don't get locked out of Metabase, there always has to be at least one user in this group."
+msgid "To make sure you don't get locked out of Actuals, there always has to be at least one user in this group."
 msgstr "为了确保你不会被Metabase锁在外面，必须需要至少一个用户在这个群组里。"
 
 #: frontend/src/metabase/admin/people/components/GroupsListing.jsx:286
@@ -1357,15 +1357,15 @@ msgid "Sorry, an error occurred."
 msgstr "对不起，发生了一个错误。"
 
 #: frontend/src/metabase/admin/permissions/constants/messages.ts:3
-msgid "Administrators always have the highest level of access to everything in Metabase."
+msgid "Administrators always have the highest level of access to everything in Actuals."
 msgstr "管理员总是对Metabase中的一切有最高级别的访问权。"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:70
-msgid "Every Metabase user belongs to the All Users group. If you want to limit or restrict a group's access to something, make sure the All Users group has an equal or lower level of access."
+msgid "Every Actuals user belongs to the All Users group. If you want to limit or restrict a group's access to something, make sure the All Users group has an equal or lower level of access."
 msgstr "每个Metabase用户都属于“所有用户”组。如果要限制一个用户组对某些内容的访问权限，请确保“所有用户”组具有相同或更低级别的访问权限。"
 
 #: frontend/src/metabase/admin/permissions/selectors.js:72
-msgid "MetaBot is Metabase's Slack bot. You can choose what it has access to here."
+msgid "MetaBot is Actuals's Slack bot. You can choose what it has access to here."
 msgstr "MetaBot是Metabase的Slack机器人，你可以在此处选择访问权限。"
 
 #: frontend/src/metabase/admin/permissions/selectors/confirmations.ts:64
@@ -1491,7 +1491,7 @@ msgstr "Google账号登录"
 
 #: frontend/src/metabase/admin/settings/auth/components/GoogleAuthForm/GoogleAuthForm.tsx:68
 #: frontend/src/metabase/admin/settings/auth/containers/GoogleAuthCard/GoogleAuthCard.tsx:19
-msgid "Allows users with existing Metabase accounts to login with a Google account that matches their email address in addition to their Metabase username and password."
+msgid "Allows users with existing Actuals accounts to login with a Google account that matches their email address in addition to their Actuals username and password."
 msgstr "允许拥有现有Metabase账户的用户在Metabase用户名和密码的基础上，用与他们的电子邮件地址相匹配的谷歌账户登录。"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingOption/EmbeddingOption.tsx:133
@@ -1505,7 +1505,7 @@ msgid "LDAP"
 msgstr "LDAP"
 
 #: frontend/src/metabase/admin/settings/auth/containers/LdapAuthCard/LdapAuthCard.tsx:14
-msgid "Allows users within your LDAP directory to log in to Metabase with their LDAP credentials, and allows automatic mapping of LDAP groups to Metabase groups."
+msgid "Allows users within your LDAP directory to log in to Actuals with their LDAP credentials, and allows automatic mapping of LDAP groups to Actuals groups."
 msgstr "允许你的LDAP目录中的用户用他们的LDAP凭证登录到Metabase，并允许LDAP组自动映射到Metabase组。"
 
 #: frontend/src/metabase/admin/settings/components/SettingsBatchForm.jsx:23
@@ -1579,7 +1579,7 @@ msgid "Getting set up"
 msgstr "着手准备"
 
 #: frontend/src/metabase/admin/settings/setup/components/SetupCheckList/SetupCheckList.jsx:135
-msgid "A few things you can do to get the most out of Metabase."
+msgid "A few things you can do to get the most out of Actuals."
 msgstr "你可以做几件事情来获得Metabase的最大收益。"
 
 #: frontend/src/metabase/admin/settings/setup/components/SetupCheckList/SetupCheckList.jsx:144
@@ -1591,7 +1591,7 @@ msgid "Google Sign-In"
 msgstr "Google登录"
 
 #: frontend/src/metabase/admin/settings/components/SettingsSingleSignOnForm.jsx:123
-msgid "To allow users to sign in with Google you'll need to give Metabase a Google Developers console application client ID. It only takes a few steps and instructions on how to create a key can be found {0}"
+msgid "To allow users to sign in with Google you'll need to give Actuals a Google Developers console application client ID. It only takes a few steps and instructions on how to create a key can be found {0}"
 msgstr "为了允许用户使用Google登录，你需要给Metabase一个Google开发者应用端ID，在如何创建一个可以被找到的密钥上{0}，它只需要几步和一些指导。"
 
 #: frontend/src/metabase/admin/settings/components/SettingsSingleSignOnForm.jsx:140
@@ -1611,16 +1611,16 @@ msgid "Create a Slack Bot User for MetaBot"
 msgstr "为MetaBot创建一个Slack Bot用户"
 
 #: frontend/src/metabase/admin/settings/components/SettingsSlackForm.jsx:255
-msgid "Once you're there, give it a name and click {0}. Then copy and paste the Bot API Token into the field below. Once you are done, create a \"metabase_files\" channel in Slack. Metabase needs this to upload graphs."
+msgid "Once you're there, give it a name and click {0}. Then copy and paste the Bot API Token into the field below. Once you are done, create a \"metabase_files\" channel in Slack. Actuals needs this to upload graphs."
 msgstr "一旦你到了那里，给它一个名字，然后点击{0}。然后复制并粘贴Bot API Token到下面的字段中。一旦你完成了，在Slack中创建一个 \"metabase_files \"频道。Metabase需要这个来上传图表。"
 
 #: frontend/src/metabase/admin/settings/components/SettingsUpdatesForm/VersionUpdateNotice/VersionUpdateNotice.jsx:59
-msgid "You're running Metabase {0} which is the latest and greatest!"
-msgstr "你正在运行 Metabase {0}，已经是最新版本！"
+msgid "You're running Actuals {0} which is the latest and greatest!"
+msgstr "你正在运行 Actuals {0}，已经是最新版本！"
 
 #: frontend/src/metabase/admin/settings/components/SettingsUpdatesForm.jsx:100
-msgid "Metabase {0} is available.  You're running {1}"
-msgstr "Metabase {0}可更新。你正在运行是{1}"
+msgid "Actuals {0} is available.  You're running {1}"
+msgstr "Actuals {0}可更新。你正在运行是{1}"
 
 #: enterprise/frontend/src/metabase-enterprise/snippets/components/SnippetCollectionForm.tsx:147
 #: frontend/src/metabase/account/profile/components/UserProfileForm/UserProfileForm.tsx:90
@@ -1746,8 +1746,8 @@ msgid "By enabling embedding you're agreeing to the embedding license located at
 msgstr "通过启用嵌入功能，你同意位于以下网址的嵌入许可："
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingLegalese.jsx:23
-msgid "In plain English, when you embed charts or dashboards from Metabase in your own application, that application isn't subject to the Affero General Public License that covers the rest of Metabase, provided you keep the Metabase logo and the \"Powered by Metabase\" visible on those embeds. You should, however, read the license text linked above as that is the actual license that you will be agreeing to by enabling this feature."
-msgstr "简单地说，当你在自己的应用程序中嵌入Metabase的图表或仪表板时，该应用程序不受涵盖Metabase其他部分的Affero通用公共许可证的约束，只要你在这些嵌入物上保持Metabase标志和 \"Powered by Metabase \"可见。但是，你应该阅读上面链接的许可证文本，因为这是你在启用此功能时将同意的实际许可证。"
+msgid "In plain English, when you embed charts or dashboards from Actuals in your own application, that application isn't subject to the Affero General Public License that covers the rest of Actuals, provided you keep the Actuals logo and the \"Powered by Actuals\" visible on those embeds. You should, however, read the license text linked above as that is the actual license that you will be agreeing to by enabling this feature."
+msgstr "简单地说，当你在自己的应用程序中嵌入Metabase的图表或仪表板时，该应用程序不受涵盖Metabase其他部分的Affero通用公共许可证的约束，只要你在这些嵌入物上保持Metabase标志和 \"Powered by Actuals \"可见。但是，你应该阅读上面链接的许可证文本，因为这是你在启用此功能时将同意的实际许可证。"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingLegalese/EmbeddingLegalese.tsx:68
 msgid "Enable"
@@ -1758,12 +1758,12 @@ msgid "Premium embedding enabled"
 msgstr "启用高级嵌入功能"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingLevel.jsx:30
-msgid "Enter the token you bought from the Metabase Store"
+msgid "Enter the token you bought from the Actuals Store"
 msgstr "输入你从Metabase商店购买的token"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingLevel.jsx:57
-msgid "Premium embedding lets you disable \"Powered by Metabase\" on your embedded dashboards and questions."
-msgstr "高级嵌入让你在嵌入的仪表板和问题上禁用 \"Powered by Metabase\"。"
+msgid "Premium embedding lets you disable \"Powered by Actuals\" on your embedded dashboards and questions."
+msgstr "高级嵌入让你在嵌入的仪表板和问题上禁用 \"Powered by Actuals\"。"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingLevel.jsx:64
 msgid "Buy a token"
@@ -1786,7 +1786,7 @@ msgid "Create a mapping"
 msgstr "创建一个映射"
 
 #: frontend/src/metabase/admin/settings/components/widgets/GroupMappingsWidget.jsx:145
-msgid "Mappings allow Metabase to automatically add and remove users from groups based on the membership information provided by the\n"
+msgid "Mappings allow Actuals to automatically add and remove users from groups based on the membership information provided by the\n"
 "directory server. Membership to the Admin group can be granted through mappings, but will not be automatically removed as a\n"
 "failsafe measure."
 msgstr "映射允许Metabase根据目录服务器提供的成员资格信息自动添加和删除组中的用户。Admin组的成员身份可以通过映射授予，但作为故障保护措施并不会被自动删除。"
@@ -2060,7 +2060,7 @@ msgid "Map tile server URL"
 msgstr "地图瓦片服务器(Map tile server)URL"
 
 #: frontend/src/metabase/admin/settings/selectors.js:304
-msgid "Metabase uses OpenStreetMaps by default."
+msgid "Actuals uses OpenStreetMaps by default."
 msgstr "Metabase默认使用OpenStreet地图"
 
 #: frontend/src/metabase/admin/settings/selectors.js:309
@@ -2092,8 +2092,8 @@ msgid "Embedding in other Applications"
 msgstr "嵌入在其他的应用中"
 
 #: frontend/src/metabase/admin/settings/selectors.js:332
-msgid "Enable Embedding Metabase in other Applications"
-msgstr "启用在其他应用程序中嵌入 Metabase"
+msgid "Enable Embedding Actuals in other Applications"
+msgstr "启用在其他应用程序中嵌入 Actuals"
 
 #: frontend/src/metabase/admin/settings/selectors.js:499
 msgid "Embedding secret key"
@@ -2153,11 +2153,11 @@ msgid "Back to login"
 msgstr "返回登录"
 
 #: frontend/src/metabase/auth/components/GoogleNoAccount.jsx:15
-msgid "No Metabase account exists for this Google account."
+msgid "No Actuals account exists for this Google account."
 msgstr "这个谷歌账户不存在Metabase账户。"
 
 #: metabase/integrations/google.clj:26
-msgid "You'll need an administrator to create a Metabase account before you can use Google to log in."
+msgid "You'll need an administrator to create a Actuals account before you can use Google to log in."
 msgstr "你需要一个管理员来创建Metabase账户，然后才能使用谷歌登录。"
 
 #: frontend/src/metabase/auth/components/AuthProviderButton.jsx:24
@@ -2173,7 +2173,7 @@ msgid "Forgot password"
 msgstr "忘记密码"
 
 #: frontend/src/metabase/auth/components/ForgotPasswordForm/ForgotPasswordForm.tsx:51
-msgid "The email you use for your Metabase account"
+msgid "The email you use for your Actuals account"
 msgstr "你用于Metabase账户的电子邮件"
 
 #: frontend/src/metabase/auth/components/ForgotPasswordForm/ForgotPasswordForm.tsx:62
@@ -2185,7 +2185,7 @@ msgid "Check your email for instructions on how to reset your password."
 msgstr "请查看你的电子邮件，了解如何重设密码的说明。"
 
 #: frontend/src/metabase/auth/components/Login/Login.tsx:30
-msgid "Sign in to Metabase"
+msgid "Sign in to Actuals"
 msgstr "登录到Metabase"
 
 #: frontend/src/metabase/auth/containers/LoginApp.jsx:165
@@ -2488,11 +2488,11 @@ msgstr "一些数据库安装只有通过SSH通道访问的服务器有权访问
 "启用这个选项，通常比直接连接速度更慢。"
 
 #: frontend/src/metabase/entities/databases/forms.js:349
-msgid "This is a large database, so let me choose when Metabase syncs and scans"
+msgid "This is a large database, so let me choose when Actuals syncs and scans"
 msgstr "这是一个大型数据库，所以让我选择Metabase同步和扫描的时间"
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:296
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values.\n"
+msgid "By default, Actuals does a lightweight hourly sync and an intensive daily scan of field values.\n"
 "If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
 msgstr "默认情况下，Metabase每小时执行一次轻量级同步，每天执行一次密集扫描。\n"
 "如果你有一个大型数据库，我们建议启用此功能并查看字段值扫描的发生时间和频率。"
@@ -2519,7 +2519,7 @@ msgid "with Google Drive permissions"
 msgstr "使用Google Driver权限"
 
 #: frontend/src/metabase/entities/databases/forms.js:248
-msgid "To use Metabase with this data you must enable API access in the Google Developers Console."
+msgid "To use Actuals with this data you must enable API access in the Google Developers Console."
 msgstr "要将Metabase用于此数据，你必须在Google Developers Console中启用API访问权限。"
 
 #: frontend/src/metabase/entities/databases/forms.js:249
@@ -2806,7 +2806,7 @@ msgid "Loading..."
 msgstr "正在加载..."
 
 #: frontend/src/metabase/setup/components/NewsletterForm/NewsletterForm.tsx:47
-msgid "Metabase Newsletter"
+msgid "Actuals Newsletter"
 msgstr "Metabase新闻"
 
 #: frontend/src/metabase/setup/components/NewsletterForm/NewsletterForm.tsx:51
@@ -2818,7 +2818,7 @@ msgid "Subscribe"
 msgstr "订阅"
 
 #: frontend/src/metabase/setup/components/NewsletterForm/NewsletterForm.tsx:74
-msgid "You're subscribed. Thanks for using Metabase!"
+msgid "You're subscribed. Thanks for using Actuals!"
 msgstr "你已经订阅了。谢谢你使用Metabase!"
 
 #: frontend/src/metabase/components/ErrorPages/ErrorPages.tsx:47
@@ -2916,7 +2916,7 @@ msgid "Calendar Day"
 msgstr "日历"
 
 #: frontend/src/metabase/components/SchedulePicker/SchedulePicker.tsx:235
-msgid "your Metabase timezone"
+msgid "your Actuals timezone"
 msgstr "你的Metabase时区"
 
 #: frontend/src/metabase/components/SearchHeader.jsx:21
@@ -3385,7 +3385,7 @@ msgid "Hello World!"
 msgstr "Hello World!"
 
 #: frontend/src/metabase/home/components/Activity.jsx:264
-msgid "Metabase is up and running."
+msgid "Actuals is up and running."
 msgstr "Metabase正在运行"
 
 #: frontend/src/metabase/home/components/Activity.jsx:270
@@ -3761,7 +3761,7 @@ msgid "Do Not Include"
 msgstr "不包括"
 
 #: frontend/src/metabase/lib/core.js:260
-msgid "Metabase will never retrieve this field. Use this for sensitive or irrelevant information."
+msgid "Actuals will never retrieve this field. Use this for sensitive or irrelevant information."
 msgstr "Metabase永远不会获取此字段。将此用于敏感或不相关的信息。"
 
 #: frontend/src/metabase-lib/v1/operators/constants.js:323
@@ -4436,7 +4436,7 @@ msgid "Help"
 msgstr "帮助"
 
 #: frontend/src/metabase/nav/components/ProfileLink.jsx:75
-msgid "About Metabase"
+msgid "About Actuals"
 msgstr "关于Metabase"
 
 #: frontend/src/metabase/nav/components/ProfileLink/ProfileLink.jsx:78
@@ -4464,7 +4464,7 @@ msgid "and is built with care in San Francisco, CA"
 msgstr "并在加利福尼亚州的旧金山精心打造。"
 
 #: frontend/src/metabase/nav/components/AdminNavbar/AdminNavbar.tsx:47
-msgid "Metabase Admin"
+msgid "Actuals Admin"
 msgstr "Metabase管理后台"
 
 #: frontend/src/metabase/query_builder/components/NativeQueryEditor/NativeQueryEditorSidebar/NativeQueryEditorSidebar.tsx:109
@@ -4790,7 +4790,7 @@ msgid "Public link"
 msgstr "公共链接"
 
 #: frontend/src/metabase/public/components/widgets/SharingPane.tsx:119
-msgid "Share this {0} with people who don't have a Metabase account using the URL below:"
+msgid "Share this {0} with people who don't have a Actuals account using the URL below:"
 msgstr "使用下面的URL与没有Metabase账户的人分享这个{0}。"
 
 #: frontend/src/metabase/public/components/EmbedModal/SelectEmbedTypePane/SelectEmbedTypePane.tsx:149
@@ -5006,7 +5006,7 @@ msgid "Help everyone on your team stay in sync with your data."
 msgstr "帮助你团队中的每个人与你的数据保持同步。"
 
 #: frontend/src/metabase/pulse/components/WhatsAPulse.jsx:31
-msgid "Pulses let you send data from Metabase to email or Slack on the schedule of your choice."
+msgid "Pulses let you send data from Actuals to email or Slack on the schedule of your choice."
 msgstr "定时让你按照你选择的时间表从Metabase发送数据到电子邮件或Slack。"
 
 #: metabase/lib/fe_util.cljc:137
@@ -6302,7 +6302,7 @@ msgstr "透视这个字段"
 
 #: frontend/src/metabase/models/containers/NewModelOptions/NewModelOptions.tsx:104
 #: frontend/src/metabase/reference/databases/NoDatabasesEmptyState.jsx:7
-msgid "Metabase is no fun without any data"
+msgid "Actuals is no fun without any data"
 msgstr "Metabase没有任何数据的话一点都不好玩"
 
 #: frontend/src/metabase/reference/databases/NoDatabasesEmptyState.jsx:12
@@ -6442,7 +6442,7 @@ msgid "Contact {0}"
 msgstr "联系{0}"
 
 #: frontend/src/metabase/reference/guide/GettingStartedGuideEditForm.jsx:253
-msgid "Help new Metabase users find their way around."
+msgid "Help new Actuals users find their way around."
 msgstr "帮助Metabase的新用户找到他们的方法。"
 
 #: frontend/src/metabase/reference/guide/GettingStartedGuideEditForm.jsx:256
@@ -6659,7 +6659,7 @@ msgid "Connecting to {0}"
 msgstr "连接到{0}。"
 
 #: frontend/src/metabase/setup/components/DatabaseConnectionStep.jsx:132
-msgid "You’ll need some info about your database, like the username and password. If you don’t have that right now, Metabase also comes with a sample dataset you can get started with."
+msgid "You’ll need some info about your database, like the username and password. If you don’t have that right now, Actuals also comes with a sample dataset you can get started with."
 msgstr "在开始之前需要配置数据库信息（如：用户名、密码）。如果暂时没有这些信息metabase也提供了一个简单数据源供学习使用。"
 
 #: frontend/src/metabase/databases/components/DatabaseForm/DatabaseForm.tsx:208
@@ -6683,7 +6683,7 @@ msgid "We won't collect any usage events"
 msgstr "我们不会收集任何使用事件"
 
 #: frontend/src/metabase/setup/components/PreferencesStep.jsx:90
-msgid "In order to help us improve Metabase, we'd like to collect certain data about usage through Google Analytics."
+msgid "In order to help us improve Actuals, we'd like to collect certain data about usage through Google Analytics."
 msgstr "为了提升Metabase的用户体验，可能需要通过Google Analytics收集特定的使用数据。"
 
 #: frontend/src/metabase/setup/components/PreferencesStep.jsx:95
@@ -6691,12 +6691,12 @@ msgid "Here's a full list of everything we track and why."
 msgstr "以下是我们跟踪的所有内容和原因的完整清单。"
 
 #: frontend/src/metabase/setup/components/DataUsageStep/DataUsageStep.tsx:82
-msgid "Allow Metabase to anonymously collect usage events"
+msgid "Allow Actuals to anonymously collect usage events"
 msgstr "允许Metabase匿名收集使用事件"
 
 #: frontend/src/metabase/setup/components/DataUsageStep/DataUsageStep.tsx:87
-msgid "Metabase {0} collects anything about your data or question results."
-msgstr "Metabase{0}收集任何事情关于你的数据或者提问结果"
+msgid "Actuals {0} collects anything about your data or question results."
+msgstr "Actuals{0}收集任何事情关于你的数据或者提问结果"
 
 #: frontend/src/metabase/lib/settings.ts:280
 #: frontend/src/metabase/setup/components/DataUsageStep/DataUsageStep.tsx:88
@@ -6724,7 +6724,7 @@ msgid "is just a click away."
 msgstr "只需点击一下就可以了。"
 
 #: frontend/src/metabase/setup/components/WelcomePage/WelcomePage.tsx:42
-msgid "Welcome to Metabase"
+msgid "Welcome to Actuals"
 msgstr "欢迎来到Metabase"
 
 #: frontend/src/metabase/setup/components/Setup.jsx:132
@@ -6740,7 +6740,7 @@ msgid "You're all set up!"
 msgstr "都准备好了!"
 
 #: frontend/src/metabase/setup/components/CompletedStep/CompletedStep.tsx:38
-msgid "Take me to Metabase"
+msgid "Take me to Actuals"
 msgstr "带我到Metabase"
 
 #: frontend/src/metabase/setup/components/UserStep/UserStep.tsx:59
@@ -6819,7 +6819,7 @@ msgid "We’ll show you some interesting explorations of your data in\n"
 msgstr "我们很快将会展示给你一些关于你的数据的有趣的探索结果。"
 
 #: frontend/src/metabase/setup/containers/PostSetupApp.jsx:69
-msgid "This seems to be taking a while. In the meantime, you can check out one of these example explorations to see what Metabase can do for you."
+msgid "This seems to be taking a while. In the meantime, you can check out one of these example explorations to see what Actuals can do for you."
 msgstr "这似乎需要一些时间。在此期间，你可以查看其中一个例子的探索，看看Metabase能为你做什么。"
 
 #: frontend/src/metabase/setup/containers/PostSetupApp.jsx:83
@@ -7960,7 +7960,7 @@ msgid "Email is not verified."
 msgstr "电子邮件没有得到验证。"
 
 #: src/metabase/integrations/google.clj
-msgid "You''ll need an administrator to create a Metabase account before you can use Google to log in."
+msgid "You''ll need an administrator to create a Actuals account before you can use Google to log in."
 msgstr "你需要一个管理员创建一个Metabase账户，然后才能使用谷歌登录。"
 
 #: target/classes/metabase/integrations/google.clj
@@ -8028,10 +8028,10 @@ msgstr "{0} 中有很多已保存的question？ 创建集合以帮助管理它�
 
 #. This is the very first log message that will get printed.
 #. It's here because this is one of the very first namespaces that gets loaded, and the first that has access to the logger
-#. It shows up a solid 10-15 seconds before the "Starting Metabase in STANDALONE mode" message because so many other namespaces need to get loaded
+#. It shows up a solid 10-15 seconds before the "Starting Actuals in STANDALONE mode" message because so many other namespaces need to get loaded
 #: metabase/api/setup.clj:231 metabase/email/messages.clj:56
-msgid "Metabase"
-msgstr "Metabase"
+msgid "Actuals"
+msgstr "Actuals"
 
 #: metabase/api/setup.clj:254
 msgid "Create metrics"
@@ -8420,19 +8420,19 @@ msgid "FAIL [[[{0}]]]"
 msgstr "失败 [[[{0}]]]"
 
 #: metabase/core.clj:73
-msgid "Please use the following URL to setup your Metabase installation:"
+msgid "Please use the following URL to setup your Actuals installation:"
 msgstr "请使用以下网址来设置你的Metabase安装。"
 
 #: metabase/core.clj:87
-msgid "Metabase Shutting Down ..."
+msgid "Actuals Shutting Down ..."
 msgstr "Metabase正在关闭……"
 
 #: metabase/core.clj:91
-msgid "Metabase Shutdown COMPLETE"
+msgid "Actuals Shutdown COMPLETE"
 msgstr "Metabase关闭完成"
 
 #: metabase/core.clj:101
-msgid "Starting Metabase version {0} ..."
+msgid "Starting Actuals version {0} ..."
 msgstr "启动Metabase版本{0} ..."
 
 #: src/metabase/core.clj
@@ -8441,7 +8441,7 @@ msgstr "系统时区是“{0}”"
 
 #. startup database.  validates connection & runs any necessary migrations
 #: metabase/core.clj:112
-msgid "Setting up and migrating Metabase DB. Please sit tight, this may take a minute..."
+msgid "Setting up and migrating Actuals DB. Please sit tight, this may take a minute..."
 msgstr "Metabse数据库设置、迁移中。坐稳了，这个可能要花一分钟……"
 
 #: metabase/core.clj:130
@@ -8449,7 +8449,7 @@ msgid "Looks like this is a new installation ... preparing setup wizard"
 msgstr "看起来这是一个全新安装......开始启动设置向导"
 
 #: metabase/core.clj:137
-msgid "Metabase Initialization COMPLETE"
+msgid "Actuals Initialization COMPLETE"
 msgstr "Metabase初始化完成"
 
 #: metabase/server.clj:49
@@ -8461,11 +8461,11 @@ msgid "Shutting Down Embedded Jetty Webserver"
 msgstr "关闭嵌入式Jetty Webserver"
 
 #: metabase/core.clj:166
-msgid "Starting Metabase in STANDALONE mode"
+msgid "Starting Actuals in STANDALONE mode"
 msgstr "在STANDALONE模式下启动Metabase"
 
 #: metabase/core.clj:176
-msgid "Metabase Initialization FAILED"
+msgid "Actuals Initialization FAILED"
 msgstr "Metabase初始化失败"
 
 #: metabase/db/liquibase.clj:218
@@ -8626,7 +8626,7 @@ msgstr "成功地将metabase.driver.FixedHiveDriver与JDBC注册。"
 #. CONFIG
 #. TODO - smtp-port should be switched to type :integer
 #: src/metabase/email.clj target/classes/metabase/email.clj
-msgid "Email address you want to use as the sender of Metabase."
+msgid "Email address you want to use as the sender of Actuals."
 msgstr "你想用来作为Metabase的发件人的电子邮件地址。"
 
 #: metabase/email.clj:58
@@ -8719,7 +8719,7 @@ msgstr "组的搜索基础，如果你的LDAP目录提供了''memberOf''覆盖�
 
 #. Should be in the form: {"cn=Some Group,dc=...": [1, 2, 3]} where keys are LDAP groups and values are lists of MB groups IDs
 #: metabase/integrations/ldap.clj:94
-msgid "JSON containing LDAP to Metabase group mappings."
+msgid "JSON containing LDAP to Actuals group mappings."
 msgstr "JSON包含LDAP到Metabase 组映射"
 
 #. Define a setting which captures our Slack api token
@@ -8936,8 +8936,8 @@ msgid "Storing FieldValues for Field {0}..."
 msgstr "储存字段{0}的字段值..."
 
 #: src/metabase/models/humanization.clj
-msgid "Metabase can attempt to transform your table and field names into more sensible, human-readable versions, e.g. \"somehorriblename\" becomes \"Some Horrible Name\"."
-msgstr "Metabase 会尝试将数据表名称和表中字段名称转换为适合阅读的版本，例如：将somehorriblename转换为 Some Horrible Name。"
+msgid "Actuals can attempt to transform your table and field names into more sensible, human-readable versions, e.g. \"somehorriblename\" becomes \"Some Horrible Name\"."
+msgstr "Actuals 会尝试将数据表名称和表中字段名称转换为适合阅读的版本，例如：将somehorriblename转换为 Some Horrible Name。"
 
 #: src/metabase/models/humanization.clj
 msgid "This doesn’t work all that well if the names are in a language other than English, however."
@@ -9087,11 +9087,11 @@ msgid "Loading plugin {0}... "
 msgstr "正在加载插件{0}... "
 
 #: src/metabase/plugins.clj
-msgid "It looks like you have some external dependencies in your Metabase plugins directory."
+msgid "It looks like you have some external dependencies in your Actuals plugins directory."
 msgstr "看起来你的Metabase插件目录里有一些外部依赖。"
 
 #: src/metabase/plugins.clj
-msgid "With Java 9 or higher, Metabase cannot automatically add them to your classpath."
+msgid "With Java 9 or higher, Actuals cannot automatically add them to your classpath."
 msgstr "对于Java 9或更高版本，Metabase不能自动将它们添加到你的classpath中。"
 
 #: src/metabase/plugins.clj
@@ -9103,27 +9103,27 @@ msgid "See https://metabase.com/docs/latest/operations-guide/start.html#java-ver
 msgstr "更多细节见https://metabase.com/docs/latest/operations-guide/start.html#java-versions。"
 
 #: src/metabase/plugins.clj
-msgid "(If you're already running Metabase this way, you can ignore this message.)"
+msgid "(If you're already running Actuals this way, you can ignore this message.)"
 msgstr "(如果你已经以这种方式运行Metabase，你可以忽略这条信息）。"
 
 #: metabase/public_settings.clj:67
-msgid "Identify when new versions of Metabase are available."
+msgid "Identify when new versions of Actuals are available."
 msgstr "确定新版本的Metabase何时可用。"
 
 #: metabase/public_settings.clj:73
-msgid "Information about available versions of Metabase."
+msgid "Information about available versions of Actuals."
 msgstr "关于Metabase的可用版本的信息。"
 
 #: metabase/public_settings.clj:77
-msgid "The name used for this instance of Metabase."
+msgid "The name used for this instance of Actuals."
 msgstr "用于Metabase的这个实例的名称。"
 
 #: src/metabase/public_settings.clj
-msgid "The base URL of this Metabase instance, e.g. \"http://metabase.my-company.com\"."
+msgid "The base URL of this Actuals instance, e.g. \"http://metabase.my-company.com\"."
 msgstr "这个Metabase实例的基本URL，例如 \"http://metabase.my-company.com\"。"
 
 #: src/metabase/public_settings.clj
-msgid "The default language for this Metabase instance."
+msgid "The default language for this Actuals instance."
 msgstr "这个Metabase实例的默认语言。"
 
 #: src/metabase/public_settings.clj
@@ -9135,7 +9135,7 @@ msgid "The email address users should be referred to if they encounter a problem
 msgstr "如果用户遇到问题，应该参考的电子邮件地址。"
 
 #: metabase/public_settings.clj:195
-msgid "Enable the collection of anonymous usage data in order to help Metabase improve."
+msgid "Enable the collection of anonymous usage data in order to help Actuals improve."
 msgstr "启用匿名使用数据的收集，以帮助Metabase改进。"
 
 #: metabase/public_settings.clj:230
@@ -9167,7 +9167,7 @@ msgid "The absolute maximum time to keep any cached query results, in seconds."
 msgstr "保留任何缓存查询结果的绝对最大时间，单位是秒。"
 
 #: metabase/public_settings.clj:299
-msgid "Metabase will cache all saved questions with an average query execution time longer than this many seconds:"
+msgid "Actuals will cache all saved questions with an average query execution time longer than this many seconds:"
 msgstr "Metabase会捕捉所有平均查询时间大于这么多秒的已保存问题"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
@@ -9379,9 +9379,9 @@ msgstr "job已存在"
 
 #. This is the very first log message that will get printed.  It's here because this is one of the very first
 #. namespaces that gets loaded, and the first that has access to the logger It shows up a solid 10-15 seconds before
-#. the "Starting Metabase in STANDALONE mode" message because so many other namespaces need to get loaded
+#. the "Starting Actuals in STANDALONE mode" message because so many other namespaces need to get loaded
 #: src/metabase/util.clj
-msgid "Loading Metabase..."
+msgid "Loading Actuals..."
 msgstr "正在加载Metabase..."
 
 #: src/metabase/util/date.clj
@@ -9405,11 +9405,11 @@ msgid "MB_ENCRYPTION_SECRET_KEY must be at least 16 characters."
 msgstr "MB_ENCRYPTION_SECRET_KEY至少要16个字符"
 
 #: metabase/util/encryption.clj:44
-msgid "Saved credentials encryption is ENABLED for this Metabase instance."
+msgid "Saved credentials encryption is ENABLED for this Actuals instance."
 msgstr "保存的凭证加密对这个Metabase实例来说是ENABLED。"
 
 #: metabase/util/encryption.clj:45
-msgid "Saved credentials encryption is DISABLED for this Metabase instance."
+msgid "Saved credentials encryption is DISABLED for this Actuals instance."
 msgstr "对于这个Metabase实例，保存的凭证加密是禁用的。"
 
 #: src/metabase/util/encryption.clj
@@ -9645,7 +9645,7 @@ msgid "No results"
 msgstr "没有结果"
 
 #: frontend/src/metabase/home/containers/SearchApp.jsx:42
-msgid "Metabase couldn't find any results for your search."
+msgid "Actuals couldn't find any results for your search."
 msgstr "Metabase无法找到你的搜索结果。"
 
 #: frontend/src/metabase/new_query/containers/MetricSearch.jsx:115
@@ -10050,7 +10050,7 @@ msgid "Troubleshooting logs"
 msgstr "故障处理日志"
 
 #: frontend/src/metabase/admin/tasks/containers/TasksApp.jsx:50
-msgid "Trying to get to the bottom of something? This section shows logs of Metabase's background tasks, which can help shed light on what's going on."
+msgid "Trying to get to the bottom of something? This section shows logs of Actuals's background tasks, which can help shed light on what's going on."
 msgstr "试图弄清某些问题的根本原因？本节显示Metabase后台任务的日志，这有助于了解正在发生的事情。"
 
 #: frontend/src/metabase/admin/tasks/containers/TasksApp.jsx:69
@@ -11927,15 +11927,15 @@ msgid "We’d love your feedback."
 msgstr "我们欢迎您反馈。"
 
 #: metabase/email/messages.clj:106
-msgid "It looks like Metabase wasn’t quite a match for you."
+msgid "It looks like Actuals wasn’t quite a match for you."
 msgstr "看起来似乎Metabase不太适合你。"
 
 #: metabase/email/messages.clj:108
-msgid "Would you mind taking a fast 5 question survey to help the Metabase team understand why and make things better in the future?"
+msgid "Would you mind taking a fast 5 question survey to help the Actuals team understand why and make things better in the future?"
 msgstr "为了帮助Metabase团队改进产品，请参与完成包含5个简单问题的调查，谢谢。"
 
 #: metabase/email/messages.clj:283
-msgid "We hope you''ve been enjoying Metabase."
+msgid "We hope you''ve been enjoying Actuals."
 msgstr "我们希望你一直喜欢Metabase。"
 
 #: metabase/email/messages.clj:113
@@ -11943,28 +11943,28 @@ msgid "Would you mind taking a fast 6 question survey to tell us how it’s goin
 msgstr "您是否愿意帮助我们来快速填写一个有着6个问题的调查问卷？"
 
 #: src/metabase/email/messages.clj
-msgid "{0} created a Metabase account"
+msgid "{0} created a Actuals account"
 msgstr "{0}创建了一个Metabase账号"
 
 #: src/metabase/email/messages.clj
-msgid "{0} accepted their Metabase invite"
+msgid "{0} accepted their Actuals invite"
 msgstr "{0}接受了Metabase的邀请"
 
 #: src/metabase/email/messages.clj
-msgid "[Metabase] Password Reset Request"
-msgstr "[Metabase] 重置密码请求"
+msgid "[Actuals] Password Reset Request"
+msgstr "[Actuals] 重置密码请求"
 
 #: src/metabase/email/messages.clj
-msgid "[Metabase] Notification"
-msgstr "[Metabase] 通知"
+msgid "[Actuals] Notification"
+msgstr "[Actuals] 通知"
 
 #: src/metabase/email/messages.clj
-msgid "[Metabase] Help make Metabase better."
-msgstr "[Metabase] 帮助Metabase变得更好"
+msgid "[Actuals] Help make Actuals better."
+msgstr "[Actuals] 帮助Metabase变得更好"
 
 #: src/metabase/email/messages.clj
-msgid "[Metabase] Tell us how things are going."
-msgstr "[Metabase] 使用反馈"
+msgid "[Actuals] Tell us how things are going."
+msgstr "[Actuals] 使用反馈"
 
 #: metabase/legacy_mbql/util.cljc:377
 msgid "Error: query''s source query has not been resolved. You probably need to `preprocess` the query first."
@@ -12257,7 +12257,7 @@ msgid "You may need to add `?sslmode=require` to your application DB connection 
 msgstr "你可能需要在你的应用程序DB连接字符串中添加`?sslmode=require`。"
 
 #: target/classes/metabase/db/env.clj
-msgid "If Metabase fails to launch, please add it and try again."
+msgid "If Actuals fails to launch, please add it and try again."
 msgstr "如果Metabase不能启动，请添加它并重新尝试。"
 
 #: target/classes/metabase/db/env.clj
@@ -12265,7 +12265,7 @@ msgid "See https://github.com/metabase/metabase/issues/8908 for more details."
 msgstr "更多细节见https://github.com/metabase/metabase/issues/8908。"
 
 #: src/metabase/db.clj
-msgid "WARNING: Using Metabase with an H2 application database is not recomended for production deployments."
+msgid "WARNING: Using Actuals with an H2 application database is not recomended for production deployments."
 msgstr "警告：不建议在生产部署中使用Metabase与H2应用数据库。"
 
 #: target/classes/metabase/db/env.clj
@@ -12281,8 +12281,8 @@ msgid "See https://metabase.com/docs/latest/operations-guide/start.html#migratin
 msgstr "更多信息见https://metabase.com/docs/latest/operations-guide/start.html#migrating-from-using-the-h2-database-to-mysql-or-postgres。"
 
 #: metabase/db/setup.clj:115
-msgid "Unable to connect to Metabase {0} DB."
-msgstr " 不能连接到 Metabase {0} 数据库。"
+msgid "Unable to connect to Actuals {0} DB."
+msgstr " 不能连接到 Actuals {0} 数据库。"
 
 #: target/classes/metabase/db/data_migrations.clj
 msgid "Error adding legacy SQL directive to BigQuery saved Question"
@@ -12395,19 +12395,19 @@ msgid "Could not find matching Field ID for target:"
 msgstr "{0} {1}前"
 
 #: metabase/plugins.clj:34
-msgid "Metabase does not have permissions to write to plugins directory {0}"
+msgid "Actuals does not have permissions to write to plugins directory {0}"
 msgstr "{0} {1}从现在开始"
 
 #: metabase/plugins.clj:41
-msgid "Metabase cannot use the plugins directory {0}"
+msgid "Actuals cannot use the plugins directory {0}"
 msgstr "Metabase不能使用plugins路径下的{0}文件"
 
 #: metabase/plugins.clj:43
-msgid "Please make sure the directory exists and that Metabase has permission to write to it."
+msgid "Please make sure the directory exists and that Actuals has permission to write to it."
 msgstr "请确保该目录存在，并且Metabase有权限写入该目录。"
 
 #: metabase/plugins.clj:44
-msgid "You can change the directory Metabase uses for modules by setting the environment variable MB_PLUGINS_DIR."
+msgid "You can change the directory Actuals uses for modules by setting the environment variable MB_PLUGINS_DIR."
 msgstr "你可以通过设置环境变量MB_PLUGINS_DIR来改变Metabase用于模块的目录。"
 
 #: metabase/plugins.clj:45
@@ -12415,12 +12415,12 @@ msgid "Falling back to a temporary directory for now."
 msgstr "暂时回落到一个临时目录。"
 
 #: metabase/plugins.clj:50
-msgid "Metabase cannot write to temporary directory. Please set MB_PLUGINS_DIR to a writable directory and restart Metabase."
+msgid "Actuals cannot write to temporary directory. Please set MB_PLUGINS_DIR to a writable directory and restart Actuals."
 msgstr "Metabase无法写入临时目录。请将MB_PLUGINS_DIR设置为可写目录并重新启动Metabase。"
 
 #: src/metabase/plugins.clj
-msgid "spark-deps.jar is no longer needed by Metabase 1.0+. You can delete it from the plugins directory."
-msgstr "Metabase 1.0+以上版本不再需要spark-deps.jar。你可以从plugins目录中删除它。"
+msgid "spark-deps.jar is no longer needed by Actuals 1.0+. You can delete it from the plugins directory."
+msgstr "Actuals 1.0+以上版本不再需要spark-deps.jar。你可以从plugins目录中删除它。"
 
 #: metabase/plugins.clj:168
 msgid "Failied to initialize plugin {0}"
@@ -12451,7 +12451,7 @@ msgid "Added URL {0} to classpath"
 msgstr "添加URL {0}到classpath中"
 
 #: metabase/plugins/dependencies.clj:29
-msgid "Plugin {0} declares a dependency that Metabase does not understand: {1}"
+msgid "Plugin {0} declares a dependency that Actuals does not understand: {1}"
 msgstr "插件{0}声明了一个Metabase不理解的依赖关系。{1}"
 
 #: metabase/plugins/dependencies.clj:30
@@ -12459,7 +12459,7 @@ msgid "Refer to the plugin manifest reference for a complete list of valid plugi
 msgstr "请参阅插件清单参考，以获得有效插件依赖的完整列表。"
 
 #: metabase/plugins/dependencies.clj:51
-msgid "Metabase cannot initialize plugin {0} due to required dependencies."
+msgid "Actuals cannot initialize plugin {0} due to required dependencies."
 msgstr "由于需要依赖性，Metabase无法初始化插件{0}。"
 
 #: metabase/plugins/dependencies.clj:60
@@ -12523,7 +12523,7 @@ msgstr "无法初始化插件：缺少必要的属性`driver-name`。"
 msgid "Warning: plugin manifest for {0} does not include connection properties"
 msgstr "警告：{0}的插件清单不包括连接属性"
 
-#. finally, register the Metabase driver
+#. finally, register the Actuals driver
 #: metabase/plugins/lazy_loaded_driver.clj:94
 msgid "Registering lazy loading driver {0}..."
 msgstr "注册懒惰的加载驱动程序{0}..."
@@ -12671,7 +12671,7 @@ msgid "Task history cleanup successful, no rows were deleted"
 msgstr "任务历史清理成功，没有删除任何行"
 
 #: metabase/task/upgrade_checks.clj:31
-msgid "Checking for new Metabase version info."
+msgid "Checking for new Actuals version info."
 msgstr "检查新发布的Metabase版本信息。"
 
 #: src/metabase/task/upgrade_checks.clj
@@ -13014,7 +13014,7 @@ msgid "Request canceled before finishing."
 msgstr "请求在完成前被取消。"
 
 #: src/metabase/middleware/json.clj
-msgid "Metabase only supports JSON requests."
+msgid "Actuals only supports JSON requests."
 msgstr "Metabase仅支持JSON请求"
 
 #: src/metabase/middleware/json.clj
@@ -13022,7 +13022,7 @@ msgid "Make sure you set a 'Content-Type: application/json' header."
 msgstr "确定你设置了一个'Content-Type：application / json'报头。"
 
 #: metabase/server/middleware/misc.clj:50
-msgid "Setting Metabase site URL to {0}"
+msgid "Setting Actuals site URL to {0}"
 msgstr "将Metabase网站的URL设置为{0}。"
 
 #: metabase/models/database.clj:92
@@ -13129,7 +13129,7 @@ msgid "Automatically run queries when doing simple filtering and summarizing"
 msgstr "在进行简单的筛选和聚合时自动运行查询"
 
 #: frontend/src/metabase/components/DatabaseDetailsForm.jsx:320
-msgid "When this is on Metabase will automatically run queries when users do simple explorations with the Summarize and Filter buttons when viewing a table or chart. You can turn this off if querying this database is slow. This setting doesn’t affect drill-throughs or SQL queries."
+msgid "When this is on Actuals will automatically run queries when users do simple explorations with the Summarize and Filter buttons when viewing a table or chart. You can turn this off if querying this database is slow. This setting doesn’t affect drill-throughs or SQL queries."
 msgstr "这个选项开启时，当用户在查看表格或图表时使用“汇总”和“筛选”按钮进行简单数据探索时，Metabase将自动运行查询。 如果查询此数据库的速度很慢，可以将该选项关闭。 此设置不会影响数据钻探或SQL查询。"
 
 #: frontend/src/metabase/containers/Overworld.jsx:313
@@ -13484,11 +13484,11 @@ msgid "Request canceled, canceling future."
 msgstr "请求被取消，取消了未来。"
 
 #: src/metabase/cmd/load_from_h2.clj
-msgid "Metabase can only transfer data from H2 to Postgres or MySQL/MariaDB."
+msgid "Actuals can only transfer data from H2 to Postgres or MySQL/MariaDB."
 msgstr "Metabase只能将数据从H2传输到Postgres或MySQL / MariaDB。"
 
 #: target/classes/metabase/db/env.clj
-msgid "WARNING: Using Metabase with an H2 application database is not recommended for production deployments."
+msgid "WARNING: Using Actuals with an H2 application database is not recommended for production deployments."
 msgstr "警告：不建议在生产部署中使用Metabase与H2应用数据库。"
 
 #: src/metabase/db.clj
@@ -13550,7 +13550,7 @@ msgid "Error saving task history"
 msgstr "保存任务历史记录错误"
 
 #: metabase/plugins.clj:117
-msgid "spark-deps.jar is no longer needed by Metabase 0.32.0+. You can delete it from the plugins directory."
+msgid "spark-deps.jar is no longer needed by Actuals 0.32.0+. You can delete it from the plugins directory."
 msgstr "0.32.0 及以上版本的Metabase不再需要spark-deps.jar了. 您可以从插件目录中删除它."
 
 #: src/metabase/plugins/classloader.clj
@@ -13583,7 +13583,7 @@ msgid "We were unable to display this Pulse."
 msgstr "我们无法显示这个定时。"
 
 #: metabase/pulse/render/body.clj:1154
-msgid "Please view this card in Metabase."
+msgid "Please view this card in Actuals."
 msgstr "请在Metabase中查看此卡。"
 
 #: metabase/pulse/render/body.clj:53
@@ -13782,7 +13782,7 @@ msgid "Failed to fetch Field {0}: Field does not exist, or belongs to a differen
 msgstr "获取字段{0}失败。字段不存在，或属于另一个数据库。"
 
 #: metabase/server/routes/index.clj:74
-msgid "Failed to load template ''{0}''. Did you remember to build the Metabase frontend?"
+msgid "Failed to load template ''{0}''. Did you remember to build the Actuals frontend?"
 msgstr "载入模板'{0}'失败。你是否记得建立了Metabase的前端？"
 
 #: target/classes/metabase/sample_data.clj
@@ -13840,7 +13840,7 @@ msgid "Pick the columns you want to include"
 msgstr "选择需要包含的列"
 
 #: frontend/src/metabase/entities/databases/forms.js:343
-msgid "When this is on, Metabase will automatically run queries when users do simple explorations with the Summarize and Filter buttons when viewing a table or chart. You can turn this off if querying this database is slow. This setting doesn’t affect drill-throughs or SQL queries."
+msgid "When this is on, Actuals will automatically run queries when users do simple explorations with the Summarize and Filter buttons when viewing a table or chart. You can turn this off if querying this database is slow. This setting doesn’t affect drill-throughs or SQL queries."
 msgstr "这个选项开启时，当用户在查看表格或图表时使用“汇总”和“过滤”按钮进行简单数据探索时，Metabase将自动运行查询。 如果查询此数据库的速度很慢，可以将该选项关闭。 此设置不会影响数据钻探或SQL查询。"
 
 #: frontend/src/metabase/query_builder/components/notebook/steps/JoinStep/JoinStrategyPicker/JoinStrategyPicker.tsx:47
@@ -13883,11 +13883,11 @@ msgid "Diagnostic Info"
 msgstr "诊断信息"
 
 #: frontend/src/metabase/admin/tasks/components/Logs/Logs.tsx:44
-msgid "Select Metabase process:"
+msgid "Select Actuals process:"
 msgstr "选择Metabase过程："
 
 #: frontend/src/metabase/admin/tasks/components/Logs/Logs.tsx:55
-msgid "All Metabase processes"
+msgid "All Actuals processes"
 msgstr "所有Metabase进程"
 
 #: frontend/src/metabase/lib/auth.js:18
@@ -13907,7 +13907,7 @@ msgid "Using this option requires that provided host is a FQDN.  If connecting t
 msgstr "使用此选项要求提供的主机是FQDN。 如果连接到Atlas群集，则可能需要启用此选项。 如果您不知道这意味着什么，请禁用此功能。"
 
 #: frontend/src/metabase/entities/databases/forms.js:350
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
+msgid "By default, Actuals does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, we recommend turning this on and reviewing when and how often the field value scans happen."
 msgstr "默认情况下，Metabase每小时执行一次轻量级同步，每天执行一次密集扫描。 如果您有一个大型数据库，我们建议启用此功能并查看字段值扫描的发生时间和频率。"
 
 #: frontend/src/metabase/home/homepage/components/XraySection/XraySection.tsx:45
@@ -14240,8 +14240,8 @@ msgid "Sending Alert ({0}: {1}) via email"
 msgstr "通过邮箱发送告警（{0}：{1}）"
 
 #: target/classes/metabase/pulse.clj
-msgid "Metabase alert: {0} has {1}"
-msgstr "Metabase 告警: {0} 有 {1}"
+msgid "Actuals alert: {0} has {1}"
+msgstr "Actuals 告警: {0} 有 {1}"
 
 #: metabase/pulse.clj:484
 msgid "Sending Alert ({0}: {1}) via Slack"
@@ -14325,7 +14325,7 @@ msgid "OK"
 msgstr "认可"
 
 #: frontend/src/metabase/admin/settings/auth/components/GoogleAuthForm/GoogleAuthForm.tsx:71
-msgid "To allow users to sign in with Google you'll need to give Metabase a Google Developers console application client ID. It only takes a few steps and instructions on how to create a key can be found {0}."
+msgid "To allow users to sign in with Google you'll need to give Actuals a Google Developers console application client ID. It only takes a few steps and instructions on how to create a key can be found {0}."
 msgstr "为了让用户通过谷歌账户登录，你需要给Metabase一个谷歌开发端用户ID。只需要较少的步骤和指示即可知道如何创建一个可被寻找的钥匙"
 
 #: frontend/src/metabase/admin/settings/components/SettingsSingleSignOnForm.jsx:134
@@ -14333,8 +14333,8 @@ msgid "Be sure to include the full client ID, including the apps.googleuserconte
 msgstr "确保包括完整的客户端ID，包括apps.googleusercontent.com后缀。"
 
 #: frontend/src/metabase/admin/settings/components/SettingsUpdatesForm/VersionUpdateNotice/VersionUpdateNotice.jsx:90
-msgid "Metabase {0} is available."
-msgstr "Metabase {0} 可用。"
+msgid "Actuals {0} is available."
+msgstr "Actuals {0} 可用。"
 
 #: frontend/src/metabase/admin/settings/components/SettingsUpdatesForm/VersionUpdateNotice/VersionUpdateNotice.jsx:91
 msgid "You're running {0}"
@@ -14361,19 +14361,19 @@ msgid "No mappable groups"
 msgstr "没有可映射的分组"
 
 #: frontend/src/metabase/admin/tasks/containers/Help.jsx:109
-msgid "Metabase Documentation"
-msgstr "Metabase 文档"
+msgid "Actuals Documentation"
+msgstr "Actuals 文档"
 
 #: frontend/src/metabase/admin/tasks/containers/Help.jsx:110
 msgid "Includes a troubleshooting guide"
 msgstr "包括一个故障排除指南"
 
 #: frontend/src/metabase/admin/tasks/containers/Help.jsx:114
-msgid "Post on the Metabase support forum"
+msgid "Post on the Actuals support forum"
 msgstr "在Metabase支持论坛上发帖"
 
 #: frontend/src/metabase/admin/tasks/containers/Help.jsx:115
-msgid "A community forum for all things Metabase"
+msgid "A community forum for all things Actuals"
 msgstr "一个关于Metabase所有事情的社区论坛"
 
 #: frontend/src/metabase/admin/tasks/components/Help/Help.tsx:125
@@ -14453,7 +14453,7 @@ msgid "This is a lightweight process that checks for updates to this database’
 msgstr "这是一个轻量级的过程，用于检查对该数据库架构的更新。在大多数情况下，最好将此设置保持为每小时同步。"
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:165
-msgid "Metabase can scan the values present in each field in this database to enable checkbox filters in dashboards and questions. This can be a somewhat resource-intensive process, particularly if you have a very large database."
+msgid "Actuals can scan the values present in each field in this database to enable checkbox filters in dashboards and questions. This can be a somewhat resource-intensive process, particularly if you have a very large database."
 msgstr "Metabase可以扫描此数据库中每个字段中存在的值，以启用仪表板和问题中的复选框筛选器。这可能会占用一些资源，特别是如果您的数据库很大。"
 
 #: frontend/src/metabase/common/utils/model-names.ts:6
@@ -14985,7 +14985,7 @@ msgid "must be {0} characters or less"
 msgstr "必须是{0}个字符或更少"
 
 #: frontend/src/metabase/nav/components/ProfileLink.jsx:121
-msgid "Thanks for using Metabase!"
+msgid "Thanks for using Actuals!"
 msgstr "感谢您使用Metabase!"
 
 #: frontend/src/metabase/public/components/EmbedFrame/LogoBadge.tsx:29
@@ -15144,7 +15144,7 @@ msgstr "Google身份验证令牌似乎不正确。 "
 
 #: src/metabase/integrations/google.clj
 #: target/classes/metabase/integrations/google.clj
-msgid "Double check that it matches in Google and Metabase."
+msgid "Double check that it matches in Google and Actuals."
 msgstr "仔细检查它在谷歌和Metabase中是否匹配。"
 
 #: metabase/api/table.clj:341
@@ -15160,7 +15160,7 @@ msgid "Database Upgrade Required"
 msgstr "需要数据库升级"
 
 #: metabase/db/setup.clj:45
-msgid "NOTICE: Your database requires updates to work with this version of Metabase."
+msgid "NOTICE: Your database requires updates to work with this version of Actuals."
 msgstr "注意：您的数据库需要更新才能使用此版本的Metabase。"
 
 #: metabase/db/setup.clj:47
@@ -15203,12 +15203,12 @@ msgid "The sub-query from referenced question #{0} failed with the following err
 msgstr "引用的问题#{0}的子查询失败，错误如下。{1}"
 
 #: metabase/driver/mysql.clj:127
-msgid "WARNING: Metabase only officially supports MySQL {0}/MariaDB {1} and above."
+msgid "WARNING: Actuals only officially supports MySQL {0}/MariaDB {1} and above."
 msgstr "警告：Metabase只正式支持MySQL {0}/MariaDB {1}及以上版本。"
 
 #: metabase/driver/mysql.clj:131
-msgid "All Metabase features may not work properly when using an unsupported version."
-msgstr "使用不受支持的版本时，所有 Metabase 功能可能无法正常工作。"
+msgid "All Actuals features may not work properly when using an unsupported version."
+msgstr "使用不受支持的版本时，所有 Actuals 功能可能无法正常工作。"
 
 #: target/classes/metabase/driver/sql/parameters/substitute.clj
 msgid "Unable to substitute parameters"
@@ -15502,7 +15502,7 @@ msgid "Service Accounts"
 msgstr "服务账户"
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:30
-msgid "Metabase connects to Big Query via {0}."
+msgid "Actuals connects to Big Query via {0}."
 msgstr "Metabase通过{0}连接到Big Query。"
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:33
@@ -15635,7 +15635,7 @@ msgid "What's your preferred language?"
 msgstr "你的首选语言是什么？"
 
 #: frontend/src/metabase/setup/components/LanguageStep/LanguageStep.tsx:54
-msgid "This language will be used throughout Metabase and will be the default for new users."
+msgid "This language will be used throughout Actuals and will be the default for new users."
 msgstr "这种语言将在整个Metabase中使用，并将成为新用户的默认语言。"
 
 #: frontend/src/metabase/visualizations/components/PinMap.jsx:144
@@ -15787,7 +15787,7 @@ msgid "Error fetching value of Setting"
 msgstr "获取设置值的错误"
 
 #: src/metabase/public_settings.clj
-msgid "The language that should be used for Metabase's UI, system emails, pulses, and alerts."
+msgid "The language that should be used for Actuals's UI, system emails, pulses, and alerts."
 msgstr "Metabase的UI界面，系统电子邮件，定时和警报应使用的语言。"
 
 #: src/metabase/public_settings.clj
@@ -15807,7 +15807,7 @@ msgid "Cannot redirect requests to HTTPS unless `site-url` is HTTPS."
 msgstr "不能将请求重定向到HTTPS，除非`site-url`是HTTPS。"
 
 #: metabase/pulse/render/style.clj:112
-msgid "Error registering fonts: Metabase will not be able to send Pulses."
+msgid "Error registering fonts: Actuals will not be able to send Pulses."
 msgstr "注册字体时出错：Metabase无法发送Pulse。"
 
 #: metabase/pulse/render/style.clj:114
@@ -15943,7 +15943,7 @@ msgid "Configure your identity provider (IdP)"
 msgstr "配置你的身份提供者（IdP）。"
 
 #: enterprise/frontend/src/metabase-enterprise/auth/components/SettingsSAMLForm/SettingsSAMLForm.jsx:106
-msgid "Your identity provider will need the following info about Metabase."
+msgid "Your identity provider will need the following info about Actuals."
 msgstr "你的身份提供者将需要关于Metabase的以下信息。"
 
 #: enterprise/frontend/src/metabase-enterprise/auth/components/SettingsSAMLForm/SettingsSAMLForm.jsx:113
@@ -15979,11 +15979,11 @@ msgid "User's last name attribute"
 msgstr "用户的姓氏属性"
 
 #: enterprise/frontend/src/metabase-enterprise/auth/components/SettingsSAMLForm/SettingsSAMLForm.jsx:141
-msgid "Tell Metabase about your identity provider"
+msgid "Tell Actuals about your identity provider"
 msgstr "告诉Metabase关于你的身份提供者"
 
 #: enterprise/frontend/src/metabase-enterprise/auth/components/SettingsSAMLForm/SettingsSAMLForm.jsx:143
-msgid "Metabase will need the following info about your provider."
+msgid "Actuals will need the following info about your provider."
 msgstr "Metabase将需要以下关于你的供应商的信息。"
 
 #: enterprise/frontend/src/metabase-enterprise/auth/components/SettingsSAMLForm/SettingsSAMLForm.jsx:147
@@ -16029,7 +16029,7 @@ msgid "Synchronize group membership with your SSO"
 msgstr "将群组成员与你的SSO同步化"
 
 #: enterprise/frontend/src/metabase-enterprise/auth/components/SettingsSAMLForm/SettingsSAMLForm.jsx:193
-msgid "To enable this, you'll need to create mappings to tell Metabase which group(s) your users should\n"
+msgid "To enable this, you'll need to create mappings to tell Actuals which group(s) your users should\n"
 "be added to based on the SSO group they're in."
 msgstr "要启用此功能，你需要创建映射来告诉Metabase你的用户应该使用哪些组根据它们所在的SSO组添加到。"
 
@@ -16053,7 +16053,7 @@ msgid "Note:"
 msgstr "注："
 
 #: enterprise/frontend/src/metabase-enterprise/auth/components/SettingsSAMLForm.jsx:186
-msgid "If you change any of the settings of an existing SAML active setup, then you will need to restart Metabase for them to take effect."
+msgid "If you change any of the settings of an existing SAML active setup, then you will need to restart Actuals for them to take effect."
 msgstr "如果你改变了现有的SAML活动设置的任何设置，那么你将需要重新启动Metabase以使其生效。"
 
 #: enterprise/frontend/src/metabase-enterprise/auth/containers/SamlAuthCard/SamlAuthCard.tsx:14
@@ -16107,11 +16107,11 @@ msgid "String used by the JWT signing key"
 msgstr "JWT签名密钥使用的字符串"
 
 #: enterprise/frontend/src/metabase-enterprise/embedding/index.js:27
-msgid "Embedding the entire Metabase app"
+msgid "Embedding the entire Actuals app"
 msgstr "嵌入整个Metabase应用"
 
 #: enterprise/frontend/src/metabase-enterprise/embedding/index.js:16
-msgid "If you want to embed all of Metabase, enter the origins of the websites or web apps where you want to allow embedding in an iframe, separated by a space. Here are the {0} for what can be entered."
+msgid "If you want to embed all of Actuals, enter the origins of the websites or web apps where you want to allow embedding in an iframe, separated by a space. Here are the {0} for what can be entered."
 msgstr "如果你想嵌入所有的Metabase，请在iframe中输入你想允许嵌入的网站或网络应用的origin，用空格隔开。下面是可以输入的内容的{0}。"
 
 #: enterprise/frontend/src/metabase-enterprise/sandboxes/components/EditSandboxingModal/EditSandboxingModal.tsx:118
@@ -16237,7 +16237,7 @@ msgid "We're having trouble validating your token"
 msgstr "我们在验证你的标记时遇到困难"
 
 #: enterprise/frontend/src/metabase-enterprise/store/containers/StoreAccount.jsx:89
-msgid "Please double-check that your instance can connect to Metabase's servers"
+msgid "Please double-check that your instance can connect to Actuals's servers"
 msgstr "请仔细检查你的实例是否可以连接到Metabase的服务器上"
 
 #: enterprise/frontend/src/metabase-enterprise/store/containers/StoreAccount.jsx:94
@@ -16245,11 +16245,11 @@ msgid "Get help"
 msgstr "获得帮助"
 
 #: enterprise/frontend/src/metabase-enterprise/store/containers/StoreAccount.jsx:101
-msgid "Get even more out of Metabase with the Enterprise Edition"
+msgid "Get even more out of Actuals with the Enterprise Edition"
 msgstr "使用企业版从Metabase中获得更多的好处。"
 
 #: enterprise/frontend/src/metabase-enterprise/store/containers/StoreAccount.jsx:103
-msgid "All the tools you need to quickly and easily provide reports for your customers, or to help you run and monitor Metabase in a large organization"
+msgid "All the tools you need to quickly and easily provide reports for your customers, or to help you run and monitor Actuals in a large organization"
 msgstr "你需要的所有工具，以快速和轻松地为你的客户提供报告，或帮助你在一个大型组织中运行和监控Metabase。"
 
 #: enterprise/frontend/src/metabase-enterprise/store/containers/StoreAccount.jsx:115
@@ -16350,7 +16350,7 @@ msgid "White labeling"
 msgstr "白色标签"
 
 #: enterprise/frontend/src/metabase-enterprise/store/lib/features.js:17
-msgid "Match Metabase to your brand with custom colors, your own logo and more."
+msgid "Match Actuals to your brand with custom colors, your own logo and more."
 msgstr "使用自定义颜色、您自己的徽标等，使Metabase与您的品牌相匹配。"
 
 #: enterprise/frontend/src/metabase-enterprise/store/lib/features.js:26
@@ -16449,7 +16449,7 @@ msgid "at"
 msgstr "于"
 
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar/utils.ts:29
-msgid "Open the Metabase actions menu"
+msgid "Open the Actuals actions menu"
 msgstr "打开Metabase行动菜单"
 
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar/TableClickBehaviorView/TableClickBehaviorView.tsx:31
@@ -17141,7 +17141,7 @@ msgid "Send it to Slack"
 msgstr "发送到Slack"
 
 #: frontend/src/metabase/sharing/components/NewPulseSidebar.tsx:104
-msgid "Pick a channel and a schedule, and Metabase will do the rest."
+msgid "Pick a channel and a schedule, and Actuals will do the rest."
 msgstr "选择一个频道和时间表，Metabase将做其余的工作。"
 
 #: frontend/src/metabase/sharing/components/AddEditSidebar/AddEditEmailSidebar.jsx:53
@@ -17199,15 +17199,15 @@ msgid "Invalid Slack token."
 msgstr "无效的Slack令牌。"
 
 #: metabase/cmd.clj:51
-msgid "The ''{0}'' command is only available in Metabase Enterprise Edition."
+msgid "The ''{0}'' command is only available in Actuals Enterprise Edition."
 msgstr "''{0}''命令仅在Metabase企业版中可用。"
 
 #: metabase/core.clj:53
-msgid "Metabase Enterprise Edition extensions are PRESENT."
+msgid "Actuals Enterprise Edition extensions are PRESENT."
 msgstr "Metabase企业版扩展是存在的。"
 
 #: metabase/core.clj:55
-msgid "Usage of Metabase Enterprise Edition features are subject to the Metabase Commercial License."
+msgid "Usage of Actuals Enterprise Edition features are subject to the Actuals Commercial License."
 msgstr "Metabase企业版功能的使用受Metabase商业许可的约束。"
 
 #: metabase/core.clj:57
@@ -17215,7 +17215,7 @@ msgid "See {0} for details."
 msgstr "详见{0}。"
 
 #: metabase/core.clj:58
-msgid "Metabase Enterprise Edition extensions are NOT PRESENT."
+msgid "Actuals Enterprise Edition extensions are NOT PRESENT."
 msgstr "Metabase企业版扩展不存在。"
 
 #: metabase/email/messages.clj:130
@@ -17371,7 +17371,7 @@ msgid "login attribute keys must be a keyword or string"
 msgstr "登录属性键必须是一个关键词或字符串"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts."
+msgid "The default language for all users across the Actuals UI, system emails, pulses, and alerts."
 msgstr "Metabase用户界面、系统邮件、定时和警报中所有用户的默认语言。"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
@@ -17383,7 +17383,7 @@ msgid "Default page to show the user"
 msgstr "向用户显示的默认页面"
 
 #: metabase/public_settings.clj:238
-msgid "Allow this origin to embed the full Metabase application"
+msgid "Allow this origin to embed the full Actuals application"
 msgstr "允许这个orgin嵌入完整的Metabase应用程序"
 
 #: metabase/public_settings.clj:321
@@ -17391,11 +17391,11 @@ msgid "Values greater than {0} ({1}) are not allowed."
 msgstr "不允许大于{0}（{1}）的值。"
 
 #: metabase/public_settings.clj:27
-msgid "This will replace the word \"Metabase\" wherever it appears."
-msgstr "这将取代所有出现的 \"Metabase \"一词。"
+msgid "This will replace the word \"Actuals\" wherever it appears."
+msgstr "这将取代所有出现的 \"Actuals \"一词。"
 
 #: metabase/public_settings.clj:337
-msgid "These are the primary colors used in charts and throughout Metabase. You might need to refresh your browser to see your changes take effect."
+msgid "These are the primary colors used in charts and throughout Actuals. You might need to refresh your browser to see your changes take effect."
 msgstr "这些是在图表和整个Metabase中使用的主要颜色。你可能需要刷新你的浏览器才能看到你的变化生效。"
 
 #: metabase/public_settings.clj:432
@@ -17529,7 +17529,7 @@ msgid "Include User ID and query hash in queries"
 msgstr "在查询中包括用户ID和查询哈希值"
 
 #: frontend/src/metabase/entities/databases/forms.js:24
-msgid "When on, Metabase User ID and query hash get appended to queries on this database, which can be useful for auditing and debugging. However, this causes each query to look distinct, preventing BigQuery from returning cached results, which may increase your costs."
+msgid "When on, Actuals User ID and query hash get appended to queries on this database, which can be useful for auditing and debugging. However, this causes each query to look distinct, preventing BigQuery from returning cached results, which may increase your costs."
 msgstr "当打开时，Metabase用户ID和查询哈希会被附加到该数据库的查询中，这对审计和调试很有用。然而，这导致每个查询看起来是不同的，防止BigQuery返回缓存的结果，这可能会增加你的成本。"
 
 #: metabase/driver/common.clj:182
@@ -17537,7 +17537,7 @@ msgid "Periodically refingerprint tables"
 msgstr "定期修改指纹表"
 
 #: frontend/src/metabase/entities/databases/forms.js:357
-msgid "When syncing with this database, Metabase will scan a subset of values of fields to gather statistics that enable things like improved binning behavior in charts, and to generally make your Metabase instance smarter."
+msgid "When syncing with this database, Actuals will scan a subset of values of fields to gather statistics that enable things like improved binning behavior in charts, and to generally make your Actuals instance smarter."
 msgstr "当与该数据库同步时，Metabase将扫描字段值的一个子集，以收集统计数据，从而实现改进图表中的分选行为，并使你的Metabase实例更加智能。"
 
 #: frontend/src/metabase/lib/core.js:252
@@ -17802,7 +17802,7 @@ msgid "invalid context seed value"
 msgstr "无效的上下文种子值"
 
 #: metabase_enterprise/serialization/cmd.clj:63
-msgid "Dump was produced using a different version of Metabase. Things may break!"
+msgid "Dump was produced using a different version of Actuals. Things may break!"
 msgstr "Dump是用不同版本的Metabase制作的。事情可能会被打破!"
 
 #: enterprise/backend/src/metabase_enterprise/serialization/cmd.clj
@@ -17965,7 +17965,7 @@ msgid "Password for opening the keystore"
 msgstr "打开钥匙库的密码"
 
 #: metabase_enterprise/sso/integrations/sso_settings.clj:63
-msgid "Alias for the key that Metabase should use for signing SAML requests"
+msgid "Alias for the key that Actuals should use for signing SAML requests"
 msgstr "Metabase应该用来签署SAML请求的密钥的别名。"
 
 #: metabase_enterprise/sso/integrations/sso_settings.clj:107
@@ -17990,7 +17990,7 @@ msgstr "用于群组同步的SAML属性"
 
 #. Should be in the form: {"groupName": [1, 2, 3]} where keys are SAML groups and values are lists of MB groups IDs
 #: metabase_enterprise/sso/integrations/sso_settings.clj:89
-msgid "JSON containing SAML to Metabase group mappings."
+msgid "JSON containing SAML to Actuals group mappings."
 msgstr "包含SAML到Metabase组的映射的JSON。"
 
 #: metabase_enterprise/sso/integrations/sso_settings.clj:102
@@ -18027,7 +18027,7 @@ msgstr "启用与JWT同步的群组成员。"
 
 #. Should be in the form: {"groupName": [1, 2, 3]} where keys are JWT groups and values are lists of MB groups IDs
 #: metabase_enterprise/sso/integrations/sso_settings.clj:144
-msgid "JSON containing JWT to Metabase group mappings."
+msgid "JSON containing JWT to Actuals group mappings."
 msgstr "包含JWT到Metabase组的映射的JSON。"
 
 #: metabase/integrations/common.clj:62
@@ -18505,12 +18505,12 @@ msgstr "想让人帮你解决升级的问题吗？"
 
 #: frontend/src/metabase/admin/settings/components/SettingsUpdatesForm/VersionUpdateNotice/VersionUpdateNotice.jsx:160
 #: frontend/src/metabase/admin/settings/components/widgets/MarginHostingCTA.jsx:20
-msgid "Migrate to Metabase Cloud."
-msgstr "迁移到 Metabase Cloud。"
+msgid "Migrate to Actuals Cloud."
+msgstr "迁移到 Actuals Cloud。"
 
 #: frontend/src/metabase/nav/components/ProfileLink.jsx:50
-msgid "Manage Metabase Cloud"
-msgstr "管理 Metabase Cloud"
+msgid "Manage Actuals Cloud"
+msgstr "管理 Actuals Cloud"
 
 #: frontend/src/metabase/visualizations/visualizations/PivotTable/settings.ts:231
 msgid "Show totals"
@@ -18886,7 +18886,7 @@ msgid "Invalid cell format"
 msgstr "无效的单元格格式"
 
 #: metabase/search/config.clj:10
-msgid "Enable typeahead search in the Metabase navbar?"
+msgid "Enable typeahead search in the Actuals navbar?"
 msgstr "启用Metabase导航栏中的typeahead搜索？"
 
 #: target/classes/metabase/server/request/util.clj
@@ -19283,7 +19283,7 @@ msgstr "无效字段{0}{1}：回落到{2}。"
 
 #: src/metabase/models/humanization.clj
 #: target/classes/metabase/models/humanization.clj
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces."
+msgid "To make table and field names more human-friendly, Actuals will replace dashes and underscores in them with spaces."
 msgstr "为了使表和字段的名称更加人性化，Metabase将用空格替换其中的破折号和下划线。"
 
 #: src/metabase/models/humanization.clj
@@ -19297,7 +19297,7 @@ msgid "Setting names in would collide: {0} and {1}"
 msgstr "设置名称在会发生碰撞。{0}和{1}"
 
 #: metabase/public_settings.clj:80
-msgid "Indicates when Metabase last checked for new versions."
+msgid "Indicates when Actuals last checked for new versions."
 msgstr "表示Metabase最后一次检查新版本的时间。"
 
 #: src/metabase/public_settings.clj target/classes/metabase/public_settings.clj
@@ -19397,8 +19397,8 @@ msgid "Enter the token you received from the store"
 msgstr "输入你从商店收到的令牌"
 
 #: frontend/src/metabase/admin/settings/components/SettingsUpdatesForm/VersionUpdateNotice/VersionUpdateNotice.jsx:44
-msgid "Metabase Cloud keeps your instance up-to-date. You're currently on version {0}. Thanks for being a customer!"
-msgstr "Metabase Cloud使您的实例保持最新。您当前使用的是版本{0}。感谢您成为我们的客户！"
+msgid "Actuals Cloud keeps your instance up-to-date. You're currently on version {0}. Thanks for being a customer!"
+msgstr "Actuals Cloud使您的实例保持最新。您当前使用的是版本{0}。感谢您成为我们的客户！"
 
 #: frontend/src/metabase/admin/settings/components/SettingsUpdatesForm/VersionUpdateNotice/VersionUpdateNotice.jsx:38
 msgid "No successful checks yet."
@@ -19553,14 +19553,14 @@ msgid "Make all sub-collections {0}, too."
 msgstr "也将所有子集合设为 {0}。"
 
 #: enterprise/frontend/src/metabase-enterprise/hosting/components/SettingsCloudStoreLink/SettingsCloudStoreLink.tsx:13
-msgid "Manage your Cloud account, including billing preferences and technical settings about this instance in your Metabase Store account."
+msgid "Manage your Cloud account, including billing preferences and technical settings about this instance in your Actuals Store account."
 msgstr "管理你的云帐户，包括元数据库存储帐户中有关此实例的计费首选项和技术设置。\n"
 ""
 
 #: enterprise/frontend/src/metabase-enterprise/hosting/components/SettingsCloudStoreLink/SettingsCloudStoreLink.tsx:16
 #: enterprise/frontend/src/metabase-enterprise/license/components/BillingInfo/BillingGoToStore.tsx:19
-msgid "Go to the Metabase Store"
-msgstr "跳转到 Metabase 商店"
+msgid "Go to the Actuals Store"
+msgstr "跳转到 Actuals 商店"
 
 #: metabase/driver/presto_jdbc.clj:567
 msgid "Running statement in describe-schema: {0}"
@@ -19682,7 +19682,7 @@ msgid "Ensure users can’t ever see the data from this database regardless of t
 msgstr "确保用户永远不能看到这个数据库的数据，不管他们在集合级别的权限如何。请记住，如果一个用户属于另一个有数据访问权的组，该设置将优先考虑，而该用户的访问权将不会被阻止。"
 
 #: frontend/src/metabase/admin/permissions/constants/messages.ts:7
-msgid "Only available in certain Metabase plans."
+msgid "Only available in certain Actuals plans."
 msgstr "只适用于某些Metabase计划。"
 
 #: frontend/src/metabase/admin/permissions/components/DataPermissionsHelp/DataPermissionsHelp.jsx:60
@@ -19821,7 +19821,7 @@ msgid "Unsubscribe from all subscriptions / alerts"
 msgstr "退订所有的订阅/提示信息"
 
 #: enterprise/frontend/src/metabase-enterprise/caching/components/DatabaseCacheTimeField/DatabaseCacheTimeField.tsx:52
-msgid "How long to keep question results. By default, Metabase will use the value you supply on the {0}, but if this database has other factors that influence the freshness of data, it could make sense to set a custom duration. You can also choose custom durations on individual questions or dashboards to help improve performance."
+msgid "How long to keep question results. By default, Actuals will use the value you supply on the {0}, but if this database has other factors that influence the freshness of data, it could make sense to set a custom duration. You can also choose custom durations on individual questions or dashboards to help improve performance."
 msgstr "保留问题结果的时间。默认情况下，Metabase将使用你在{0}上提供的值，但如果这个数据库有其他影响数据新鲜度程度的因素，设置一个自定义的持续时间可能是有意义的。为了提高性能你也可以在个别问题或仪表板上选择自定义持续时间。"
 
 #: enterprise/frontend/src/metabase-enterprise/caching/components/DatabaseCacheTimeField/DatabaseCacheTimeField.tsx:54
@@ -20055,7 +20055,7 @@ msgid "This will delete any dashboard subscriptions or alerts {0} has created, a
 msgstr "这将删除{0}创建的任何仪表板订阅或警报，并从任何其他订阅或警报中移除他们作为接收者。"
 
 #: enterprise/frontend/src/metabase-enterprise/audit_app/components/UnsubscribeUserForm/UnsubscribeUserForm.jsx:48
-msgid "This does not affect email distribution lists that are managed outside of Metabase."
+msgid "This does not affect email distribution lists that are managed outside of Actuals."
 msgstr "这并不影响在Metabase之外管理的电子邮件分发列表。"
 
 #: enterprise/frontend/src/metabase-enterprise/audit_app/components/AuditSidebar/AuditSidebar.jsx:36
@@ -20107,7 +20107,7 @@ msgid "Not seeing something listed here?"
 msgstr "没有看到这里列出的东西？"
 
 #: frontend/src/metabase/account/notifications/components/HelpModal/HelpModal.jsx:29
-msgid "It’s possible you may also receive emails from Metabase if you’re a member of an email distribution list, like “team@mycompany.com” and that list is used as the recipient for an alert or dashboard subscription instead of your individual email."
+msgid "It’s possible you may also receive emails from Actuals if you’re a member of an email distribution list, like “team@mycompany.com” and that list is used as the recipient for an alert or dashboard subscription instead of your individual email."
 msgstr "如果你是一个电子邮件分发列表的成员，如 \"team@mycompany.com\"，并且该列表被用作警报或仪表板订阅的收件人，而不是你的个人电子邮件，你也有可能收到Metabase的电子邮件。"
 
 #: frontend/src/metabase/account/notifications/components/HelpModal/HelpModal.jsx:39
@@ -20119,7 +20119,7 @@ msgid "your instance administrator"
 msgstr "你的实例管理员"
 
 #: frontend/src/metabase/account/notifications/components/HelpModal/HelpModal.jsx:53
-msgid "Metabase doesn’t manage those lists, so we’d recommend contacting {0}. "
+msgid "Actuals doesn’t manage those lists, so we’d recommend contacting {0}. "
 msgstr "Metabase并不管理这些名单，所以我们建议联系{0}。 "
 
 #: frontend/src/metabase/account/notifications/components/NotificationCard/NotificationCard.jsx:102
@@ -20380,7 +20380,7 @@ msgid "Navigation bar color"
 msgstr "导航栏颜色"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/components/ColorSchemeWidget.jsx:25
-msgid "The top nav bar of Metabase. Defaults to the Primary Color if not set."
+msgid "The top nav bar of Actuals. Defaults to the Primary Color if not set."
 msgstr "Metabase的顶部导航栏。如果没有设置，则默认为主色。"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/components/ColorSchemeWidget.jsx:23
@@ -20433,7 +20433,7 @@ msgid "Service account JSON file"
 msgstr "服务账户JSON文件"
 
 #: frontend/src/metabase/entities/databases/big-query-fields.js:93
-msgid "This JSON file contains the credentials Metabase needs to read and query your dataset."
+msgid "This JSON file contains the credentials Actuals needs to read and query your dataset."
 msgstr "这个JSON文件包含Metabase读取和查询你的数据集所需的证书。"
 
 #: metabase/driver/common.clj:130
@@ -20449,11 +20449,11 @@ msgid "Choose when syncs and scans happen"
 msgstr "选择同步和扫描的时间"
 
 #: metabase/driver/common.clj:141
-msgid "By default, Metabase does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, turn this on to make changes."
+msgid "By default, Actuals does a lightweight hourly sync and an intensive daily scan of field values. If you have a large database, turn this on to make changes."
 msgstr "默认情况下，Metabase每小时进行一次轻量级的同步，每天对字段值进行一次密集扫描。如果你有一个大数据库，请打开这个功能来进行修改。"
 
 #: metabase/driver/common.clj:183
-msgid "This enables Metabase to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
+msgid "This enables Actuals to scan for additional field values during syncs allowing smarter behavior, like improved auto-binning on your bar charts."
 msgstr "这使Metabase能够在同步过程中扫描更多的字段值，从而实现更智能的行为，比如在你的柱状图上改进自动排序。"
 
 #: frontend/src/metabase/setup/components/UserForm/UserForm.tsx:86
@@ -20570,7 +20570,7 @@ msgid "Our {0}"
 msgstr "我们的{0}"
 
 #: frontend/src/metabase/databases/components/DatabaseNameField/DatabaseNameField.tsx:20
-msgid "Choose what this data will be called in Metabase."
+msgid "Choose what this data will be called in Actuals."
 msgstr "选择这个数据在Metabase中的名称。"
 
 #: frontend/src/metabase/admin/settings/selectors.js:597
@@ -20992,7 +20992,7 @@ msgid "DB {0} had hardcoded dataset-id; changing to an inclusion pattern and upd
 msgstr "DB {0}有硬编码的数据集-ID；改变为包含模式并更新表模式"
 
 #: src/metabase/analytics/snowplow.clj
-msgid "Unique identifier to be used in Snowplow analytics, to identify this instance of Metabase."
+msgid "Unique identifier to be used in Snowplow analytics, to identify this instance of Actuals."
 msgstr "在Snowplow分析中使用的唯一标识符，以识别Metabase的这个实例。"
 
 #: src/metabase/analytics/snowplow.clj
@@ -21024,7 +21024,7 @@ msgid "Error sending Snowplow analytics event {0}"
 msgstr "发送Snowplow分析事件{0}时出错"
 
 #: metabase/analytics/snowplow.clj:133
-msgid "The approximate timestamp at which this instance of Metabase was created, for inclusion in analytics."
+msgid "The approximate timestamp at which this instance of Actuals was created, for inclusion in analytics."
 msgstr "创建这个Metabase实例的大致时间戳，用于分析。"
 
 #: metabase/models/card.clj:845
@@ -21144,7 +21144,7 @@ msgid "In most cases, you should be fine leaving this set to sync hourly."
 msgstr "在大多数情况下，你应该把这个设置为每小时同步一次就可以了。"
 
 #: src/metabase/driver/common.clj
-msgid "If your database is behind a firewall, you may need to allow connections from our Metabase Cloud IP addresses:"
+msgid "If your database is behind a firewall, you may need to allow connections from our Actuals Cloud IP addresses:"
 msgstr "如果你的数据库在防火墙后面，你可能需要允许从我们的Metabase Cloud IP地址进行连接。"
 
 #: metabase/driver/common.clj:334
@@ -21156,7 +21156,7 @@ msgid "Error: multiple values specified for parameter; non-Field Filter paramete
 msgstr "错误：为参数指定多个值；非字段筛选器参数只能有一个值。"
 
 #: metabase/driver/h2.clj:92
-msgid "The local path relative to where Metabase is running from. Your string should not include the .mv.db extension."
+msgid "The local path relative to where Actuals is running from. Your string should not include the .mv.db extension."
 msgstr "相对于Metabase运行地点的本地路径。你的字符串不应该包括.mv.db的扩展名。"
 
 #: metabase/driver/postgres.clj:146
@@ -21252,7 +21252,7 @@ msgid "All except..."
 msgstr "所有除了..."
 
 #: metabase/driver/util.clj:293
-msgid "Comma separated names of {0} that <strong>should</strong> appear in Metabase"
+msgid "Comma separated names of {0} that <strong>should</strong> appear in Actuals"
 msgstr "<strong>应该</strong>出现在Metabase中的{0}的逗号分隔名称"
 
 #: metabase/driver/util.clj:295 metabase/driver/util.clj:302
@@ -21260,7 +21260,7 @@ msgid "You can use patterns like <strong>auth*</strong> to match multiple {0}"
 msgstr "你可以使用<strong>auth*</strong>等模式来匹配多个{0}。"
 
 #: metabase/driver/util.clj:300
-msgid "Comma separated names of {0} that <strong>should NOT</strong> appear in Metabase"
+msgid "Comma separated names of {0} that <strong>should NOT</strong> appear in Actuals"
 msgstr "逗号分隔的{0}名称，<strong>不应该</strong>出现在Metabase中。"
 
 #: metabase/email/messages.clj:710
@@ -21288,7 +21288,7 @@ msgid "Successfully authenticated Google Sign-In token for: {0} {1}"
 msgstr "成功地验证了谷歌登录令牌。{0} {1}"
 
 #: src/metabase/integrations/slack.clj
-msgid "Deprecated Slack API token for connecting the Metabase Slack bot."
+msgid "Deprecated Slack API token for connecting the Actuals Slack bot."
 msgstr "用于连接Metabase Slack机器人的已废弃的Slack API令牌。"
 
 #: src/metabase/integrations/slack.clj
@@ -21296,11 +21296,11 @@ msgid "Please use a new Slack app integration instead."
 msgstr "请使用新的Slack应用集成来代替。"
 
 #: src/metabase/integrations/slack.clj
-msgid "Bot user OAuth token for connecting the Metabase Slack app."
+msgid "Bot user OAuth token for connecting the Actuals Slack app."
 msgstr "用于连接Metabase Slack应用程序的Bot用户OAuth令牌。"
 
 #: src/metabase/integrations/slack.clj
-msgid "This should be used for all new Slack integrations starting in Metabase v0.42.0."
+msgid "This should be used for all new Slack integrations starting in Actuals v0.42.0."
 msgstr "从Metabase v0.42.0开始，这应该用于所有新的Slack集成。"
 
 #: src/metabase/integrations/slack.clj
@@ -21312,7 +21312,7 @@ msgid "Set to 'false' if a Slack API request returns an auth error."
 msgstr "如果Slack API请求返回auth错误，则设置为'false'。"
 
 #: metabase/integrations/slack.clj:77
-msgid "The name of the channel to which Metabase files should be initially uploaded"
+msgid "The name of the channel to which Actuals files should be initially uploaded"
 msgstr "最初应上传Metabase文件的通道的名称"
 
 #: metabase/integrations/slack.clj:119
@@ -21372,7 +21372,7 @@ msgid "{0} points to non-existent file: {1}"
 msgstr "{0}指向不存在的文件。{1}"
 
 #: metabase/models/secret.clj:190
-msgid "{0} (a local file path) cannot be used in Metabase hosted environment"
+msgid "{0} (a local file path) cannot be used in Actuals hosted environment"
 msgstr "{0}（一个本地文件路径）不能在Metabase托管环境中使用"
 
 #: metabase/models/setting.clj:609
@@ -21384,7 +21384,7 @@ msgid "Site-wide values are not allowed for Setting {0}"
 msgstr "设置{0}不允许使用全站的值。"
 
 #: metabase/models/setting.clj:772
-msgid "Setting {0} is deprecated as of Metabase {1} and may be removed in a future version."
+msgid "Setting {0} is deprecated as of Actuals {1} and may be removed in a future version."
 msgstr "从Metabase {1}开始，设置{0}已被废弃，并可能在未来的版本中被删除。"
 
 #: metabase/models/setting.clj:1002
@@ -21396,8 +21396,8 @@ msgid "Boolean indicating whether analytics data should be sent to Google Analyt
 msgstr "表示是否应将分析数据发送到前端的谷歌分析的布尔值"
 
 #: metabase/public_settings.clj:356
-msgid "Metabase version for which a notice about usage of deprecated features has been shown."
-msgstr "已显示关于使用已废弃功能的 Metabase 版本通知。"
+msgid "Actuals version for which a notice about usage of deprecated features has been shown."
+msgstr "已显示关于使用已废弃功能的 Actuals 版本通知。"
 
 #: metabase/public_settings.clj:569
 msgid "Whether or not to display a message about pinning dashboards. It will also be hidden if any dashboards are pinned. Admins might hide this to direct users to better content than raw data"
@@ -21416,11 +21416,11 @@ msgid " although it is used to set the WEEK_START session variable in Snowflake.
 msgstr "尽管它被用来设置Snowflake的WEEK_START会话变量。"
 
 #: metabase/public_settings.clj:680
-msgid "Error fetching Metabase Cloud gateway IP addresses:"
+msgid "Error fetching Actuals Cloud gateway IP addresses:"
 msgstr "在获取Metabase Cloud网关IP地址时出错。"
 
 #: metabase/public_settings.clj:712
-msgid "Metabase Cloud gateway IP addresses, to configure connections to DBs behind firewalls"
+msgid "Actuals Cloud gateway IP addresses, to configure connections to DBs behind firewalls"
 msgstr "Metabase云网关的IP地址，以配置与防火墙后的数据库的连接"
 
 #: src/metabase/public_settings.clj
@@ -21549,7 +21549,7 @@ msgid "This token doesn't seem to be valid. Double-check it, then contact suppor
 msgstr "这个令牌似乎无效。仔细检查一下，如果你认为它应该是有效的，请联系支持。"
 
 #: enterprise/frontend/src/metabase-enterprise/settings/hooks/use-license.ts:10
-msgid "We're having trouble validating your token. Please double-check that your instance can connect to Metabase's servers."
+msgid "We're having trouble validating your token. Please double-check that your instance can connect to Actuals's servers."
 msgstr "我们在验证您的令牌时遇到困难。请仔细检查您的实例是否可以连接到Metabase的服务器。"
 
 #: frontend/src/metabase-lib/v1/expressions/pratt/compiler.ts:45
@@ -21629,7 +21629,7 @@ msgid "Billing"
 msgstr "账单"
 
 #: enterprise/frontend/src/metabase-enterprise/license/components/BillingInfo/BillingGoToStore.tsx:16
-msgid "Manage your Cloud account, including billing preferences, in your Metabase Store account."
+msgid "Manage your Cloud account, including billing preferences, in your Actuals Store account."
 msgstr "在你的Metabase商店账户中管理你的云账户，包括计费偏好。"
 
 #: enterprise/frontend/src/metabase-enterprise/license/components/LicenseAndBillingSettings/LicenseAndBillingSettings.tsx:133
@@ -21691,7 +21691,7 @@ msgid "Sample Database"
 msgstr "样本数据库"
 
 #: frontend/src/metabase/databases/components/DatabaseSyncModal/DatabaseSyncModal.tsx:39
-msgid "Have a look around your Metabase in the meantime if you want to get a head start."
+msgid "Have a look around your Actuals in the meantime if you want to get a head start."
 msgstr "如果你想先下手为强，请在你的Metabase中查看一下。"
 
 #: frontend/src/metabase/databases/components/DatabaseSyncModal/DatabaseSyncModal.tsx:46
@@ -21770,7 +21770,7 @@ msgid "I'll invite a teammate to connect the database"
 msgstr "我将邀请一个队友来连接数据库"
 
 #: frontend/src/metabase/setup/components/DataUsageStep/DataUsageStep.tsx:67
-msgid "In order to help us improve Metabase, we'd like to collect certain data about product usage."
+msgid "In order to help us improve Actuals, we'd like to collect certain data about product usage."
 msgstr "为了帮助我们改进Metabase，我们希望收集关于产品使用的某些数据。"
 
 #: frontend/src/metabase/setup/components/DataUsageStep/DataUsageStep.tsx:72
@@ -21876,13 +21876,13 @@ msgid "Your Premium Embedding license is active until {0}."
 msgstr "你的高级嵌入许可证在{0}之前是有效的。"
 
 #: frontend/src/metabase/admin/settings/containers/PremiumEmbeddingLicensePage/PremiumEmbeddingLicensePage.tsx:106
-msgid "Enter the token you bought from the Metabase Store below."
+msgid "Enter the token you bought from the Actuals Store below."
 msgstr "在下面输入你从Metabase商店购买的Token令牌。"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingCustomizationInfo.tsx:12
-msgid "Looking to remove the “Powered by Metabase” logo, customize colors\n"
+msgid "Looking to remove the “Powered by Actuals” logo, customize colors\n"
 "and make it your own? {0}"
-msgstr "想去掉 \"Powered by Metabase \"标识，自定义颜色\n"
+msgstr "想去掉 \"Powered by Actuals \"标识，自定义颜色\n"
 "并使其成为你自己的？{0}"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackDeleteModal/SlackDeleteModal.tsx:24
@@ -21918,7 +21918,7 @@ msgid "invite a teammate"
 msgstr "邀请队友"
 
 #: frontend/src/metabase/home/homepage/components/StartSection/StartSection.tsx:117
-msgid "Connect your data to get the most out of Metabase"
+msgid "Connect your data to get the most out of Actuals"
 msgstr "连接你的数据以获得Metabase的最大效益"
 
 #: frontend/src/metabase/home/homepage/components/StartSection/StartSection.tsx:119
@@ -21971,7 +21971,7 @@ msgid "Use the tab key to navigate through settings and columns."
 msgstr "使用Tab键在设置和栏目中导航。"
 
 #: frontend/src/metabase/admin/settings/components/SettingsLicense/SettingsLicense.tsx:33
-msgid "Metabase is open source and will be free forever – but by upgrading you can have priority support, more tools to help you share your insights with your teams and powerful options to help you create seamless, interactive data experiences for your customers."
+msgid "Actuals is open source and will be free forever – but by upgrading you can have priority support, more tools to help you share your insights with your teams and powerful options to help you create seamless, interactive data experiences for your customers."
 msgstr "Metabase是开源的，并将永远免费 - 但通过升级，你可以获得优先支持，有更多的工具帮助你与你的团队分享你的洞察力，并有强大的选项帮助你为你的客户创造无缝、互动的数据体验。"
 
 #: frontend/src/metabase/admin/settings/components/SettingsLicense/SettingsLicense.tsx:35
@@ -22004,7 +22004,7 @@ msgstr "Slack应用程序无法工作。"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:51
 #: frontend/src/metabase/admin/settings/slack/components/SlackStatus/SlackStatus.tsx:54
-msgid "Metabase on Slack"
+msgid "Actuals on Slack"
 msgstr "Slack上的Metabase"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackStatus/SlackStatus.tsx:59
@@ -22033,7 +22033,7 @@ msgid "We recommend you {0}, see the instructions below:"
 msgstr "我们建议你{0}，见以下说明。"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:61
-msgid "Bring the power of Metabase to your Slack #channels."
+msgid "Bring the power of Actuals to your Slack #channels."
 msgstr "将Metabase的力量带到你的Slack #频道。"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:62
@@ -22045,7 +22045,7 @@ msgid "1. Create your Slack App"
 msgstr "1.创建你的Slack应用程序"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:101
-msgid "To create your Metabase integration on Slack you’ll need to set up some things."
+msgid "To create your Actuals integration on Slack you’ll need to set up some things."
 msgstr "要在Slack上创建你的Metabase集成，你需要设置一些东西。"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:102
@@ -22065,7 +22065,7 @@ msgid "From an app manifest."
 msgstr "来自一个应用程序清单。"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:128
-msgid "2. Copy the Metabase manifest"
+msgid "2. Copy the Actuals manifest"
 msgstr "2.复制Metabase清单"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:130
@@ -22356,11 +22356,11 @@ msgid "Delete {0}?"
 msgstr "删除{0}？"
 
 #: frontend/src/metabase/databases/components/DatabaseEngineWarning/DatabaseEngineWarning.tsx:110
-msgid "This is a community-developed driver and not supported by Metabase. "
+msgid "This is a community-developed driver and not supported by Actuals. "
 msgstr "这是一个社区开发的驱动程序，不受Metabase支持。 "
 
 #: frontend/src/metabase/databases/components/DatabaseEngineWarning/DatabaseEngineWarning.tsx:138
-msgid "This is a partner-developed driver. Though Metabase can’t provide support for it, if you need help you can contact the fine folks at "
+msgid "This is a partner-developed driver. Though Actuals can’t provide support for it, if you need help you can contact the fine folks at "
 msgstr "这是一个合作伙伴开发的驱动程序。虽然Metabase不能为它提供支持，但如果你需要帮助，你可以联系以下的优秀人士 "
 
 #: frontend/src/metabase/components/Toaster/Toaster.tsx:26
@@ -22482,8 +22482,8 @@ msgid "Good to see you, {0}"
 msgstr "很高兴见到你，{0}。"
 
 #: frontend/src/metabase/home/components/HomeHelpCard/HomeHelpCard.tsx:11
-msgid "Metabase tips"
-msgstr "Metabase 提示"
+msgid "Actuals tips"
+msgstr "Actuals 提示"
 
 #: frontend/src/metabase/home/components/HomePopularSection/HomePopularSection.tsx:49
 #: frontend/src/metabase/home/components/HomePopularSection/HomePopularSection.tsx:62
@@ -22511,7 +22511,7 @@ msgid "Pick up where you left off"
 msgstr "从你离开的地方继续"
 
 #: frontend/src/metabase/home/components/HomeXraySection/HomeXraySection.tsx:69
-msgid "Try out these sample x-rays to see what Metabase can do."
+msgid "Try out these sample x-rays to see what Actuals can do."
 msgstr "试试这些透视样本，看看Metabase能做什么。"
 
 #: frontend/src/metabase/home/components/HomeXraySection/HomeXraySection.tsx:79
@@ -22652,11 +22652,11 @@ msgid "Launch of v2.0"
 msgstr "推出v2.0版"
 
 #: frontend/src/metabase/timelines/collections/components/TimelineEmptyState/TimelineEmptyState.tsx:69
-msgid "Add events to Metabase to show important milestones, launches, or anything else, right alongside your data."
+msgid "Add events to Actuals to show important milestones, launches, or anything else, right alongside your data."
 msgstr "在Metabase中添加事件，在你的数据旁边显示重要的里程碑、发布或其他任何事情。"
 
 #: frontend/src/metabase/timelines/collections/components/TimelineEmptyState/TimelineEmptyState.tsx:70
-msgid "Events in Metabase let you see important milestones, launches, or anything else, right alongside your data."
+msgid "Events in Actuals let you see important milestones, launches, or anything else, right alongside your data."
 msgstr "Metabase中的事件让你看到重要的里程碑、启动或其他任何事情，就在你的数据旁边。"
 
 #: frontend/src/metabase/timelines/collections/components/TimelineCard/TimelineCard.tsx:52
@@ -22683,11 +22683,11 @@ msgid "Move {0}"
 msgstr "移动 {0}"
 
 #: frontend/src/metabase/timelines/questions/components/TimelineEmptyState/TimelineEmptyState.tsx:30
-msgid "Add events to Metabase to show helpful context alongside your data."
+msgid "Add events to Actuals to show helpful context alongside your data."
 msgstr "将事件添加到Metabase中，以显示与你的数据有关的有用背景。"
 
 #: frontend/src/metabase/timelines/questions/components/TimelineEmptyState/TimelineEmptyState.tsx:31
-msgid "Events in Metabase let you see helpful context alongside your data."
+msgid "Events in Actuals let you see helpful context alongside your data."
 msgstr "Metabase中的事件功能，为您在数据周围显示有用的上下文信息。"
 
 #: frontend/src/metabase/admin/datamodel/metadata/components/MetadataTable/MetadataTable.tsx:39
@@ -22695,7 +22695,7 @@ msgid "Original schema"
 msgstr "原始模式"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:98
-msgid "Click the button below to begin creating your Slack App using the Metabase configuration."
+msgid "Click the button below to begin creating your Slack App using the Actuals configuration."
 msgstr "点击下面的按钮，开始使用Metabase配置创建你的Slack应用程序。"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:99
@@ -22962,7 +22962,7 @@ msgid "Switch to visualization"
 msgstr "切换到可视化"
 
 #: frontend/src/metabase/admin/settings/components/widgets/GroupMappingsWidget.jsx:139
-msgid "Mappings allow Metabase to automatically add and remove users from groups based on the membership information provided by the\n"
+msgid "Mappings allow Actuals to automatically add and remove users from groups based on the membership information provided by the\n"
 "directory server. Users are only ever added to or removed from mapped groups."
 msgstr "映射允许Metabase根据目录服务器提供的成员信息，自动从组中添加和删除用户。\n"
 "目录服务器提供的成员信息。用户只被添加到映射的组中或从组中删除。"
@@ -23333,7 +23333,7 @@ msgid "Saved questions"
 msgstr "保存的问题"
 
 #: frontend/src/metabase/admin/settings/selectors.js:598
-msgid "Enabling cache will create tables for your models in a dedicated schema and Metabase will refresh them on a schedule. Questions based on your models will query these tables. {0}."
+msgid "Enabling cache will create tables for your models in a dedicated schema and Actuals will refresh them on a schedule. Questions based on your models will query these tables. {0}."
 msgstr "启用缓存将在一个专门的模式中为你的模型创建表，Metabase将按计划刷新它们。基于你的模型的问题将查询这些表。{0}."
 
 #: frontend/src/metabase/admin/settings/selectors.js:439
@@ -23621,7 +23621,7 @@ msgid "Move, archive, and more..."
 msgstr "移动、归档和其他..."
 
 #: frontend/src/metabase/sharing/components/SlackChannelField/SlackChannelField.tsx:71
-msgid "In order to send subscriptions and alerts to private Slack channels, you must first add the Metabase bot to them."
+msgid "In order to send subscriptions and alerts to private Slack channels, you must first add the Actuals bot to them."
 msgstr "想要发送订阅和报警到私人Slack频道，你需要首先添加Metabase bot。"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/components/ColorResetModal/ColorResetModal.tsx:23
@@ -23734,7 +23734,7 @@ msgid "Display our little friend on the homepage"
 msgstr "在主页上显示我们的小伙伴"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingCustomizationWidget/EmbeddingCustomizationWidget.tsx:13
-msgid "In order to remove the Metabase logo from embeds, you can always upgrade to {0}"
+msgid "In order to remove the Actuals logo from embeds, you can always upgrade to {0}"
 msgstr "想要移除嵌入的Metabase商标，你可以升级到 {0}"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingCustomizationWidget/EmbeddingCustomizationWidget.tsx:15
@@ -23746,7 +23746,7 @@ msgid "embedding the entire metabase app"
 msgstr "嵌入整个metabase应用"
 
 #: frontend/src/metabase/admin/settings/components/widgets/FullAppEmbeddingLinkWidget/FullAppEmbeddingLinkWidget.tsx:23
-msgid "With {0} you can embed the full Metabase app and enable your users to drill-through to charts, browse collections, and use the graphical query builder. You can also get priority support, more tools to help you share your insights with your teams and powerful options to help you create seamless, interactive data experiences for your customers."
+msgid "With {0} you can embed the full Actuals app and enable your users to drill-through to charts, browse collections, and use the graphical query builder. You can also get priority support, more tools to help you share your insights with your teams and powerful options to help you create seamless, interactive data experiences for your customers."
 msgstr "通过{0}，您可以嵌入完整的Metabase应用程序，并使用户能够钻取图表、浏览集合和使用图形查询生成器。您还可以获得优先支持、更多帮助您与团队分享见解的工具，以及帮助您为客户创造无缝、交互式数据体验的强大选项。"
 
 #: frontend/src/metabase/admin/settings/components/widgets/FullAppEmbeddingLinkWidget/FullAppEmbeddingLinkWidget.tsx:16
@@ -23795,7 +23795,7 @@ msgid "Embedding"
 msgstr "嵌入"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingSwitchWidget/EmbeddingSwitchWidget.tsx:17
-msgid "Embed dashboards, questions, or the entire Metabase app into your application. Integrate with your server code to create a secure environment, limited to specific users or organizations."
+msgid "Embed dashboards, questions, or the entire Actuals app into your application. Integrate with your server code to create a secure environment, limited to specific users or organizations."
 msgstr "将仪表板、问题或整个Metabase应用程序嵌入到应用程序中。可与你自己的服务器代码集成，创建一个安全的环境，限制于特定用户或组织使用。"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingLegalese/EmbeddingLegalese.tsx:28
@@ -23812,13 +23812,13 @@ msgid "More details"
 msgstr "更多细节"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingLegalese/EmbeddingLegalese.tsx:43
-msgid "When you embed charts or dashboards from Metabase in your own\n"
+msgid "When you embed charts or dashboards from Actuals in your own\n"
 "application, that application isn't subject to the Affero General Public\n"
-"License that covers the rest of Metabase, provided you keep the Metabase\n"
-"logo and the \"Powered by Metabase\" visible on those embeds."
+"License that covers the rest of Actuals, provided you keep the Actuals\n"
+"logo and the \"Powered by Actuals\" visible on those embeds."
 msgstr "当您将Metabase中的图表或仪表板嵌入到自己的数据库中时应用程序，that application isn't subject to the Affero General Public\n"
-"License that covers the rest of Metabase, provided you keep the Metabase\n"
-"logo and the \"Powered by Metabase\" visible on those embeds."
+"License that covers the rest of Actuals, provided you keep the Actuals\n"
+"logo and the \"Powered by Actuals\" visible on those embeds."
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingLegalese/EmbeddingLegalese.tsx:49
 msgid "Your should, however, read the license text linked above as that is the\n"
@@ -23860,7 +23860,7 @@ msgid "1. Click the button below and create your Slack App"
 msgstr "1.点击下面的按钮开始创建你的Slack应用"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:103
-msgid "First, {0} using the Metabase configuration. Once created, click “${ 1 }” to authorize it."
+msgid "First, {0} using the Actuals configuration. Once created, click “${ 1 }” to authorize it."
 msgstr "首先，{0}使用Metabase配置。一旦创建，点击 “${ 1 }”  授权。"
 
 #: frontend/src/metabase/admin/settings/slack/components/SlackSetup/SlackSetup.tsx:104
@@ -24008,8 +24008,8 @@ msgid "Heavy"
 msgstr "黑体"
 
 #: enterprise/frontend/src/metabase-enterprise/embedding/components/EmbeddingAppOriginDescription/EmbeddingAppOriginDescription.tsx:8
-msgid "With this Pro/Enterprise feature you can embed the full Metabase app. Enable your users to drill-through to charts, browse collections, and use the graphical query builder. {0}"
-msgstr "通过这个 Pro/Enterprise 特性，你可以嵌入完整的 Metabase 应用程序。允许用户钻取图表、浏览集合和使用图形查询生成器。{0}"
+msgid "With this Pro/Enterprise feature you can embed the full Actuals app. Enable your users to drill-through to charts, browse collections, and use the graphical query builder. {0}"
+msgstr "通过这个 Pro/Enterprise 特性，你可以嵌入完整的 Actuals 应用程序。允许用户钻取图表、浏览集合和使用图形查询生成器。{0}"
 
 #: enterprise/frontend/src/metabase-enterprise/embedding/index.js:29
 msgid "Authorized origins"
@@ -24100,7 +24100,7 @@ msgstr "全应用嵌入"
 
 #: frontend/src/metabase/admin/settings/selectors.js:481
 #, fuzzy
-msgid "With this Pro/Enterprise feature you can embed the full Metabase app. Enable your users to drill-through to charts, browse collections, and use the graphical query builder."
+msgid "With this Pro/Enterprise feature you can embed the full Actuals app. Enable your users to drill-through to charts, browse collections, and use the graphical query builder."
 msgstr "通过这个专业/企业版功能，你可以嵌入完整的Metabase应用程序。使你的用户能够深入到图表中，浏览集合，并使用可视化查询生成器。"
 
 #: frontend/src/metabase/admin/settings/selectors.js:500
@@ -24276,7 +24276,7 @@ msgid "Boolean indicating whether a Snowplow collector is available to receive a
 msgstr "表示Snowplow收集器是否可以接收分析事件的布尔值。应通过Cypress测试中的环境变量或在本地开发期间设置。"
 
 #: metabase/analytics/snowplow.clj:84
-msgid "Unique identifier to be used in Snowplow analytics, to identify this instance of Metabase. This is a public setting since some analytics events are sent prior to initial setup."
+msgid "Unique identifier to be used in Snowplow analytics, to identify this instance of Actuals. This is a public setting since some analytics events are sent prior to initial setup."
 msgstr "唯一的身份标识被使用 Snowplow analytics中识别 Metabase实例.这是一个公共设置，因为一些分析事件在初始设置之前发送。"
 
 #: metabase/api/database.clj:737 metabase/driver/util.clj:68
@@ -24332,11 +24332,11 @@ msgstr "系统信息：\n"
 "{0}"
 
 #: metabase/driver/common.clj:159
-msgid "Metabase can scan the values present in each field in this database to enable checkbox filters in dashboards and questions. This can be a somewhat resource-intensive process, particularly if you have a very large database. When should Metabase automatically scan and cache field values?"
+msgid "Actuals can scan the values present in each field in this database to enable checkbox filters in dashboards and questions. This can be a somewhat resource-intensive process, particularly if you have a very large database. When should Actuals automatically scan and cache field values?"
 msgstr "Metabase可以扫描此数据库中每个字段中的值，以启用仪表板和问题中的复选框过滤器。这可能是一个资源密集型的过程，特别是如果您有一个非常大的数据库。Metabase何时应自动扫描和缓存字段值？"
 
 #: metabase/driver/common.clj:220
-msgid "If your database is behind a firewall, you may need to allow connections from our Metabase [Cloud IP addresses](https://www.metabase.com/cloud/docs/ip-addresses-to-whitelist.html):"
+msgid "If your database is behind a firewall, you may need to allow connections from our Actuals [Cloud IP addresses](https://www.metabase.com/cloud/docs/ip-addresses-to-whitelist.html):"
 msgstr "如果您的数据库位于防火墙之后，您可能需要允许来自我们的Metabase[Cloud IP addresses]的连接。\n"
 "(https://www.metabase.com/cloud/docs/ip-addresses-to-whitelist.html):"
 
@@ -24463,17 +24463,17 @@ msgid "[{0}] Model cache refresh failed for {1}"
 msgstr "[{0}] 模型缓存刷新失败 {1}"
 
 #: metabase/integrations/google.clj:87
-msgid "Google Sign-In token appears to be incorrect. Double check that it matches in Google and Metabase."
+msgid "Google Sign-In token appears to be incorrect. Double check that it matches in Google and Actuals."
 msgstr "Google 登录 token 显示不正确。请确认在 Google 和 Metabase是否一致。"
 
 #: metabase/integrations/slack.clj:22
 #, fuzzy
-msgid "Deprecated Slack API token for connecting the Metabase Slack bot. Please use a new Slack app integration instead."
+msgid "Deprecated Slack API token for connecting the Actuals Slack bot. Please use a new Slack app integration instead."
 msgstr "用于连接Metabase Slack机器人的Slack API令牌功能已经废弃。请使用新的Slack应用集成功能代替。"
 
 #: metabase/integrations/slack.clj:31
-msgid "Bot user OAuth token for connecting the Metabase Slack app. This should be used for all new Slack integrations starting in Metabase v0.42.0."
-msgstr "Bot 使用 OAuth token 连接 Metabase Slack app。在Metabase v0.42.0后将用在新的Slack integrations 。"
+msgid "Bot user OAuth token for connecting the Actuals Slack app. This should be used for all new Slack integrations starting in Actuals v0.42.0."
+msgstr "Bot 使用 OAuth token 连接 Actuals Slack app。在Metabase v0.42.0后将用在新的Slack integrations 。"
 
 #: metabase/integrations/slack.clj:44
 #, fuzzy
@@ -24526,7 +24526,7 @@ msgstr "不能更新FieldValues的类型或hash_key。"
 
 #: metabase/models/humanization.clj:79
 #, fuzzy
-msgid "To make table and field names more human-friendly, Metabase will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
+msgid "To make table and field names more human-friendly, Actuals will replace dashes and underscores in them with spaces. We’ll capitalize each word while at it, so ‘last_visited_at’ will become ‘Last Visited At’."
 msgstr "为了使表和字段的名称更加人性化，Metabase将用空格代替其中的破折号和下划线。我们将大写每个单词，所以'last_visited_at'将变成'Last Visited At'。"
 
 #: metabase/models/params.clj:40
@@ -24574,7 +24574,7 @@ msgstr "告诉我们在哪里可以找到每种字体重量的文件。你不需
 
 #: metabase/public_settings.clj:179
 #, fuzzy
-msgid "The default language for all users across the Metabase UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
+msgid "The default language for all users across the Actuals UI, system emails, pulses, and alerts. Users can individually override this default language from their own account settings."
 msgstr "所有用户在Metabase用户界面、系统邮件、pulses和警报中的默认语言。用户可以从自己的账户设置中单独设置自己默认语言。"
 
 #: metabase/public_settings.clj:722
@@ -25350,7 +25350,7 @@ msgstr "带有日期或日期时间值的列的名称。"
 msgid "Optional. The default is \"ISO\".\n"
 "- ISO: Week 1 starts on the Monday before the first Thursday of January.\n"
 "- US: Week 1 starts on Jan 1. All other weeks start on Sunday.\n"
-"- Instance: Week 1 starts on Jan 1. All other weeks start on the day defined in your Metabase localization settings."
+"- Instance: Week 1 starts on Jan 1. All other weeks start on the day defined in your Actuals localization settings."
 msgstr "可选的。默认为 \"ISO\"。\n"
 "- ISO：第一周从一月第一个星期四前的星期一开始。\n"
 "- 美国。第1周从1月1日开始，其他各周都从周日开始。\n"
@@ -26112,7 +26112,7 @@ msgid "Database required of {0} has changed from ''{1}'' to ''{2}''."
 msgstr "{0}的数据库要求从''{1}''变为''{2}''。"
 
 #: metabase/task.clj:168
-msgid "Metabase task scheduler disabled. Scheduled tasks will not be ran."
+msgid "Actuals task scheduler disabled. Scheduled tasks will not be ran."
 msgstr "Metabase任务调度器被禁用。预定的任务将不被运行。"
 
 #: metabase/util/schema.clj:148
@@ -26126,7 +26126,7 @@ msgid "{0} (optional)"
 msgstr "{0}（可选）"
 
 #: metabase_enterprise/advanced_config/file.clj:164
-msgid "Found config file at path {0}; Metabase will be initialized with values from this file"
+msgid "Found config file at path {0}; Actuals will be initialized with values from this file"
 msgstr "在路径{0}处找到了配置文件；元数据库将用该文件的值进行初始化"
 
 #: metabase_enterprise/advanced_config/file.clj:265
@@ -26190,7 +26190,7 @@ msgid "Invalid Collection ID(s). These Collections do not exist: {0}"
 msgstr "无效的ID（s）集合。这些集合不存在：{0}"
 
 #: metabase_enterprise/serialization/cmd.clj:95
-msgid "Loading serialized Metabase files from {0}"
+msgid "Loading serialized Actuals files from {0}"
 msgstr "从{0}加载序列化的Metabase文件"
 
 #: metabase_enterprise/serialization/v2/entity_ids.clj:67
@@ -26424,11 +26424,11 @@ msgid "Error reducing result rows: {0}"
 msgstr "减少结果行时出错：{0}"
 
 #: metabase/sample_data.clj:63
-msgid "Sample database could not be extracted to the plugins directory,which may result in slow startup times. Please set MB_PLUGINS_DIR to a writable directory and restart Metabase."
-msgstr "无法将示例数据库提取到插件目录，这可能会导致启动时间变慢。请将 MB_PLUGINS_DIR 设置为可写目录并重新启动 Metabase。"
+msgid "Sample database could not be extracted to the plugins directory,which may result in slow startup times. Please set MB_PLUGINS_DIR to a writable directory and restart Actuals."
+msgstr "无法将示例数据库提取到插件目录，这可能会导致启动时间变慢。请将 MB_PLUGINS_DIR 设置为可写目录并重新启动 Actuals。"
 
 #: metabase_enterprise/advanced_config/file.clj:261
-msgid "Metabase config files require a Premium token with the :advanced-config feature."
+msgid "Actuals config files require a Premium token with the :advanced-config feature."
 msgstr "元数据库配置文件需要具有 :advanced-config 功能的高级令牌。"
 
 #: 
@@ -26484,11 +26484,11 @@ msgid "This group's user membership will no longer be synced with the directory 
 msgstr "这个组的用户成员资格将不再与目录服务器同步。"
 
 #: frontend/src/metabase/admin/settings/components/widgets/GroupMappingsWidget/DeleteGroupMappingModal/DeleteGroupMappingModal.tsx:62
-msgid "What should happen with the groups themselves in Metabase?"
+msgid "What should happen with the groups themselves in Actuals?"
 msgstr "Metabase中的组本身应该如何处理？"
 
 #: frontend/src/metabase/admin/settings/components/widgets/GroupMappingsWidget/DeleteGroupMappingModal/DeleteGroupMappingModal.tsx:63
-msgid "What should happen with the group itself in Metabase?"
+msgid "What should happen with the group itself in Actuals?"
 msgstr "在Metabase中，该组本身应该发生什么？"
 
 #: frontend/src/metabase/admin/settings/components/widgets/GroupMappingsWidget/DeleteGroupMappingModal/DeleteGroupMappingModal.tsx:68
@@ -26520,7 +26520,7 @@ msgid "Synchronize Group Memberships"
 msgstr "同步组成员"
 
 #: frontend/src/metabase/admin/settings/components/widgets/GroupMappingsWidget/GroupMappingsWidget.jsx:123
-msgid "Mappings allow Metabase to automatically add and remove users from groups based on the membership information provided by the directory server. If a group isn‘t mapped, its membership won‘t be synced."
+msgid "Mappings allow Actuals to automatically add and remove users from groups based on the membership information provided by the directory server. If a group isn‘t mapped, its membership won‘t be synced."
 msgstr "映射允许Metabase根据目录服务器提供的成员信息，自动从组中添加和删除用户。如果一个组没有被映射，其成员资格将不会被同步。"
 
 #: frontend/src/metabase/admin/settings/components/widgets/GroupMappingsWidget/GroupMappingsWidget.jsx:128
@@ -26686,7 +26686,7 @@ msgid "This card does not support click mappings"
 msgstr "该卡不支持点击映射"
 
 #: frontend/src/metabase/databases/components/DatabaseCacheScheduleField/DatabaseCacheScheduleField.tsx:91
-msgid "When a user adds a new filter to a dashboard or a SQL question, Metabase will scan the field(s) mapped to that filter in order to show the list of selectable values."
+msgid "When a user adds a new filter to a dashboard or a SQL question, Actuals will scan the field(s) mapped to that filter in order to show the list of selectable values."
 msgstr "当用户在仪表盘或SQL问题中添加一个新的过滤器时，Metabase将扫描映射到该过滤器的字段，以显示可选择的值的列表。"
 
 #: frontend/src/metabase/models/containers/FormModelPicker/FormModelPicker.tsx:25
@@ -27257,11 +27257,11 @@ msgid "Error preparing statement: {0}"
 msgstr "准备语句时出错。{0}"
 
 #: metabase/driver/util.clj:330
-msgid "Comma separated names of {0} that should NOT appear in Metabase"
+msgid "Comma separated names of {0} that should NOT appear in Actuals"
 msgstr "逗号分隔的{0}名称，不应出现在元数据库中。"
 
 #: metabase/driver/util.clj:323
-msgid "Comma separated names of {0} that should appear in Metabase"
+msgid "Comma separated names of {0} that should appear in Actuals"
 msgstr "应该出现在元数据库中的以逗号分隔的{0}名称"
 
 #: metabase/driver/util.clj:325 metabase/driver/util.clj:332
@@ -27363,7 +27363,7 @@ msgid "No current user found"
 msgstr "当前用户未找到"
 
 #: frontend/src/metabase/dashboard/components/ClickBehaviorSidebar/utils.ts:30
-msgid "Open the Metabase drill-through menu"
+msgid "Open the Actuals drill-through menu"
 msgstr "打开Metabase钻探菜单"
 
 #: frontend/src/metabase/query_builder/components/expressions/ExpressionWidget.tsx:127
@@ -27532,13 +27532,13 @@ msgid "Tired of manually managing people and groups?"
 msgstr "厌倦了手动管理人员和组？"
 
 #: frontend/src/metabase/admin/people/components/NudgeToPro.tsx:18
-msgid "Get single-sign on (SSO) via SAML, JWT, or LDAP with Metabase Pro"
+msgid "Get single-sign on (SSO) via SAML, JWT, or LDAP with Actuals Pro"
 msgstr "使用Metabase Pro通过SAML、JWT或LDAP实现单点登录（SSO）"
 
 #: frontend/src/metabase/admin/permissions/components/ApplicationPermissionsHelp/ApplicationPermissionsHelp.tsx:10
 #: frontend/src/metabase/admin/permissions/components/CollectionPermissionsHelp/CollectionPermissionsHelp.tsx:11
 #: frontend/src/metabase/admin/permissions/components/DataPermissionsHelp/DataPermissionsHelp.tsx:29
-msgid "People can be members of multiple groups, and Metabase grants them the most permissive level of access across all of a person's groups."
+msgid "People can be members of multiple groups, and Actuals grants them the most permissive level of access across all of a person's groups."
 msgstr "人员可以是多个组的成员，Metabase会授予他们在所在的组中享有的最高权限级别。"
 
 #: frontend/src/metabase/admin/permissions/components/DataPermissionsHelp/DataPermissionsHelp.tsx:44
@@ -27554,7 +27554,7 @@ msgid "Impersonated (Pro)"
 msgstr "切换身份 (Pro)"
 
 #: frontend/src/metabase/admin/permissions/components/DataPermissionsHelp/DataPermissionsHelp.tsx:59
-msgid "Impersonation associates a Metabase group with database-defined roles and their privileges. Metabase queries made by this group will respect the grants given to the database roles. You can use impersonation to give a group access to the native/SQL editor, while restricting the group's access to data based on a specific database role."
+msgid "Impersonation associates a Actuals group with database-defined roles and their privileges. Actuals queries made by this group will respect the grants given to the database roles. You can use impersonation to give a group access to the native/SQL editor, while restricting the group's access to data based on a specific database role."
 msgstr "模拟关联了一个Metabase组与数据库定义的角色和它们的权限。由该组发出的Metabase查询将遵守授予数据库角色的权限。您可以使用模拟来授予组访问本地/SQL编辑器的权限，同时基于特定数据库角色限制组对数据的访问权限。"
 
 #: frontend/src/metabase/admin/permissions/components/DataPermissionsHelp/DataPermissionsHelp.tsx:66
@@ -27638,7 +27638,7 @@ msgid "{0} about collection permissions"
 msgstr "关于集合权限的{0}"
 
 #: frontend/src/metabase/collections/components/CollectionHeader/CollectionUploadInfoModal.tsx:26
-msgid "Uploads CSVs to Metabase"
+msgid "Uploads CSVs to Actuals"
 msgstr "将CSV文件上传到Metabase"
 
 #: frontend/src/metabase/collections/components/CollectionHeader/CollectionUploadInfoModal.tsx:35
@@ -27799,7 +27799,7 @@ msgid "Navigation bar"
 msgstr "导航栏"
 
 #: frontend/src/metabase/nav/components/DatabasePromptBanner/DatabasePromptBanner.tsx:41
-msgid "Connect to your database to get the most from Metabase."
+msgid "Connect to your database to get the most from Actuals."
 msgstr "连接到您的数据库，以充分利用Metabase。"
 
 #: frontend/src/metabase/nav/components/DatabasePromptBanner/DatabasePromptBanner.tsx:48
@@ -27917,7 +27917,7 @@ msgid "Applications permissions"
 msgstr "应用程序权限"
 
 #: frontend/src/metabase/admin/permissions/components/ApplicationPermissionsHelp/ApplicationPermissionsHelp.tsx:15
-msgid "Application settings are useful for granting groups access to some, but not all, of Metabase’s administrative features."
+msgid "Application settings are useful for granting groups access to some, but not all, of Actuals’s administrative features."
 msgstr "应用程序设置对于授予组访问Metabase的某些但不是全部管理功能都非常有用。"
 
 #: frontend/src/metabase/admin/permissions/components/ApplicationPermissionsHelp/ApplicationPermissionsHelp.tsx:17
@@ -28210,7 +28210,7 @@ msgid "Map a user attribute to database roles"
 msgstr "将用户属性映射到数据库角色"
 
 #: enterprise/frontend/src/metabase-enterprise/advanced_permissions/components/ImpersonationModal/ImpersonationModalView.tsx:89
-msgid "When the person runs a query (including native queries), Metabase will impersonate the privileges of the database role you associate with the user attribute."
+msgid "When the person runs a query (including native queries), Actuals will impersonate the privileges of the database role you associate with the user attribute."
 msgstr "当用户运行查询（包括本地查询）时，Metabase会模拟与用户属性关联的数据库角色的权限。"
 
 #: enterprise/frontend/src/metabase-enterprise/advanced_permissions/components/ImpersonationModal/ImpersonationModalView.tsx:100
@@ -28227,11 +28227,11 @@ msgid "Edit user settings"
 msgstr "编辑用户设置"
 
 #: enterprise/frontend/src/metabase-enterprise/advanced_permissions/components/ImpersonationWarning/ImpersonationWarning.tsx:23
-msgid "Make sure the main database credential has access to everything different user groups may need access to. It's what Metabase uses to sync table information."
+msgid "Make sure the main database credential has access to everything different user groups may need access to. It's what Actuals uses to sync table information."
 msgstr "确保主数据库凭据具有访问不同用户组可能需要访问的所有内容。这是Metabase用于同步表信息的方式。"
 
 #: enterprise/frontend/src/metabase-enterprise/advanced_permissions/components/ImpersonationWarning/ImpersonationWarning.tsx:20
-msgid "{0} is the database user Metabase is using to connect to {1}. Make sure that {2} has access to everything in {3} that all Metabase groups may need access to, as that database user account is what Metabase uses to sync table information."
+msgid "{0} is the database user Actuals is using to connect to {1}. Make sure that {2} has access to everything in {3} that all Actuals groups may need access to, as that database user account is what Actuals uses to sync table information."
 msgstr "{0} 是Metabase用来连接{1}的数据库用户。请确保{2}可以访问{3}中所有Metabase组可能需要访问的内容，因为该数据库用户账户是Metabase用来同步表信息的。"
 
 #: enterprise/frontend/src/metabase-enterprise/advanced_permissions/components/ImpersonationWarning/ImpersonationWarning.tsx:67
@@ -28348,7 +28348,7 @@ msgid "None of your databases are compatible with this version of the uploads fe
 msgstr "您的数据库与此版本的上传功能不兼容。"
 
 #: frontend/src/metabase/admin/settings/components/UploadSettings/UploadSettings.tsx:297
-msgid "Metabase currently supports {0} for uploads and needs a connection with write privileges."
+msgid "Actuals currently supports {0} for uploads and needs a connection with write privileges."
 msgstr "Metabase目前支持{0}的上传，并需要具有写权限的连接。"
 
 #: frontend/src/metabase/admin/settings/components/UploadSettings/UploadSettings.tsx:298
@@ -28517,8 +28517,8 @@ msgid "\"{0}\""
 msgstr "\"{0}\""
 
 #: metabase/core.clj:152
-msgid "Metabase Initialization COMPLETE in {0}"
-msgstr "Metabase 初始化完成，用时 {0}"
+msgid "Actuals Initialization COMPLETE in {0}"
+msgstr "Actuals 初始化完成，用时 {0}"
 
 #: metabase/driver/bigquery_cloud_sdk.clj:245
 msgid "Warning: missing type mapping for parsing BigQuery results column {0} of type {1}."
@@ -28545,7 +28545,7 @@ msgid "Sorry, the row you''re trying to update doesn''t exist"
 msgstr "抱歉，您尝试更新的行不存在"
 
 #: metabase/driver/sql_jdbc/execute.clj:284
-msgid "{0} is deprecated in Metabase 0.47.0. Implement {1} instead."
+msgid "{0} is deprecated in Actuals 0.47.0. Implement {1} instead."
 msgstr "在Metabase 0.47.0中，{0}已经被弃用，请改用{1}。"
 
 #: metabase/events/view_log.clj:29
@@ -29015,7 +29015,7 @@ msgid "Export to {0} complete!"
 msgstr "导出到{0}完成！"
 
 #: metabase_enterprise/serialization/cmd.clj:230
-msgid "Exporting Metabase to {0}"
+msgid "Exporting Actuals to {0}"
 msgstr "将Metabase导出到{0}"
 
 #: metabase_enterprise/serialization/v2/load.clj:80
@@ -29152,7 +29152,7 @@ msgid "Upload error details"
 msgstr "上传错误详情"
 
 #: frontend/src/metabase/home/components/CustomHomePageModal/CustomHomePageModal.tsx:108
-msgid "Pick a dashboard to serve as the homepage. If people lack permissions to view the selected dashboard, Metabase will redirect them to the default homepage. You can update or reset the homepage at any time in Admin Settings > Settings > General."
+msgid "Pick a dashboard to serve as the homepage. If people lack permissions to view the selected dashboard, Actuals will redirect them to the default homepage. You can update or reset the homepage at any time in Admin Settings > Settings > General."
 msgstr "选择一个仪表板作为主页。如果用户没有权限查看所选仪表板，Metabase将会重定向到默认主页。您可以随时在管理设置>设置>常规中更新或重置主页。"
 
 #: frontend/src/metabase/redux/uploads.ts:68
@@ -29160,7 +29160,7 @@ msgid "You cannot upload files larger than {0}mb"
 msgstr "你无法上传大于{0}mb的文件"
 
 #: metabase/public_settings.clj:104
-msgid "Pick a dashboard to serve as the homepage. If people lack permissions to view the selected dashboard, Metabase will redirect them to the default homepage."
+msgid "Pick a dashboard to serve as the homepage. If people lack permissions to view the selected dashboard, Actuals will redirect them to the default homepage."
 msgstr "选择一个仪表板作为首页。如果用户没有权限查看所选仪表板，则Metabase将重定向他们到默认首页。"
 
 #: metabase/public_settings.clj:333
@@ -29283,11 +29283,11 @@ msgid "Interactive embedding"
 msgstr "互动嵌入"
 
 #: frontend/src/metabase/admin/settings/selectors.js:507
-msgid "With this Pro/Enterprise feature, you can let your customers query, visualize, and drill-down on their data with the full functionality of Metabase in your app or website, complete with your branding. Set permissions with SSO, down to the row- or column-level, so people only see what they need to."
-msgstr "有了这项专业版/企业版功能，您就可以让客户在您的应用程序或网站中使用 Metabase 的全部功能对数据进行查询、可视化和深入研究，并完整地使用您的品牌。使用 SSO 设置权限，直至行或列级别，这样人们只能看到他们需要的内容。"
+msgid "With this Pro/Enterprise feature, you can let your customers query, visualize, and drill-down on their data with the full functionality of Actuals in your app or website, complete with your branding. Set permissions with SSO, down to the row- or column-level, so people only see what they need to."
+msgstr "有了这项专业版/企业版功能，您就可以让客户在您的应用程序或网站中使用 Actuals 的全部功能对数据进行查询、可视化和深入研究，并完整地使用您的品牌。使用 SSO 设置权限，直至行或列级别，这样人们只能看到他们需要的内容。"
 
 #: frontend/src/metabase/admin/settings/components/widgets/FullAppEmbeddingLinkWidget/FullAppEmbeddingLinkWidget.tsx:14
-msgid "With {0} you can embed the full Metabase app to allow people to drill-through to charts, browse collections, and use the graphical query builder. You can also get priority support, more tools to help you share your insights with your teams and powerful options to help you create seamless, interactive data experiences for your customers."
+msgid "With {0} you can embed the full Actuals app to allow people to drill-through to charts, browse collections, and use the graphical query builder. You can also get priority support, more tools to help you share your insights with your teams and powerful options to help you create seamless, interactive data experiences for your customers."
 msgstr "有了{0}，您就可以嵌入完整的Metabase应用程序，让用户可以深入查看图表、浏览集合并使用图形查询生成器。您还可以获得优先支持、更多帮助您与团队分享见解的工具，以及帮助您为客户创建无缝、交互式数据体验的强大选项。"
 
 #: metabase/analytics/prometheus.clj:210
@@ -29364,8 +29364,8 @@ msgid "A value that is true iff the metabase instance has one or more users regi
 msgstr "如果元数据库实例注册了一个或多个用户，则该值为 true。"
 
 #: metabase_enterprise/advanced_config/file.clj:261
-msgid "Metabase config files require a Premium token with the :config-text-file feature."
-msgstr "Metabase 配置文件需要带有 :config-text-file 功能的 Premium 令牌。"
+msgid "Actuals config files require a Premium token with the :config-text-file feature."
+msgstr "Actuals 配置文件需要带有 :config-text-file 功能的 Premium 令牌。"
 
 #: metabase_enterprise/advanced_config/models/pulse_channel.clj:10
 msgid "Allowed email address domain(s) for new Dashboard Subscriptions and Alerts. To specify multiple domains, separate each domain with a comma, with no space in between. To allow all domains, leave the field empty. This setting doesn’t affect existing subscriptions."
@@ -29580,7 +29580,7 @@ msgid "{0} has been auto-connected with filters with the same field."
 msgstr "{0} 已与具有相同字段的筛选器自动连接。"
 
 #: frontend/src/metabase/nav/components/WhatsNewNotification/WhatsNewNotification.tsx:65
-msgid "Metabase has been updated"
+msgid "Actuals has been updated"
 msgstr "元数据库已更新"
 
 #: frontend/src/metabase/nav/components/WhatsNewNotification/WhatsNewNotification.tsx:75
@@ -29784,8 +29784,8 @@ msgid "Strict (not recommended)"
 msgstr "严格（不推荐）"
 
 #: enterprise/frontend/src/metabase-enterprise/embedding/index.js:51
-msgid "Never allows cookies to be sent on a cross-site request. Warning: this will prevent users from following external links to Metabase."
-msgstr "绝不允许在跨站请求中发送 cookie。警告：这将阻止用户跟踪 Metabase 的外部链接。"
+msgid "Never allows cookies to be sent on a cross-site request. Warning: this will prevent users from following external links to Actuals."
+msgstr "绝不允许在跨站请求中发送 cookie。警告：这将阻止用户跟踪 Actuals 的外部链接。"
 
 #: enterprise/frontend/src/metabase-enterprise/embedding/index.js:56
 msgid "Allows all cross-site requests. Incompatible with most Safari and iOS-based browsers."
@@ -29919,7 +29919,7 @@ msgid "Cake"
 msgstr "蛋糕"
 
 #: enterprise/frontend/src/metabase-enterprise/audit_app/components/OpenInMetabase.jsx:9
-msgid "Open in Metabase"
+msgid "Open in Actuals"
 msgstr "在元数据库中打开"
 
 #: enterprise/frontend/src/metabase-enterprise/audit_app/containers/AuditApp.jsx:35
@@ -29931,7 +29931,7 @@ msgstr "本审计部分已升级为\n"
 " 并将在今后的版本中删除。"
 
 #: enterprise/frontend/src/metabase-enterprise/audit_app/containers/AuditApp.jsx:42
-msgid "Metabase Analytics Collection"
+msgid "Actuals Analytics Collection"
 msgstr "元数据库分析集"
 
 #: enterprise/frontend/src/metabase-enterprise/audit_app/containers/AuditApp.jsx:48
@@ -29991,8 +29991,8 @@ msgid "SameSite cookie setting"
 msgstr "SameSite cookie 设置"
 
 #: enterprise/frontend/src/metabase-enterprise/embedding/components/EmbeddingAppSameSiteCookieDescription/EmbeddingAppSameSiteCookieDescription.tsx:33
-msgid "Determines whether or not cookies are allowed to be sent on cross-site requests. You’ll likely need to change this to None if your embedding application is hosted under a different domain than Metabase. Otherwise, leave it set to Lax, as it's more secure."
-msgstr "决定是否允许在跨站请求中发送 cookie。如果嵌入应用程序的主机与 Metabase 的域不同，则可能需要将其更改为 \"无\"。否则，请将其设置为 \"宽松\"，因为这样更安全。"
+msgid "Determines whether or not cookies are allowed to be sent on cross-site requests. You’ll likely need to change this to None if your embedding application is hosted under a different domain than Actuals. Otherwise, leave it set to Lax, as it's more secure."
+msgstr "决定是否允许在跨站请求中发送 cookie。如果嵌入应用程序的主机与 Actuals 的域不同，则可能需要将其更改为 \"无\"。否则，请将其设置为 \"宽松\"，因为这样更安全。"
 
 #: enterprise/frontend/src/metabase-enterprise/embedding/components/EmbeddingAppSameSiteCookieDescription/EmbeddingAppSameSiteCookieDescription.tsx:34
 msgid "If you set this to None, you'll have to use HTTPS (unless you're just embedding locally), or browsers will reject the request. {0}"
@@ -30458,8 +30458,8 @@ msgid "Usage insights"
 msgstr "使用心得"
 
 #: enterprise/frontend/src/metabase-enterprise/collections/components/CollectionInstanceAnalyticsIcon.tsx:37
-msgid "This is a read-only Metabase Analytics {0}."
-msgstr "这是只读 Metabase 分析 {0}。"
+msgid "This is a read-only Actuals Analytics {0}."
+msgstr "这是只读 Actuals 分析 {0}。"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/components/HelpLinkSettings/HelpLinkSettings.tsx:45
 msgid "This field can't be left empty."
@@ -30470,8 +30470,8 @@ msgid "This needs to be an \"http://\", \"https://\" or \"mailto:\" URL."
 msgstr "这需要是一个 \"http://\"、\"https://\"或 \"mailto: \"URL。"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/components/HelpLinkSettings/HelpLinkSettings.tsx:63
-msgid "Link to Metabase help"
-msgstr "Metabase 帮助链接"
+msgid "Link to Actuals help"
+msgstr "Actuals 帮助链接"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/components/HelpLinkSettings/HelpLinkSettings.tsx:64
 msgid "Hide it"
@@ -30490,13 +30490,13 @@ msgid "Enter a URL it should go to"
 msgstr "输入 URL，它应该转到"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/components/MetabaseLinksToggleWidget/MetabaseLinksToggleDescription.tsx:7
-msgid "Control the visibility of links to Metabase documentation and Metabase references in your instance. {0}"
-msgstr "控制实例中 Metabase 文档链接和 Metabase 引用的可见性。{0}"
+msgid "Control the visibility of links to Actuals documentation and Actuals references in your instance. {0}"
+msgstr "控制实例中 Actuals 文档链接和 Actuals 引用的可见性。{0}"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/components/MetabaseLinksToggleDescription.tsx:36
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/components/MetabaseLinksToggleWidget/MetabaseLinksToggleDescription.tsx:18
-msgid "This affects all links in the product experience (outside of the admin panel) that point to Metabase.com URLs."
-msgstr "这会影响产品体验中（管理面板之外）指向 Metabase.com URL 的所有链接。"
+msgid "This affects all links in the product experience (outside of the admin panel) that point to Actuals.com URLs."
+msgstr "这会影响产品体验中（管理面板之外）指向 Actuals.com URL 的所有链接。"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/components/MetabaseLinksToggleDescription.tsx:39
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/components/MetabaseLinksToggleWidget/MetabaseLinksToggleDescription.tsx:21
@@ -30620,8 +30620,8 @@ msgid "Replace with…"
 msgstr "替换为..."
 
 #: frontend/src/metabase/home/components/EmbedMinimalHomepage/EmbedMinimalHomepage.tsx:36
-msgid "Get started with Embedding Metabase in your app"
-msgstr "开始在应用程序中嵌入 Metabase"
+msgid "Get started with Embedding Actuals in your app"
+msgstr "开始在应用程序中嵌入 Actuals"
 
 #: frontend/src/metabase/home/components/EmbedMinimalHomepage/EmbedMinimalHomepage.tsx:40
 msgid "As you expressed interest in Embedding, follow these steps to start"
@@ -30722,12 +30722,12 @@ msgid "Enable users to download data from this embed"
 msgstr "使用户能够从该嵌入下载数据"
 
 #: frontend/src/metabase/public/components/EmbedModal/StaticEmbedSetupPane/AppearanceSettings.tsx:190
-msgid "Removing the “Powered by Metabase” banner"
-msgstr "移除 \"Powered by Metabase \"横幅"
+msgid "Removing the “Powered by Actuals” banner"
+msgstr "移除 \"Powered by Actuals \"横幅"
 
 #: frontend/src/metabase/public/components/EmbedModal/StaticEmbedSetupPane/AppearanceSettings.tsx:193
-msgid "This banner appears on all static embeds created with the Metabase open source version. You’ll need to upgrade to {0} to remove the banner."
-msgstr "该横幅会出现在所有使用 Metabase 开源版本创建的静态嵌入上。您需要升级到{0}才能移除该横幅。"
+msgid "This banner appears on all static embeds created with the Actuals open source version. You’ll need to upgrade to {0} to remove the banner."
+msgstr "该横幅会出现在所有使用 Actuals 开源版本创建的静态嵌入上。您需要升级到{0}才能移除该横幅。"
 
 #: frontend/src/metabase/public/components/EmbedModal/StaticEmbedSetupPane/AppearanceSettings.tsx:208
 msgid "Dashboard title"
@@ -30952,8 +30952,8 @@ msgid "Configure your parameters' types and properties here. The values for thes
 msgstr "在此配置参数的类型和属性。这些参数的值可以来自用户输入，也可以来自仪表盘过滤器。"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingOption/EmbeddingOption.tsx:61
-msgid "A \"powered by Metabase\" banner appears on static embeds. You can {0} to remove it."
-msgstr "静态嵌入程序上会出现 \"powered by Metabase\"（由 Metabase 提供）横幅。您可以 {0} 删除它。"
+msgid "A \"powered by Actuals\" banner appears on static embeds. You can {0} to remove it."
+msgstr "静态嵌入程序上会出现 \"powered by Actuals\"（由 Actuals 提供）横幅。您可以 {0} 删除它。"
 
 #: frontend/src/metabase/admin/settings/components/widgets/EmbeddingOption/EmbeddingOption.tsx:63
 msgid "upgrade to a paid plan"
@@ -30993,8 +30993,8 @@ msgid "Set it up"
 msgstr "设置"
 
 #: frontend/src/metabase/public/components/EmbedModal/SelectEmbedTypePane/InteractiveEmbeddingCTA/InteractiveEmbeddingCTA.tsx:34
-msgid "Give your customers the full power of Metabase in your own app, with SSO, advanced permissions, customization, and more."
-msgstr "通过 SSO、高级权限、自定义等功能，在您自己的应用程序中为客户提供 Metabase 的全部功能。"
+msgid "Give your customers the full power of Actuals in your own app, with SSO, advanced permissions, customization, and more."
+msgstr "通过 SSO、高级权限、自定义等功能，在您自己的应用程序中为客户提供 Actuals 的全部功能。"
 
 #: frontend/src/metabase/public/components/EmbedModal/SelectEmbedTypePane/InteractiveEmbeddingCTA/InteractiveEmbeddingCTA.tsx:62
 msgid "Pro"
@@ -31082,8 +31082,8 @@ msgid "Which group should this key belong to? The key will have the same permiss
 msgstr "该密钥应属于哪个组？该密钥将拥有授予该组的相同权限。"
 
 #: frontend/src/metabase/admin/settings/components/ApiKeys/CreateApiKeyModal.tsx:67
-msgid "We don't version the Metabase API. We rarely change API endpoints, and almost never remove them, but if you write code that relies on the API, there's a chance you might have to update your code in the future."
-msgstr "我们不会对 Metabase API 进行版本更新。我们很少更改 API 端点，也几乎从不删除这些端点，但如果您编写的代码依赖于 API，那么将来有可能需要更新您的代码。"
+msgid "We don't version the Actuals API. We rarely change API endpoints, and almost never remove them, but if you write code that relies on the API, there's a chance you might have to update your code in the future."
+msgstr "我们不会对 Actuals API 进行版本更新。我们很少更改 API 端点，也几乎从不删除这些端点，但如果您编写的代码依赖于 API，那么将来有可能需要更新您的代码。"
 
 #: frontend/src/metabase/admin/settings/auth/components/ApiKeysAuthCard.tsx:15
 #: frontend/src/metabase/admin/settings/components/ApiKeys/ManageApiKeys.tsx:140
@@ -31225,12 +31225,12 @@ msgstr "我还不确定"
 
 #: frontend/src/metabase/setup/components/UsageQuestionStep/UsageQuestionStep.tsx:41
 #: frontend/src/metabase/setup/components/UsageQuestionStep/UsageQuestionStep.tsx:52
-msgid "What will you use Metabase for?"
-msgstr "Metabase 有什么用途？"
+msgid "What will you use Actuals for?"
+msgstr "Actuals 有什么用途？"
 
 #: frontend/src/metabase/setup/components/UsageQuestionStep/UsageQuestionStep.tsx:62
-msgid "Let us know your plans with Metabase so that we can best guide you"
-msgstr "让我们了解您使用 Metabase 的计划，以便我们为您提供最佳指导"
+msgid "Let us know your plans with Actuals so that we can best guide you"
+msgstr "让我们了解您使用 Actuals 的计划，以便我们为您提供最佳指导"
 
 #: frontend/src/metabase/setup/components/UsageQuestionStep/UsageQuestionStep.tsx:68
 msgid "Self-service analytics for my own company"
@@ -31366,20 +31366,20 @@ msgid "Compact number"
 msgstr "紧凑型编号"
 
 #: enterprise/frontend/src/metabase-enterprise/advanced_permissions/components/ImpersonationWarning/ImpersonationWarning.tsx:26
-msgid "You’re connecting Metabase to the {0} database using the credentials for the Redshift user {1}. For impersonation to work,  {2} must be a superuser in Redshift."
-msgstr "您正在使用 Redshift 用户 {1} 的凭据将 Metabase 连接到 {0} 数据库。要使冒充操作有效，{2} 必须是 Redshift 的超级用户。"
+msgid "You’re connecting Actuals to the {0} database using the credentials for the Redshift user {1}. For impersonation to work,  {2} must be a superuser in Redshift."
+msgstr "您正在使用 Redshift 用户 {1} 的凭据将 Actuals 连接到 {0} 数据库。要使冒充操作有效，{2} 必须是 Redshift 的超级用户。"
 
 #: enterprise/frontend/src/metabase-enterprise/advanced_permissions/components/ImpersonationWarning/ImpersonationWarning.tsx:41
-msgid "{0} is the database user Metabase is using to connect to your  {1} database. Make sure that {2} has access to everything in {3} that all Metabase groups may need access to, as that database user account is what Metabase uses to sync table information."
-msgstr "{0} 是 Metabase 用来连接 {1} 数据库的数据库用户。确保 {2} 可以访问所有 Metabase 组可能需要访问的 {3} 中的所有内容，因为该数据库用户账户是 Metabase 用来同步表信息的。"
+msgid "{0} is the database user Actuals is using to connect to your  {1} database. Make sure that {2} has access to everything in {3} that all Actuals groups may need access to, as that database user account is what Actuals uses to sync table information."
+msgstr "{0} 是 Actuals 用来连接 {1} 数据库的数据库用户。确保 {2} 可以访问所有 Actuals 组可能需要访问的 {3} 中的所有内容，因为该数据库用户账户是 Actuals 用来同步表信息的。"
 
 #: enterprise/frontend/src/metabase-enterprise/advanced_permissions/components/ImpersonationModal/ImpersonationModalView.tsx:82
-msgid "Map a Metabase user attribute to database users"
-msgstr "将 Metabase 用户属性映射到数据库用户"
+msgid "Map a Actuals user attribute to database users"
+msgstr "将 Actuals 用户属性映射到数据库用户"
 
 #: enterprise/frontend/src/metabase-enterprise/advanced_permissions/components/ImpersonationModal/ImpersonationModalView.tsx:87
-msgid "When the person runs a query (including native queries), Metabase will impersonate the privileges of the database user you associate with the user attribute."
-msgstr "当用户运行查询（包括本地查询）时，Metabase 将假冒与用户属性相关联的数据库用户的权限。"
+msgid "When the person runs a query (including native queries), Actuals will impersonate the privileges of the database user you associate with the user attribute."
+msgstr "当用户运行查询（包括本地查询）时，Actuals 将假冒与用户属性相关联的数据库用户的权限。"
 
 #: frontend/src/metabase/visualizations/visualizations/SmartScalar/compute.js:246
 #: frontend/src/metabase/visualizations/visualizations/SmartScalar/compute.js:551
@@ -31476,8 +31476,8 @@ msgid "Regenerate API key"
 msgstr "重新生成 API 密钥"
 
 #: frontend/src/metabase/admin/settings/components/ApiKeys/EditApiKeyModal.tsx:76
-msgid "Metabase will replace the existing API key with a new key. You won't be able to recover the old key."
-msgstr "Metabase 将用新密钥替换现有的 API 密钥。您将无法恢复旧密钥。"
+msgid "Actuals will replace the existing API key with a new key. You won't be able to recover the old key."
+msgstr "Actuals 将用新密钥替换现有的 API 密钥。您将无法恢复旧密钥。"
 
 #: frontend/src/metabase/admin/settings/components/ApiKeys/EditApiKeyModal.tsx:81
 msgid "No, don't regenerate"
@@ -31622,8 +31622,8 @@ msgid "By clicking \"Agree and continue\" you're agreeing to {0}"
 msgstr "点击 \"同意并继续\"，即表示您同意 {0}。"
 
 #: frontend/src/metabase/public/components/widgets/LegaleseStep/LegaleseStep.tsx:45
-msgid "When you embed charts or dashboards from Metabase in your own application that application isn't subject to the Affero General Public License that covers the rest of Metabase, provided you keep the Metabase logo and the \"Powered by Metabase\" visible on those embeds."
-msgstr "当您在自己的应用程序中嵌入 Metabase 中的图表或仪表盘时，该应用程序不受涵盖 Metabase 其他部分的 Affero 通用公共许可证的约束，前提是您必须在嵌入的图表或仪表盘上保留 Metabase 徽标和 \"Powered by Metabase\"（由 Metabase 提供）字样。"
+msgid "When you embed charts or dashboards from Actuals in your own application that application isn't subject to the Affero General Public License that covers the rest of Actuals, provided you keep the Actuals logo and the \"Powered by Actuals\" visible on those embeds."
+msgstr "当您在自己的应用程序中嵌入 Actuals 中的图表或仪表盘时，该应用程序不受涵盖 Actuals 其他部分的 Affero 通用公共许可证的约束，前提是您必须在嵌入的图表或仪表盘上保留 Actuals 徽标和 \"Powered by Actuals\"（由 Actuals 提供）字样。"
 
 #: frontend/src/metabase/public/components/widgets/LegaleseStep/LegaleseStep.tsx:48
 msgid "You should, however, read the license text linked above as that is the actual license that you will be agreeing to by enabling this feature."
@@ -31849,8 +31849,8 @@ msgid "Custom URL for the help link."
 msgstr "帮助链接的自定义 URL。"
 
 #: metabase/public_settings.clj:492
-msgid "Whether or not to display Metabase links outside admin settings."
-msgstr "是否在管理设置之外显示 Metabase 链接。"
+msgid "Whether or not to display Actuals links outside admin settings."
+msgstr "是否在管理设置之外显示 Actuals 链接。"
 
 #: metabase/public_settings.clj:463
 msgid "Invalid help link option"
@@ -31865,8 +31865,8 @@ msgid "Toggle which is true after a user has dismissed the banner on Browse Data
 msgstr "在用户取消 \"浏览有关模型的数据 \"的横幅后切换为 true"
 
 #: metabase/public_settings.clj:104
-msgid "Pick a dashboard to serve as the homepage. If people lack permissions to view the selected dashboard, Metabase will redirect them to the default homepage. To revert to the default Metabase homepage, simply turn off the toggle."
-msgstr "选择一个仪表板作为主页。如果用户没有权限查看所选仪表板，Metabase 会将其重定向到默认主页。要恢复到默认 Metabase 主页，只需关闭切换开关即可。"
+msgid "Pick a dashboard to serve as the homepage. If people lack permissions to view the selected dashboard, Actuals will redirect them to the default homepage. To revert to the default Actuals homepage, simply turn off the toggle."
+msgstr "选择一个仪表板作为主页。如果用户没有权限查看所选仪表板，Actuals 会将其重定向到默认主页。要恢复到默认 Actuals 主页，只需关闭切换开关即可。"
 
 #: metabase/pulse/render/body.clj:200
 msgid "Results have been included as a file attachment"
@@ -31957,21 +31957,21 @@ msgid "You do not have access to the audit database"
 msgstr "您无法访问审计数据库"
 
 #: metabase_enterprise/sso/integrations/sso_settings.clj:26
-msgid "When we enable SAML user provisioning, we automatically create a Metabase account on SAML signin for users who\n"
+msgid "When we enable SAML user provisioning, we automatically create a Actuals account on SAML signin for users who\n"
 "don''t have one."
-msgstr "当我们启用 SAML 用户供应时，我们会在 SAML 登录时为没有 Metabase 帐户的用户自动创建一个 Metabase 帐户。\n"
+msgstr "当我们启用 SAML 用户供应时，我们会在 SAML 登录时为没有 Actuals 帐户的用户自动创建一个 Actuals 帐户。\n"
 "账户。"
 
 #: metabase_enterprise/sso/integrations/sso_settings.clj:34
-msgid "When we enable JWT user provisioning, we automatically create a Metabase account on JWT signin for users who\n"
+msgid "When we enable JWT user provisioning, we automatically create a Actuals account on JWT signin for users who\n"
 "don''t have one."
-msgstr "当我们启用 JWT 用户供应时，我们会在 JWT 登录时自动为没有 Metabase 帐户的用户创建一个 Metabase 帐户。\n"
+msgstr "当我们启用 JWT 用户供应时，我们会在 JWT 登录时自动为没有 Actuals 帐户的用户创建一个 Actuals 帐户。\n"
 "账户。"
 
 #: metabase_enterprise/sso/integrations/sso_settings.clj:42
-msgid "When we enable LDAP user provisioning, we automatically create a Metabase account on LDAP signin for users who\n"
+msgid "When we enable LDAP user provisioning, we automatically create a Actuals account on LDAP signin for users who\n"
 "don''t have one."
-msgstr "当我们启用 LDAP 用户供应时，我们会在 LDAP 登录时自动为没有 Metabase 帐户的用户创建一个 Metabase 帐户。\n"
+msgstr "当我们启用 LDAP 用户供应时，我们会在 LDAP 登录时自动为没有 Actuals 帐户的用户创建一个 Actuals 帐户。\n"
 "账户。"
 
 #: metabase_enterprise/sso/integrations/sso_utils.clj:36
@@ -32056,11 +32056,11 @@ msgid "User Provisioning"
 msgstr "用户配置"
 
 #: enterprise/frontend/src/metabase-enterprise/auth/index.js:109
-msgid "When a user logs in via SAML, create a Metabase account for them automatically if they don't have one."
+msgid "When a user logs in via SAML, create a Actuals account for them automatically if they don't have one."
 msgstr "当用户通过 SAML 登录时，如果他们没有元数据库帐户，则会自动为其创建一个元数据库帐户。"
 
 #: enterprise/frontend/src/metabase-enterprise/auth/index.js:202
-msgid "When a user logs in via JWT, create a Metabase account for them automatically if they don't have one."
+msgid "When a user logs in via JWT, create a Actuals account for them automatically if they don't have one."
 msgstr "当用户通过 JWT 登录时，如果他们没有元数据库帐户，则会自动为其创建一个元数据库帐户。"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/index.js:58
@@ -32070,7 +32070,7 @@ msgstr "品牌推广"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/index.js:65
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/index.js:131
-msgid "Conceal Metabase"
+msgid "Conceal Actuals"
 msgstr "隐藏配置数据库"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/index.js:76
@@ -32084,15 +32084,15 @@ msgstr "为获得最佳效果，请使用带有透明图层的 SVG 文件\n"
 "背景。"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/index.js:143
-msgid "Hide or customize pieces of the Metabase product to tailor the experience to your brand and needs"
-msgstr "隐藏或自定义 Metabase 产品的各个部分，以便根据您的品牌和需求定制体验"
+msgid "Hide or customize pieces of the Actuals product to tailor the experience to your brand and needs"
+msgstr "隐藏或自定义 Actuals 产品的各个部分，以便根据您的品牌和需求定制体验"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/index.js:155
 msgid "Homepage, Documentation and References"
 msgstr "主页、文档和参考资料"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/index.js:157
-msgid "Control the display of homepage visuals and greeting message plus other Metabase elements such as links to Metabase documentation and Metabase references in your instance."
+msgid "Control the display of homepage visuals and greeting message plus other Actuals elements such as links to Actuals documentation and Actuals references in your instance."
 msgstr "控制主页视觉效果和问候消息以及其他元数据库元素的显示，例如实例中元数据库文档和元数据库引用的链接。"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/index.js:168
@@ -32100,7 +32100,7 @@ msgid "Show lighthouse illustration on the home and login pages"
 msgstr "在主页和登录页面上显示灯塔插图"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/index.js:179
-msgid "Show links and references to Metabase {0}"
+msgid "Show links and references to Actuals {0}"
 msgstr "显示元数据库 {0} 的链接和引用"
 
 #: enterprise/frontend/src/metabase-enterprise/whitelabel/index.js:193
@@ -32214,7 +32214,7 @@ msgid "Server logs from the current user only"
 msgstr "仅来自当前用户的服务器日志"
 
 #: frontend/src/metabase/components/ErrorPages/ErrorDiagnosticModal.tsx:120
-msgid "Metabase instance version and settings"
+msgid "Actuals instance version and settings"
 msgstr "配置数据库实例版本和设置"
 
 #: frontend/src/metabase/components/ErrorPages/ErrorDiagnosticModal.tsx:140
@@ -32230,7 +32230,7 @@ msgid "Retire {0}"
 msgstr "退休{0}"
 
 #: enterprise/frontend/src/metabase-enterprise/auth/index.js:307
-msgid "When a user logs in via LDAP, create a Metabase account for them automatically if they don't have one."
+msgid "When a user logs in via LDAP, create a Actuals account for them automatically if they don't have one."
 msgstr "当用户通过 LDAP 登录时，如果他们没有元数据库帐户，则会自动为其创建一个元数据库帐户。"
 
 #: enterprise/frontend/src/metabase-enterprise/license/components/BillingInfo/BillingInfoError.tsx:14
@@ -32403,8 +32403,8 @@ msgid "Choose the message to show while a query is running."
 msgstr "选择查询运行时显示的消息。"
 
 #: metabase/public_settings.clj:27
-msgid "Replace the word “Metabase” wherever it appears."
-msgstr "替换出现的“Metabase”一词。"
+msgid "Replace the word “Actuals” wherever it appears."
+msgstr "替换出现的“Actuals”一词。"
 
 #: metabase/public_settings.clj:421
 msgid "Upload a file to use as the favicon."
@@ -32423,12 +32423,12 @@ msgid "Enter a URL of the landing page to show the user. This overrides the cust
 msgstr "输入向用户显示的登录页面的 URL。这会覆盖上面的自定义主页设置。"
 
 #: metabase/public_settings.clj:371
-msgid "Choose the colors used in the user interface throughout Metabase and others specifically for the charts. You need to refresh your browser to see your changes take effect."
-msgstr "选择整个 Metabase 和其他专门用于图表的用户界面中使用的颜色。您需要刷新浏览器才能看到更改生效。"
+msgid "Choose the colors used in the user interface throughout Actuals and others specifically for the charts. You need to refresh your browser to see your changes take effect."
+msgstr "选择整个 Actuals 和其他专门用于图表的用户界面中使用的颜色。您需要刷新浏览器才能看到更改生效。"
 
 #: metabase/public_settings.clj:412
-msgid "Upload a file to replace the Metabase logo on the top bar."
-msgstr "上传文件以替换顶栏上的 Metabase 徽标。"
+msgid "Upload a file to replace the Actuals logo on the top bar."
+msgstr "上传文件以替换顶栏上的 Actuals 徽标。"
 
 #: metabase/query_processor/compile.clj:25
 msgid "Error compiling query: {0}"
@@ -32501,8 +32501,8 @@ msgid "Enable AI features."
 msgstr "启用人工智能功能。"
 
 #: metabase_enterprise/llm/settings.clj:13
-msgid "The OpenAI API Key used in Metabase Enterprise."
-msgstr "Metabase Enterprise 中使用的 OpenAI API 密钥。"
+msgid "The OpenAI API Key used in Actuals Enterprise."
+msgstr "Actuals Enterprise 中使用的 OpenAI API 密钥。"
 
 #: metabase_enterprise/sso/api/sso.clj:102
 msgid "Error handling SLO"
@@ -32517,7 +32517,7 @@ msgid "Use  account name"
 msgstr "使用账户名"
 
 #: frontend/src/metabase/home/components/EmbedMinimalHomepage/EmbedMinimalHomepage.tsx:44
-msgid "Embed Metabase in your app"
+msgid "Embed Actuals in your app"
 msgstr "在您的应用程序中嵌入元数据库"
 
 #: frontend/src/metabase/home/components/EmbedMinimalHomepage/EmbedMinimalHomepage.tsx:69
@@ -32629,7 +32629,7 @@ msgid "Activating"
 msgstr "激活"
 
 #: frontend/src/metabase/components/ErrorPages/ErrorDiagnosticModal.tsx:136
-msgid "Metabase instance version information"
+msgid "Actuals instance version information"
 msgstr "配置数据库实例版本信息"
 
 #: frontend/src/metabase/components/ErrorPages/ErrorDiagnosticModal.tsx:255
@@ -32726,7 +32726,7 @@ msgid "Error creating query from legacy query: {0}"
 msgstr "从旧查询创建查询时出错：{0}"
 
 #: metabase/public_settings/premium_features.clj:232
-msgid "Airgapped token is no longer valid. Please contact Metabase support."
+msgid "Airgapped token is no longer valid. Please contact Actuals support."
 msgstr "气隙令牌不再有效。请联系元数据库支持。"
 
 #: metabase/public_settings/premium_features.clj:148

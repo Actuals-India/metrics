@@ -118,15 +118,15 @@ export const PLUGIN_DATA_PERMISSIONS: {
   ) => boolean;
 
   upgradeViewPermissionsIfNeeded:
-    | ((
-        permissions: GroupsPermissions,
-        groupId: number,
-        { databaseId }: DatabaseEntityId,
-        value: any,
-        database: Database,
-        permission: DataPermission,
-      ) => GroupPermissions)
-    | null;
+  | ((
+    permissions: GroupsPermissions,
+    groupId: number,
+    { databaseId }: DatabaseEntityId,
+    value: any,
+    database: Database,
+    permission: DataPermission,
+  ) => GroupPermissions)
+  | null;
 } = {
   permissionsPayloadExtraSelectors: [],
   hasChanges: [],
@@ -179,7 +179,7 @@ export const PLUGIN_SELECTORS = {
     isSlow ? t`Waiting for results...` : t`Doing science...`,
   getIsWhiteLabeling: (_state: State) => false,
   // eslint-disable-next-line no-literal-metabase-strings -- This is the actual Metabase name, so we don't want to translate it.
-  getApplicationName: (_state: State) => "Metabase",
+  getApplicationName: (_state: State) => "Actuals",
   getShowMetabaseLinks: (_state: State) => true,
   getLoginPageIllustration: (_state: State): IllustrationValue => {
     return {
