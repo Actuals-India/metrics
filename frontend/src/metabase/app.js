@@ -52,6 +52,23 @@ import registerVisualizations from "metabase/visualizations/register";
 
 import { getStore } from "./store";
 
+
+// if (window.self === window.top) {
+//   window.location.href = 'https://app-fe-ultimate-dev.actuals.co.in/';
+// } else {
+//   if (document.referrer !== 'https://app-fe-ultimate-dev.actuals.co.in/') {
+//     window.location.href = 'https://app-fe-ultimate-dev.actuals.co.in/';
+//   }
+// }
+
+// if (window.self === window.top) {
+//   document.body.innerHTML = '<h1>Access Denied</h1>';
+// } else {
+//   if (document.referrer !== 'https://app-fe-ultimate-dev.actuals.co.in/') {
+//     document.body.innerHTML = '<h1>Access Denied</h1>';
+//   }
+// }
+
 // remove trailing slash
 const metabaseRoot = window.MetabaseRoot || "/"
 const BASENAME = metabaseRoot.replace(/\/+$/, "");
