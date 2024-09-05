@@ -142,8 +142,8 @@ const DatabaseEditAppSidebar = ({
           </SidebarGroup.List>
         </SidebarGroup>
         <SidebarGroup>
-          {/* <SidebarGroup.Name>{t`Danger Zone`}</SidebarGroup.Name> */}
-          {/* <SidebarGroup.List>
+          <SidebarGroup.Name>{t`Danger Zone`}</SidebarGroup.Name>
+          <SidebarGroup.List>
             {isSyncCompleted(database) && (
               <SidebarGroup.ListItem hasMarginTop={false}>
                 <ModalWithTrigger
@@ -176,7 +176,7 @@ const DatabaseEditAppSidebar = ({
                 </ModalWithTrigger>
               </SidebarGroup.ListItem>
             )}
-          </SidebarGroup.List> */}
+          </SidebarGroup.List>
         </SidebarGroup>
       </SidebarContent>
       {hasModelActionsSection && (

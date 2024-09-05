@@ -37,14 +37,14 @@ export const AdminNavbar = ({
 }: AdminNavbarProps) => {
   const isPaidPlain = useSelector(getIsPaidPlan);
 
-  const allowedAdminPaths = [
-    "databases",
-    "data-model",
-    "people",
-    "permissions",
-  ];
+  // const allowedAdminPaths = [
+  //   "databases",
+  //   "data-model",
+  //   "people",
+  //   "permissions",
+  // ];
 
-  adminPaths = adminPaths.filter(path => allowedAdminPaths.includes(path.key));
+  // adminPaths = adminPaths.filter(path => allowedAdminPaths.includes(path.key));
 
   return (
     <AdminNavbarRoot
