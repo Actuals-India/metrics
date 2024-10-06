@@ -1,0 +1,5 @@
+5 sep 24 
+- main didnt work so deployed changes in timetravel
+- show admin settings f5b8711aa1b00e7700f059163e4a613539a5c5c9 613b776f96c8a6c0e5d4026261009ad7824a550d timetravel
+
+
