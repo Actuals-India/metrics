@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - timetravel
+      - main
   workflow_dispatch:
     inputs:
       target_env:
