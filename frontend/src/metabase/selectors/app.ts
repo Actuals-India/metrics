@@ -81,6 +81,7 @@ export const getIsNavBarEnabled = createSelector(
       return false;
     }
     if (isEmbedded && !embedOptions.side_nav) {
+      // if (!embedOptions.side_nav) {
       return false;
     }
 
@@ -150,6 +151,7 @@ export const getIsLogoVisible = createSelector(
   [getIsEmbedded, getEmbedOptions],
   (isEmbedded, embedOptions) => {
     return !isEmbedded || embedOptions.logo;
+    // return embedOptions.logo;
   },
 );
 
@@ -157,13 +159,23 @@ export const getIsSearchVisible = createSelector(
   [getIsEmbedded, getEmbedOptions],
   (isEmbedded, embedOptions) => {
     return !isEmbedded || embedOptions.search;
+    // return embedOptions.search;
   },
 );
+
+// export const getIsNewButtonVisible = createSelector(
+//   [getIsEmbedded, getEmbedOptions],
+//   (isEmbedded, embedOptions) => {
+//     return !isEmbedded || embedOptions.new_button;
+//     // return embedOptions.new_button;
+//   },
+// );
 
 export const getIsNewButtonVisible = createSelector(
   [getIsEmbedded, getEmbedOptions],
   (isEmbedded, embedOptions) => true,
 );
+
 
 export const getIsProfileLinkVisible = createSelector(
   [getIsEmbedded],

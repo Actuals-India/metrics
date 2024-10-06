@@ -16,7 +16,8 @@ export const SsoButton = ({
   isCard,
   redirectUrl,
 }: SsoButtonProps): JSX.Element => {
-  const isEmbedded = isWithinIframe();
+  // const isEmbedded = isWithinIframe();
+  const isEmbedded = false;
   const dispatch = useDispatch();
 
   const handleLogin = useCallback(() => {

@@ -53,7 +53,8 @@ import registerVisualizations from "metabase/visualizations/register";
 import { getStore } from "./store";
 
 // remove trailing slash
-const BASENAME = window.MetabaseRoot.replace(/\/+$/, "");
+const metabaseRoot = window.MetabaseRoot || "/"
+const BASENAME = metabaseRoot.replace(/\/+$/, "");
 
 api.basename = BASENAME;
 

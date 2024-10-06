@@ -56,6 +56,9 @@ const CSS_CONFIG = {
 const config = (module.exports = {
   mode: devMode ? "development" : "production",
   context: SRC_PATH,
+  devServer: {
+    port: 8081
+  },
 
   // output a bundle for the app JS and a bundle for styles
   // eventually we should have multiple (single file) entry points for various pieces of the app to enable code splitting
@@ -90,19 +93,19 @@ const config = (module.exports = {
       },
       ...(shouldUseEslint
         ? [
-            {
-              test: /\.(tsx?|jsx?)$/,
-              exclude: /node_modules|cljs|\.spec\.js/,
-              use: [
-                {
-                  loader: "eslint-loader",
-                  options: {
-                    rulePaths: [__dirname + "/frontend/lint/eslint-rules"],
-                  },
+          {
+            test: /\.(tsx?|jsx?)$/,
+            exclude: /node_modules|cljs|\.spec\.js/,
+            use: [
+              {
+                loader: "eslint-loader",
+                options: {
+                  rulePaths: [__dirname + "/frontend/lint/eslint-rules"],
                 },
-              ],
-            },
-          ]
+              },
+            ],
+          },
+        ]
         : []),
       {
         test: /\.(svg|png)$/,
@@ -190,17 +193,17 @@ const config = (module.exports = {
   },
   cache: useFilesystemCache
     ? {
-        type: "filesystem",
-        cacheDirectory: path.resolve(
-          __dirname,
-          "node_modules/.cache/",
-          edition === "oss" ? "webpack-oss" : "webpack-ee",
-        ),
-        buildDependencies: {
-          // invalidates the cache on configuration change
-          config: [__filename],
-        },
-      }
+      type: "filesystem",
+      cacheDirectory: path.resolve(
+        __dirname,
+        "node_modules/.cache/",
+        edition === "oss" ? "webpack-oss" : "webpack-ee",
+      ),
+      buildDependencies: {
+        // invalidates the cache on configuration change
+        config: [__filename],
+      },
+    }
     : undefined,
   optimization: {
     runtimeChunk: "single",
