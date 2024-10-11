@@ -656,7 +656,7 @@ export const getShouldShowUnsavedChangesWarning = createSelector(
       const rawQuery = Lib.rawNativeQuery(question.query());
 
       if (isNewQuestion) {
-        return rawQuery.length > 0;
+        return rawQuery ? rawQuery.length > 0 : true;
       }
 
       const rawOriginalQuery = Lib.rawNativeQuery(originalQuestion.query());
@@ -989,8 +989,8 @@ export const getDataReferenceStack = createSelector(
     uiControls.dataReferenceStack
       ? uiControls.dataReferenceStack
       : dbId
-      ? [{ type: "database", item: { id: dbId } }]
-      : [],
+        ? [{ type: "database", item: { id: dbId } }]
+        : [],
 );
 
 export const getDashboardId = state => {

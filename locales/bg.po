@@ -13312,7 +13312,7 @@ msgid "SQL for this question"
 msgstr "SQL за този въпрос"
 
 #: frontend/src/metabase/query_builder/components/view/NativeQueryPreviewSidebar/NativeQueryPreviewSidebar.tsx:27
-msgid "Convert this question to SQL"
+msgid "Use AI for querying and insights"
 msgstr "Преобразувайте този въпрос в SQL"
 
 #: frontend/src/metabase/query_builder/components/view/QuestionAlertWidget.jsx:74

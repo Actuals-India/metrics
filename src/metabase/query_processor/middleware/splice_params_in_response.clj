@@ -14,7 +14,7 @@
 (defn splice-params-in-response
   "Middleware that manipulates query response. Splice prepared statement (or equivalent) parameters directly into the
   native query returned as part of successful query results. (This `:native_form` is ultimately what powers the
-  'Convert this Question to SQL' feature in the Query Processor.) E.g.:
+  'Use AI for querying and insights' feature in the Query Processor.) E.g.:
 
     {:data {:native_form {:query \"SELECT * FROM birds WHERE name = ?\", :params [\"Reggae\"]}}}
 

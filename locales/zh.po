@@ -13310,7 +13310,7 @@ msgid "SQL for this question"
 msgstr "这个问题的SQL"
 
 #: frontend/src/metabase/query_builder/components/view/NativeQueryPreviewSidebar/NativeQueryPreviewSidebar.tsx:27
-msgid "Convert this question to SQL"
+msgid "Use AI for querying and insights"
 msgstr "将此问题转换为SQL查询"
 
 #: frontend/src/metabase/query_builder/components/view/QuestionAlertWidget.jsx:74

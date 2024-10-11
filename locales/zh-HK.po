@@ -13284,7 +13284,7 @@ msgid "SQL for this question"
 msgstr "這個問題的SQL語句"
 
 #: frontend/src/metabase/query_builder/components/view/NativeQueryPreviewSidebar/NativeQueryPreviewSidebar.tsx:27
-msgid "Convert this question to SQL"
+msgid "Use AI for querying and insights"
 msgstr "將這個問題轉換為SQL"
 
 #: frontend/src/metabase/query_builder/components/view/QuestionAlertWidget.jsx:74

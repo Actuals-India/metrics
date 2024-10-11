@@ -22,7 +22,7 @@ const TITLE = {
 };
 
 const BUTTON_TITLE = {
-  sql: t`Convert this question to SQL`,
+  sql: t`Use AI for querying and insights`,
   json: t`Convert this question to a native query`,
 };
 
@@ -46,15 +46,23 @@ export const NotebookNativePreview = (): JSX.Element => {
   const formattedQuery = formatNativeQuery(data?.query, engine);
 
   const handleConvertClick = useCallback(() => {
-    if (!formattedQuery) {
-      return;
+    // if (!formattedQuery) {
+    //   return;
+    // }
+    try {
+      const newDatasetQuery = createDatasetQuery(
+        formattedQuery as any,
+        question,
+      );
+      const newQuestion = question.setDatasetQuery(newDatasetQuery);
+
+      dispatch(
+        updateQuestion(newQuestion, { shouldUpdateUrl: true, run: true }),
+      );
+      dispatch(setUIControls({ isNativeEditorOpen: true }));
+    } catch (e) {
+      console.log(e);
     }
-
-    const newDatasetQuery = createDatasetQuery(formattedQuery, question);
-    const newQuestion = question.setDatasetQuery(newDatasetQuery);
-
-    dispatch(updateQuestion(newQuestion, { shouldUpdateUrl: true, run: true }));
-    dispatch(setUIControls({ isNativeEditorOpen: true }));
   }, [question, dispatch, formattedQuery]);
 
   const getErrorMessage = (error: unknown) =>
@@ -120,7 +128,8 @@ export const NotebookNativePreview = (): JSX.Element => {
           variant="subtle"
           p={0}
           onClick={handleConvertClick}
-          disabled={!showQuery}
+          // disabled={!showQuery}
+          disabled={false}
         >
           {BUTTON_TITLE[engineType]}
         </Button>

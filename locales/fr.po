@@ -13352,7 +13352,7 @@ msgid "SQL for this question"
 msgstr "Requête SQL pour cette question"
 
 #: frontend/src/metabase/query_builder/components/view/NativeQueryPreviewSidebar/NativeQueryPreviewSidebar.tsx:27
-msgid "Convert this question to SQL"
+msgid "Use AI for querying and insights"
 msgstr "Convertir cette question en requête SQL"
 
 #: frontend/src/metabase/query_builder/components/view/QuestionAlertWidget.jsx:74

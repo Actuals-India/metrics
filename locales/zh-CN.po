@@ -13339,7 +13339,7 @@ msgid "SQL for this question"
 msgstr "这个Question的 SQL"
 
 #: frontend/src/metabase/query_builder/components/view/NativeQueryPreviewSidebar/NativeQueryPreviewSidebar.tsx:27
-msgid "Convert this question to SQL"
+msgid "Use AI for querying and insights"
 msgstr "将此Question转换为 SQL"
 
 #: frontend/src/metabase/query_builder/components/view/QuestionAlertWidget.jsx:74

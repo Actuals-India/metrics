@@ -52,7 +52,7 @@ describe("scenarios > question > notebook > native query preview sidebar", () =>
     cy.findByTestId("native-query-preview-sidebar").within(() => {
       cy.findByText("SQL for this question").should("exist");
       cy.get(".ace_content").should("not.exist");
-      cy.button("Convert this question to SQL").should("be.disabled");
+      cy.button("Use AI for querying and insights").should("be.disabled");
     });
   });
 
@@ -70,7 +70,7 @@ describe("scenarios > question > notebook > native query preview sidebar", () =>
       cy.get(".ace_content")
         .should("contain", "SELECT")
         .and("contain", queryLimit);
-      cy.button("Convert this question to SQL").should("exist");
+      cy.button("Use AI for querying and insights").should("exist");
     });
 
     cy.log(
@@ -425,7 +425,7 @@ function convertToSql() {
   openNotebook();
   cy.findByLabelText("View the SQL").click();
   cy.intercept("POST", "/api/dataset").as("dataset");
-  cy.button("Convert this question to SQL").click();
+  cy.button("Use AI for querying and insights").click();
   cy.wait("@dataset");
   cy.findByTestId("native-query-editor").should("be.visible");
 }

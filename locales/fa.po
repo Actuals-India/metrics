@@ -13325,7 +13325,7 @@ msgid "SQL for this question"
 msgstr "SQL برای این سوال"
 
 #: frontend/src/metabase/query_builder/components/view/NativeQueryPreviewSidebar/NativeQueryPreviewSidebar.tsx:27
-msgid "Convert this question to SQL"
+msgid "Use AI for querying and insights"
 msgstr "این سوال را به SQL تبدیل کنید"
 
 #: frontend/src/metabase/query_builder/components/view/QuestionAlertWidget.jsx:74

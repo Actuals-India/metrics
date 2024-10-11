@@ -44,7 +44,7 @@
 
 (mu/defn compile-and-splice-parameters :- :map
   "Return the native form for a `query`, with any prepared statement (or equivalent) parameters spliced into the query
-  itself as literals. This is used to power features such as 'Convert this Question to SQL'.
+  itself as literals. This is used to power features such as 'Use AI for querying and insights'.
 
   (Currently, this function is mostly used by tests and a few API endpoints;
   REPL; [[metabase.query-processor.middleware.splice-params-in-response/splice-params-in-response]] middleware handles

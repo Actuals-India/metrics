@@ -727,7 +727,7 @@
 
     {:query \"SELECT * FROM birds WHERE name = 'Reggae'\"}
 
-  This is used to power features such as 'Convert this Question to SQL' in the Query Builder. Normally when executing
+  This is used to power features such as 'Use AI for querying and insights' in the Query Builder. Normally when executing
   the query we'd like to leave the statement as a prepared one and pass parameters that way instead of splicing them
   in as literals so as to avoid SQL injection vulnerabilities. Thus the results of this method are not normally
   executed by the Query Processor when processing an MBQL query. However when people convert a

@@ -1,0 +1,85 @@
+- step 1
+- https://{metabase_url}/api/database/
+- list of databases
+- example response 
+- {
+  "data": [
+    {
+      "description": null,
+      "features": [
+        "index-info",
+        "full-join",
+        "fingerprint"
+      ],
+      "is_sample": false,
+      "id": 2,
+      "is_on_demand": false,
+      "engine": "postgres",
+    },
+    {
+      "description": "Some example data for you to play around with.",
+      "cache_ttl": null,
+      "details": {
+        "db": "file:/plugins/sample-database.db;USER=GUEST;PASSWORD=guest"
+      },
+      "is_sample": true,
+      "id": 1,
+      "is_on_demand": false,
+      "engine": "h2",
+    }
+  ],
+  "total": 2
+}
+- choose the first one which has postgres engine and save it's id
+
+
+- step 2
+- to get the list of schemas in the database
+- https://{metabase_url}/api/database/{database_id}/schemas
+- returns example [
+  "CustomerCare",
+  "D2C_data",
+  "Data_D2C",
+  .
+  .
+]
+
+- step 3
+- to get the list of tables in the schemas of the database from above step
+- {metabase_url}/api/database/{database_id}/schema/{schema_name}
+- [
+    {
+        "description": null,
+        "entity_type": "entity/GenericTable",
+        "schema": "geography",
+        "database_require_filter": null,
+        "show_in_getting_started": false,
+        "name": "categories",
+    },
+    {
+        "description": null,
+        "entity_type": "entity/GenericTable",
+        "schema": "geography",
+        "database_require_filter": null,
+        "show_in_getting_started": false,
+        "name": "geographies",
+        "caveats": null,
+
+    },
+    {
+        "description": null,
+        "entity_type": "entity/GenericTable",
+        "schema": "geography",
+        "database_require_filter": null,
+        "show_in_getting_started": false,
+        "name": "geographies_view",
+        "caveats": null,
+    }
+]
+- extract name field from all (it represents table name)
+
+- use 3 endpoints above to get the list of tables and columns of schema.
+- store this info in an efficient format because this will go to openai api as payload
+
+
+

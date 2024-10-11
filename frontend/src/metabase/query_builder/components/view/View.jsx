@@ -24,6 +24,7 @@ import DataReference from "../dataref/DataReference";
 import { SnippetSidebar } from "../template_tags/SnippetSidebar";
 import { TagEditorSidebar } from "../template_tags/TagEditorSidebar";
 
+import MetabaseToOpenAI from "./MetabaseToOpenAI";
 import NewQuestionHeader from "./NewQuestionHeader";
 import NewQuestionView from "./View/NewQuestionView";
 import { NotebookContainer } from "./View/NotebookContainer";
@@ -383,7 +384,10 @@ class View extends Component {
           data-testid="query-builder-root"
         >
           {isHeaderVisible && this.renderHeader()}
+
           <QueryBuilderContentContainer>
+          <MetabaseToOpenAI />
+
             {!isNative && (
               <NotebookContainer
                 isOpen={isNotebookContainerOpen}
