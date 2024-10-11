@@ -203,7 +203,6 @@ const Notebook = ({ className, updateQuestion, ...props }: NotebookProps) => {
 
   //   const apiUrl = "https://api.openai.com/v1/chat/completions";
   //   const apiKey =
-  //     "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";
 
   //   const prompt = `${naturalQuery}, give proper formatting, postgres query and one line explanations for each. \nDatabase schema: ${JSON.stringify(
   //     schemasAndTables,
