@@ -111,3 +111,5 @@ modules/drivers/*/.lsp/*
 
 # airgap
 /resources/airgap/
+
+bkp.txt

@@ -84,34 +84,40 @@ const MetabaseToOpenAI: React.FC = () => {
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setLoading(true);
-    if (!naturalQuery || !schemasAndTables) {return;}
 
-    const apiUrl = "https://api.openai.com/v1/chat/completions";
-    const apiKey =
-      "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";
+    // Ensure necessary data is available
+    if (!naturalQuery || !schemasAndTables) {
+      return;
+    }
 
-    const prompt = `${naturalQuery}. Use only new lines for formatting. Return postgres executable query where applicable and one line explanations for each. Do not suggest complex queries that require type casting. Make sure to wrap schema-name and table-name in double quotes. \nDatabase schema: ${JSON.stringify(
+    // Your Lambda API Gateway endpoint
+    const apiUrl =
+      "https://klukh8gzlj.execute-api.ap-south-1.amazonaws.com/default/openaiQueryLambda";
+
+    let schemasAndTables1 = JSON.stringify({
+      schema1: ["users", "transactions"],
+      schema2: ["customers", "orders"],
+    });
+
+    const payload = {
+      naturalQuery,
       schemasAndTables,
-    )}`;
-
-    console.log(prompt);
+    };
 
     try {
+      // Make the POST request to your Lambda function
       const response = await fetch(apiUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${apiKey}`,
         },
-        body: JSON.stringify({
-          model: "gpt-4o",
-          messages: [{ role: "user", content: prompt }],
-          temperature: 0,
-        }),
+        body: JSON.stringify(payload), // Send naturalQuery and schemasAndTables as payload
       });
 
+      // Parse the response from the Lambda function
       const data = await response.json();
-      const generatedSQL = data.choices[0].message.content.trim();
+      const generatedSQL = data.result; // Access the SQL query result
+
       setResult(generatedSQL);
       console.log(generatedSQL);
     } catch (error) {

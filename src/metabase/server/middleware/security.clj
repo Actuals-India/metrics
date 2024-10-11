@@ -102,6 +102,8 @@
                                  "metabase.us10.list-manage.com"
                                  ;; for openai
                                  "https://api.openai.com"
+                                 ;; for openai lambda
+                                 "https://klukh8gzlj.execute-api.ap-south-1.amazonaws.com"
                                  ;; Google analytics
                                  (when (public-settings/anon-tracking-enabled)
                                    "www.google-analytics.com")
