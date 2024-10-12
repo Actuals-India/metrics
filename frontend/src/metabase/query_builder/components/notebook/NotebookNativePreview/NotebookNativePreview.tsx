@@ -80,6 +80,17 @@ export const NotebookNativePreview = (): JSX.Element => {
       display="flex"
       style={{ flexDirection: "column" }}
     >
+      <Box ta="end" p="1.5rem">
+        <Button
+          variant="subtle"
+          onClick={handleConvertClick}
+          // disabled={!showQuery}
+          disabled={false}
+          style={{ fontSize: "18px" }}
+        >
+          <div style={{ padding: "10px" }}>{BUTTON_TITLE[engineType]}</div>
+        </Button>
+      </Box>
       <Box
         component="header"
         c={color("text-dark")}
@@ -123,7 +134,7 @@ export const NotebookNativePreview = (): JSX.Element => {
           </NativeQueryEditorRoot>
         )}
       </Box>
-      <Box ta="end" p="1.5rem">
+      {/* <Box ta="end" p="1.5rem">
         <Button
           variant="subtle"
           p={0}
@@ -133,7 +144,7 @@ export const NotebookNativePreview = (): JSX.Element => {
         >
           {BUTTON_TITLE[engineType]}
         </Button>
-      </Box>
+      </Box> */}
     </Box>
   );
 };
